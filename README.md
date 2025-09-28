@@ -1,4 +1,7 @@
 
+# Releases
+**[https://github.com/Krynetic/Database-Releases](https://github.com/Krynetic/Database-Releases)**
+
 # Installation
 
 ## Docker
