@@ -6,13 +6,13 @@
 
 ## Docker
 
-### Image: ghcr.io/krynetic/database-relases:latest
+### Image: ghcr.io/krynetic/database-releases:latest
 
 ```ruby
 #docker-compose.yml
 services:
   database:
-    image: ghcr.io/krynetic/database-relases:latest
+    image: ghcr.io/krynetic/database-releases:latest
     command: ["--server", "graphql"]
     volumes:
       - ./data:/data
