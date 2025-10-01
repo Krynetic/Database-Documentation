@@ -27,13 +27,22 @@
 | SetValue   | 31.38 탎 | 0.459 탎 | 0.383 탎 |  13.68 KB |
 | SetMillion | 1.711 s  | 0.0163 s | 0.0144 s |  10.76 GB |
 
-#### Version 2025-10-01
+#### Version 2025-10-01 #1
 
 | Method     | Mean     | Error    | StdDev   | Allocated |
 |---------   |---------:|---------:|---------:|----------:|
 | GetValue   | 53.80 ns | 5.366 ns | 0.294 ns |      32 B |
 | SetValue   | 29.27 탎 | 28.98 탎 | 1.589 탎 |   6.79 KB |
 | SetMillion | 1.166 s  | 0.3686 s | 0.0202 s |   4.19 GB |
+
+#### Version 2025-10-01 #2
+
+| Method     | Mean     | Error    | StdDev   | Allocated |
+|----------- |---------:|---------:|---------:|----------:|
+| GetValue   | 17.01 ns | 6.442 ns | 0.353 ns |      32 B |
+| SetValue   | 12.40 탎 | 6.578 탎 | 0.361 탎 |    3.5 KB |
+| SetMillion | 819.8 ms | 226.5 ms | 12.42 ms |   3.23 GB |
+
 
 ---
 
