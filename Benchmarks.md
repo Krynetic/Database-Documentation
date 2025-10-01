@@ -27,6 +27,17 @@
 | SetValue   | 31.38 탎 | 0.459 탎 | 0.383 탎 |  13.68 KB |
 | SetMillion | 1.711 s  | 0.0163 s | 0.0144 s |  10.76 GB |
 
+#### Version 2025-10-01
+
+| Method     | Mean     | Error    | StdDev   | Allocated |
+|---------   |---------:|---------:|---------:|----------:|
+| GetValue   | 53.80 ns | 5.366 ns | 0.294 ns |      32 B |
+| SetValue   | 29.27 탎 | 28.98 탎 | 1.589 탎 |   6.79 KB |
+| SetMillion | 1.166 s  | 0.3686 s | 0.0202 s |   4.19 GB |
+
+---
+
+**Code**
 ```csharp
 [GlobalSetup]
 public void Setup()
