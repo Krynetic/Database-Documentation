@@ -43,6 +43,25 @@
 | SetValue   | 12.40 탎 | 6.578 탎 | 0.361 탎 |    3.5 KB |
 | SetMillion | 819.8 ms | 226.5 ms | 12.42 ms |   3.23 GB |
 
+#### Version 2025-10-02
+
+| Method       | Mean     | Error    | StdDev   | Allocated |
+|-----------   |---------:|---------:|--------: |----------:|
+| GetValue     | 17.13 ns | 0.824 ns | 0.045 ns |      32 B |
+| SetValue     | 10.80 탎 | 3.649 탎 | 0.200 탎 |   3.14 KB |
+| SetMillion   | 649.6 ms | 135.6 ms | 7.43 ms  |   2.87 GB |
+| RandomSet    | 15.91 탎 | 0.268 탎 | 1.363 탎 |    7.9 KB |
+| RandomSet10K | 23.21 ms | 0.388 ms | 1.993 ms |  65.17 MB |
+
+#### Version 2025-10-20
+
+| Method       | Mean     | Error    | StdDev   | Allocated |
+|-----------   |---------:|---------:|--------: |----------:|
+| GetValue     | 23.50 ns | 0.584 ns | 0.875 ns |      72 B |
+| SetValue     | 11.29 탎 | 0.675 탎 | 0.969 탎 |   2.65 KB |
+| SetMillion   | 670.1 ms | 42.57 ms | 2.33 ms  |   2.47 GB |
+| RandomSet    | 14.01 탎 | 0.248 탎 | 1.235 탎 |   5.49 KB |
+| RandomSet10K | 14.74 ms | 0.258 ms | 1.307 ms |   41.5 MB |
 
 ---
 
@@ -80,5 +99,34 @@ public void SetValue()
 public object? GetValue()
 {
     return store["static"];
+}
+
+[IterationSetup(Target = nameof(RandomSet))]
+public void RandomSet_Reset() => store.Clear();
+
+[Benchmark]
+public void RandomSet()
+{
+    store["folder1/folder2/" + prng.Long()] = new
+    {
+        name = "name" + prng.Long(),
+        age = prng.Long()
+    };
+}
+
+[IterationSetup(Target = nameof(RandomSet10K))]
+public void RandomSet10K_Reset() => store.Clear();
+
+[Benchmark]
+public void RandomSet10K()
+{
+    for (int i = 0; i < 10_000; i++)
+    {
+        store["folder1/folder2/" + prng.Long()] = new
+        {
+            name = "name" + prng.Long(),
+            age = prng.Long()
+        };
+    }
 }
 ```
