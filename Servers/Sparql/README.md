@@ -136,3 +136,40 @@ SELECT * WHERE {
 | <http://krynetic.com/users/1> |
 | <http://krynetic.com/users/2> |
 | <http://krynetic.com/users/3> |
+
+---
+
+## Inserting data at a given path (*comming!*)
+
+- `Path` \<http://krynetic.com/users/4/name>
+- `Relation` \<http://krynetic.com/#value> (**REQUIRED**)
+- `Value` "value"^^<http://www.w3.org/2001/XMLSchema#datatype>
+```SQL
+INSERT DATA {
+  GRAPH <http://krynetic.com/users> {
+    <http://krynetic.com/users/4/name> <http://krynetic.com/#value> "tester"^^<http://www.w3.org/2001/XMLSchema#string> .
+  }
+}
+```
+
+
+## Datatypes
+
+| Type          | Description |
+|------------------|-------------|
+| `null`           | Represents no value |
+| `byte`           | 8-bit unsigned integer |
+| `sbyte`          | 8-bit signed integer |
+| `ushort`         | 16-bit unsigned integer |
+| `short`          | 16-bit signed integer |
+| `uint`           | 32-bit unsigned integer |
+| `int`            | 32-bit signed integer |
+| `ulong`          | 64-bit unsigned integer |
+| `long`           | 64-bit signed integer |
+| `float`          | 32-bit floating-point |
+| `double`         | 64-bit floating-point |
+| `decimal`        | High-precision decimal |
+| `string`         | Textual data |
+| `boolean`        | True/False logical value |
+| `dateTime`       | ISO 8601 date-time |
+| `dateTimeStamp`  | Date-time with timezone |
