@@ -9,50 +9,6 @@
 
 ----
 
-#### Version 2025-09-28
-
-
-| Method     | Mean     | Error    | StdDev   | Allocated |
-|----------- |---------:|---------:|---------:|----------:|
-| GetValue   | 134.6 ns | 1.48 ns  | 1.31 ns  |     440 B |
-| SetValue   | 44.39 탎 | 0.834 탎 | 0.893 탎 |  17.34 KB |
-| SetMillion | 4.857 s  | 0.0198 s | 0.0185 s |  12.13 GB |
-
-
-#### Version 2025-09-30
-
-| Method     | Mean     | Error    | StdDev   | Allocated |
-|----------- |---------:|---------:|---------:|----------:|
-| GetValue   | 56.71 ns | 0.532 ns | 0.472 ns |      32 B |
-| SetValue   | 31.38 탎 | 0.459 탎 | 0.383 탎 |  13.68 KB |
-| SetMillion | 1.711 s  | 0.0163 s | 0.0144 s |  10.76 GB |
-
-#### Version 2025-10-01 #1
-
-| Method     | Mean     | Error    | StdDev   | Allocated |
-|---------   |---------:|---------:|---------:|----------:|
-| GetValue   | 53.80 ns | 5.366 ns | 0.294 ns |      32 B |
-| SetValue   | 29.27 탎 | 28.98 탎 | 1.589 탎 |   6.79 KB |
-| SetMillion | 1.166 s  | 0.3686 s | 0.0202 s |   4.19 GB |
-
-#### Version 2025-10-01 #2
-
-| Method     | Mean     | Error    | StdDev   | Allocated |
-|----------- |---------:|---------:|---------:|----------:|
-| GetValue   | 17.01 ns | 6.442 ns | 0.353 ns |      32 B |
-| SetValue   | 12.40 탎 | 6.578 탎 | 0.361 탎 |    3.5 KB |
-| SetMillion | 819.8 ms | 226.5 ms | 12.42 ms |   3.23 GB |
-
-#### Version 2025-10-02
-
-| Method       | Mean     | Error    | StdDev   | Allocated |
-|-----------   |---------:|---------:|--------: |----------:|
-| GetValue     | 17.13 ns | 0.824 ns | 0.045 ns |      32 B |
-| SetValue     | 10.80 탎 | 3.649 탎 | 0.200 탎 |   3.14 KB |
-| SetMillion   | 649.6 ms | 135.6 ms | 7.43 ms  |   2.87 GB |
-| RandomSet    | 15.91 탎 | 0.268 탎 | 1.363 탎 |    7.9 KB |
-| RandomSet10K | 23.21 ms | 0.388 ms | 1.993 ms |  65.17 MB |
-
 #### Version 2025-10-20
 
 | Method       | Mean     | Error    | StdDev   | Allocated |
@@ -130,3 +86,122 @@ public void RandomSet10K()
     }
 }
 ```
+
+---
+
+## Request benchmarks
+
+**NOTE**: <span style="color:red">Intra-docker container execution - Benchmarker is started within docker container</span> !
+
+### Krynetic start arguments used
+
+--server openapi \
+--optimize-socket \
+--loglevel information \
+--prefill
+
+---
+
+### *Latency*: 0.9 ms
+
+```csharp
+#https://search.apps.ubuntu.com/api/v1/package/wrk2
+wrk -t32 -c128 -R 1000 -d15s  http://localhost:8080/static
+```
+
+```text
+Running 15s test @ http://localhost:8080/static
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.90ms  518.66us   8.10ms   71.11%
+    Req/Sec    32.38     70.90   333.00     86.53%
+  15136 requests in 15.11s, 2.46MB read
+Requests/sec:   1002.01
+Transfer/sec:    166.51KB
+```
+
+### *Requests per seconds*: 95,000 (WRK 2)
+
+```csharp
+#https://search.apps.ubuntu.com/api/v1/package/wrk2
+wrk -t32 -c128 -R 100000 -d15s  http://localhost:8080/static
+```
+
+```text
+Running 15s test @ http://localhost:8080/static
+  1423862 requests in 14.99s, 231.10MB read
+Requests/sec:  94957.03
+Transfer/sec:  15.41MB
+```
+
+
+###  *Requests per seconds*: 80,700 (Bombardier)
+
+```csharp
+#v2.0.2/bombardier-linux-amd64
+bombardier --connections 128 --duration 5s --latencies --disableKeepAlives http://localhost:8080/static
+```
+
+```text
+Statistics        Avg      Stdev        Max
+  Reqs/sec     80731.91    9670.01  108452.31
+  Latency        1.58ms   513.38us    15.39ms
+  Latency Distribution
+     50%     1.18ms
+     75%     1.91ms
+     90%     3.29ms
+     95%     3.89ms
+     99%     5.58ms
+  HTTP codes:
+    1xx - 0, 2xx - 403854, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    18.33MB/s
+```
+
+ ### *Throughput*: 2.1 GB/s (apache2-utils)
+
+ ```csharp
+#apache2-utils/now 2.4.65-1~deb12u1 amd64
+ab -n10000 -c64 http://localhost:8080/static_1M
+```
+
+ ```text
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Server Software:        Microsoft-NetCore/2.0
+Server Hostname:        localhost
+Server Port:            8080
+
+Document Path:          /static_1M
+Document Length:        1000002 bytes
+
+Concurrency Level:      64
+Time taken for tests:   4.632 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      10001400000 bytes
+HTML transferred:       10000020000 bytes
+Requests per second:    2158.82 [#/sec] (mean)
+Time per request:       29.646 [ms] (mean)
+Time per request:       0.463 [ms] (mean, across all concurrent requests)
+Transfer rate:          2108518.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.2      1       3
+Processing:    11   29   1.4     29      36
+Waiting:        0    1   0.8      1       7
+Total:         11   30   1.4     29      37
+
+Percentage of the requests served within a certain time (ms)
+  50%     29
+  66%     30
+  75%     30
+  80%     30
+  90%     31
+  95%     32
+  98%     33
+  99%     34
+ 100%     37 (longest request)
+ ```

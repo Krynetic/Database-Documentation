@@ -62,3 +62,9 @@ EXPOSE 8081/tcp
 #GRPC >
 EXPOSE 50051/tcp
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Krynetic/Database-Documentation,Krynetic/Database-Releases&type=date&legend=top-left)](https://www.star-history.com/#Krynetic/Database-Documentation&Krynetic/Database-Releases&type=date&legend=top-left)
+
+wrk -t8 -c100 -d5s --u_latency http://localhost:8080/static
