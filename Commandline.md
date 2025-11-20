@@ -20,11 +20,8 @@
 `-s`, `--server` **(REQUIRED)**  
 &nbsp;&nbsp;&nbsp;&nbsp;*Servers to start*  
 <sub>
-&nbsp;&nbsp;&nbsp;&nbsp;**Announce | Couchbase | CouchDB** \
-&nbsp;&nbsp;&nbsp;&nbsp;**FTP | GraphQL | GRPC | Kafka** \
-&nbsp;&nbsp;&nbsp;&nbsp;**MongoDB | MQTT | OData** \
-&nbsp;&nbsp;&nbsp;&nbsp;**OpenAPI | Redis | S3 |** \
-&nbsp;&nbsp;&nbsp;&nbsp;**SocketIO | SQL | SSH | WCF**
+&nbsp;&nbsp;&nbsp;&nbsp;**Announce | MQTT | GraphQL** \
+&nbsp;&nbsp;&nbsp;&nbsp;**WCF | GRPC**
 </sub>
 
 `--prefill`  

@@ -4,9 +4,33 @@
 
 # Installation
 
-## Docker licensed edition using GraphQL
+## Docker
 
 ### Image: ghcr.io/krynetic/database-releases:latest
+
+### Instant: Community edition using GraphQL
+
+```ruby
+docker run --rm -it -p 8085:8085 ghcr.io/krynetic/database-releases:latest
+```
+
+### Compose: Community edition using GraphQL
+
+```ruby
+#docker-compose.yml
+services:
+  database:
+    image: ghcr.io/krynetic/database-releases:latest
+    command: ["--server", "graphql"]
+    volumes:
+      - ./data:/data
+    environment:
+      - STORAGE_DIRECTORY=/data
+    ports:
+      - "8085:8085"
+```
+
+### Compose: Licensed edition using GraphQL
 
 ```ruby
 #docker-compose.yml
@@ -20,13 +44,11 @@ services:
     environment:
       - LICENSE_FILE=/license.key
       - STORAGE_DIRECTORY=/data
-      - HOST=*
     ports:
       - "8085:8085"
-      # Add more ports here
 ```
 
-## Kubernetes Community edition using GraphQL
+### Kubernetes: Community edition using GraphQL
 ```ruby
 apiVersion: apps/v1
 kind: Deployment
@@ -85,7 +107,7 @@ spec:
       protocol: TCP
 ```
 
-## Kubernetes licensed edition using GraphQL
+### Kubernetes: Licensed edition using GraphQL
 ```ruby
 apiVersion: apps/v1
 kind: Deployment
