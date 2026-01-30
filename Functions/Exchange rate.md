@@ -1,0 +1,2 @@
+## Exchange rate
+* <function><a id="exchangerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExchangeRate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> from, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> to) -> <span style="color:#87AF00">Task\<decimal\></span></function>

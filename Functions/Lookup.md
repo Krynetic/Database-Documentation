@@ -1,0 +1,4 @@
+## Lookup
+* <function><a id="lookup"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Lookup</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fullkey = <span style="color:#D70000; margin-right:1px">""</span>) -> <span style="color:#87AF00">object</span> -- (alias <span style="color:#D75F00">$</span>)</function>
+* <function><a id="parent"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Parent</span>() -> <span style="color:#87AF00">string</span></function>
+* <function><a id="self"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Self</span>() -> <span style="color:#87AF00">string</span></function>

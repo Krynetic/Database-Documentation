@@ -1,0 +1,2 @@
+## Weather
+* <function><a id="fetchweather"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchWeather</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, object\>\></span></function>

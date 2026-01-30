@@ -1,0 +1,2 @@
+## WebAssembly (WASM)
+* <function><a id="wasm"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Wasm</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> wasmBytes, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function = <span style="color:#D70000; margin-right:1px">"main"</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">WASM</span>)</function>
