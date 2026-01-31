@@ -57,8 +57,6 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_Python"></a>[Python](#python)
 - <a id="index_ruby"></a>[Ruby](#ruby)
   - <a id="index_Ruby"></a>[Ruby](#ruby)
-- <a id="index_webassembly-wasm"></a>[WebAssembly (WASM)](#webassembly-wasm)
-  - <a id="index_Wasm"></a>[Wasm](#wasm)
 - <a id="index_elliptic-curve-digital-signature-algorithm-esdsa"></a>[Elliptic Curve Digital Signature Algorithm (ESDSA)](#elliptic-curve-digital-signature-algorithm-esdsa)
   - <a id="index_ECDSAGenerate"></a>[ECDSAGenerate](#ecdsagenerate)
   - <a id="index_ECDSASign"></a>[ECDSASign](#ecdsasign)
@@ -178,8 +176,6 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_ParseLatLon"></a>[ParseLatLon](#parselatlon)
   - <a id="index_ParseLatLonWithMetadata"></a>[ParseLatLonWithMetadata](#parselatlonwithmetadata)
   - <a id="index_GeocodeLocation"></a>[GeocodeLocation](#geocodelocation)
-- <a id="index_git"></a>[Git](#git)
-  - <a id="index_GitCommits"></a>[GitCommits](#gitcommits)
 - <a id="index_globally-unique-identifier-guid"></a>[Globally Unique Identifier (Guid)](#globally-unique-identifier-guid)
   - <a id="index_GenerateUuid1"></a>[GenerateUuid1](#generateuuid1)
   - <a id="index_GenerateUuid3"></a>[GenerateUuid3](#generateuuid3)
@@ -193,14 +189,9 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_CRC64"></a>[CRC64](#crc64)
   - <a id="index_XXHash32"></a>[XXHash32](#xxhash32)
   - <a id="index_XXHash64"></a>[XXHash64](#xxhash64)
-  - <a id="index_Shake128"></a>[Shake128](#shake128)
-  - <a id="index_Shake256"></a>[Shake256](#shake256)
   - <a id="index_SHA1"></a>[SHA1](#sha1)
   - <a id="index_SHA256"></a>[SHA256](#sha256)
   - <a id="index_SHA512"></a>[SHA512](#sha512)
-  - <a id="index_SHA3_256"></a>[SHA3_256](#sha3256)
-  - <a id="index_SHA3_384"></a>[SHA3_384](#sha3384)
-  - <a id="index_SHA3_512"></a>[SHA3_512](#sha3512)
   - <a id="index_MD5"></a>[MD5](#md5)
   - <a id="index_HMAC_SHA256"></a>[HMAC_SHA256](#hmacsha256)
   - <a id="index_HMAC_SHA512"></a>[HMAC_SHA512](#hmacsha512)
@@ -295,7 +286,6 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_PathParent"></a>[PathParent](#pathparent)
   - <a id="index_PathParts"></a>[PathParts](#pathparts)
   - <a id="index_PathId"></a>[PathId](#pathid)
-  - <a id="index_PathDepth"></a>[PathDepth](#pathdepth)
 - <a id="index_print"></a>[Print](#print)
   - <a id="index_Print"></a>[Print](#print)
 - <a id="index_random"></a>[Random](#random)
@@ -442,8 +432,6 @@ Evaluates Javascript code using the YantraJS runtime
 * <function><a id="python"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Python</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Py</span>)</function>
 ## <a id="ruby" href="#index_ruby">Ruby</a>
 * <function><a id="ruby"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Ruby</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Rb</span>)</function>
-## <a id="webassembly-wasm" href="#index_webassembly-wasm">WebAssembly (WASM)</a>
-* <function><a id="wasm"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Wasm</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> wasmBytes, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function = <span style="color:#D70000; margin-right:1px">"main"</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">WASM</span>)</function>
 ## <a id="elliptic-curve-digital-signature-algorithm-esdsa" href="#index_elliptic-curve-digital-signature-algorithm-esdsa">Elliptic Curve Digital Signature Algorithm (ESDSA)</a>
 * <function><a id="ecdsagenerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSAGenerate</span>() -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Generates an ECDSA key pair using the NIST P\-256 curve.
@@ -1168,8 +1156,6 @@ Geocodes the specified location using OpenWeatherMap&apos;s Geo API.
 &lt;param name=&quot;openweathermapApiKey&quot;&gt;Your OpenWeatherMap API key for authentication.&lt;/param&gt;
 &lt;returns&gt;A dictionary containing latitude and longitude as keys with their respective double values,
 or an empty dictionary if the location cannot be geocoded.&lt;/returns&gt;</pre></function>
-## <a id="git" href="#index_git">Git</a>
-* <function><a id="gitcommits"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">GitCommits</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">Dictionary\<string, object\></span></function>
 ## <a id="globally-unique-identifier-guid" href="#index_globally-unique-identifier-guid">Globally Unique Identifier (Guid)</a>
 * <function><a id="generateuuid1"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid1</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Generates a UUID version 1 which is based on the current date and time, ensuring uniqueness through node and clock sequence identifiers.
@@ -1236,18 +1222,6 @@ Computes the XXH64 hash of a given input string using the specified seed value.
 &lt;param name=&quot;input&quot;&gt;The input string to be hashed.&lt;/param&gt;
 &lt;param name=&quot;seed&quot;&gt;An optional seed value for the hash function. Defaults to 0 if not provided.&lt;/param&gt;
 &lt;returns&gt;Returns the computed XXH64 hash as an unsigned long (ulong).&lt;/returns&gt;</pre></function>
-* <function><a id="shake128"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Shake128</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputLength) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHAKE\-128 hash of a given input string using a specified output length.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;param name=&quot;outputLength&quot;&gt;The desired length of the output hash in bytes.&lt;/param&gt;
-&lt;returns&gt;The SHAKE\-128 hash as a hexadecimal string representation.&lt;/returns&gt;</pre></function>
-* <function><a id="shake256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Shake256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputLength) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHAKE\-256 hash of a given input string with specified output length.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;param name=&quot;outputLength&quot;&gt;The desired length of the hash output in bytes.&lt;/param&gt;
-&lt;returns&gt;A hexadecimal string representing the SHAKE\-256 hash of the input with the specified length.&lt;/returns&gt;</pre></function>
 * <function><a id="sha1"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA1</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Calculates the SHA\-1 hash for a given input string and returns it as a hexadecimal string.
 This method utilizes the provided hashing function from the SHA1 class to ensure 
@@ -1270,23 +1244,6 @@ Computes the SHA\-512 hash of a given input string.
 &lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
 &lt;returns&gt;A hexadecimal string representation of the SHA\-512 hash.&lt;/returns&gt;
 &lt;remarks&gt;This method is marked as a plugin function for dynamic loading.&lt;/remarks&gt;</pre></function>
-* <function><a id="sha3256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA\-3 256\-bit hash of a given input string.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;A hexadecimal representation of the SHA\-3 256\-bit hash.&lt;/returns&gt;</pre></function>
-* <function><a id="sha3384"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_384</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA3\-384 hash of a given input string.
-This method utilizes a helper function to perform hashing with the specified algorithm.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;The resulting SHA3\-384 hash as a hexadecimal string.&lt;/returns&gt;</pre></function>
-* <function><a id="sha3512"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA3\-512 hash of a given input string.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;The SHA3\-512 hash represented as a hexadecimal string.&lt;/returns&gt;
-&lt;remarks&gt;This method utilizes the HashData property of the SHA3\_512 class to perform hashing.&lt;/remarks&gt;</pre></function>
 * <function><a id="md5"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MD5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Computes the MD5 hash of a given input string.
 This method utilizes a custom plugin function mechanism to process the string.
@@ -1823,7 +1780,6 @@ Default is 80 bits.
 * <function><a id="pathparent"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParent</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string</span></function>
 * <function><a id="pathparts"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParts</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string[]</span></function>
 * <function><a id="pathid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathId</span>() -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Id</span>)</function>
-* <function><a id="pathdepth"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathDepth</span>() -> <span style="color:#5FAFAF">int</span></function>
 ## <a id="print" href="#index_print">Print</a>
 * <function><a id="print"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Print</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message) -> <span style="color:#87AF00">void</span> -- (alias <span style="color:#D75F00">Echo</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Prints the specified message to both the console and debug output.

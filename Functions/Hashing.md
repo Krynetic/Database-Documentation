@@ -24,18 +24,6 @@ Computes the XXH64 hash of a given input string using the specified seed value.
 &lt;param name=&quot;input&quot;&gt;The input string to be hashed.&lt;/param&gt;
 &lt;param name=&quot;seed&quot;&gt;An optional seed value for the hash function. Defaults to 0 if not provided.&lt;/param&gt;
 &lt;returns&gt;Returns the computed XXH64 hash as an unsigned long (ulong).&lt;/returns&gt;</pre></function>
-* <function><a id="shake128"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Shake128</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputLength) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHAKE\-128 hash of a given input string using a specified output length.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;param name=&quot;outputLength&quot;&gt;The desired length of the output hash in bytes.&lt;/param&gt;
-&lt;returns&gt;The SHAKE\-128 hash as a hexadecimal string representation.&lt;/returns&gt;</pre></function>
-* <function><a id="shake256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Shake256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputLength) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHAKE\-256 hash of a given input string with specified output length.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;param name=&quot;outputLength&quot;&gt;The desired length of the hash output in bytes.&lt;/param&gt;
-&lt;returns&gt;A hexadecimal string representing the SHAKE\-256 hash of the input with the specified length.&lt;/returns&gt;</pre></function>
 * <function><a id="sha1"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA1</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Calculates the SHA\-1 hash for a given input string and returns it as a hexadecimal string.
 This method utilizes the provided hashing function from the SHA1 class to ensure 
@@ -58,23 +46,6 @@ Computes the SHA\-512 hash of a given input string.
 &lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
 &lt;returns&gt;A hexadecimal string representation of the SHA\-512 hash.&lt;/returns&gt;
 &lt;remarks&gt;This method is marked as a plugin function for dynamic loading.&lt;/remarks&gt;</pre></function>
-* <function><a id="sha3256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA\-3 256\-bit hash of a given input string.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;A hexadecimal representation of the SHA\-3 256\-bit hash.&lt;/returns&gt;</pre></function>
-* <function><a id="sha3384"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_384</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA3\-384 hash of a given input string.
-This method utilizes a helper function to perform hashing with the specified algorithm.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;The resulting SHA3\-384 hash as a hexadecimal string.&lt;/returns&gt;</pre></function>
-* <function><a id="sha3512"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA3_512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
-Computes the SHA3\-512 hash of a given input string.
-&lt;/summary&gt;
-&lt;param name=&quot;value&quot;&gt;The input string to be hashed.&lt;/param&gt;
-&lt;returns&gt;The SHA3\-512 hash represented as a hexadecimal string.&lt;/returns&gt;
-&lt;remarks&gt;This method utilizes the HashData property of the SHA3\_512 class to perform hashing.&lt;/remarks&gt;</pre></function>
 * <function><a id="md5"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MD5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">&lt;summary&gt;
 Computes the MD5 hash of a given input string.
 This method utilizes a custom plugin function mechanism to process the string.
