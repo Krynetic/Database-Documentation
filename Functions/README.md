@@ -76,8 +76,10 @@ It assumes familiarity with programming concepts and focuses on precision, compl
 - <a id="index_barcode"></a>[Barcode](#barcode)
   - <a id="index_GenerateQRCode"></a>[GenerateQRCode](#generateqrcode)
 - <a id="index_built-in"></a>[Built-In](#built-in)
-  - <a id="index_Count"></a>[Count](#count)
+  - <a id="index_Length"></a>[Length](#length)
   - <a id="index_Type"></a>[Type](#type)
+  - <a id="index_ToBytes"></a>[ToBytes](#tobytes)
+  - <a id="index_Array"></a>[Array](#array)
 - <a id="index_cache"></a>[Cache](#cache)
   - <a id="index_CacheGet"></a>[CacheGet](#cacheget)
   - <a id="index_CacheSet"></a>[CacheSet](#cacheset)
@@ -133,6 +135,12 @@ It assumes familiarity with programming concepts and focuses on precision, compl
 - <a id="index_cookies"></a>[Cookies](#cookies)
   - <a id="index_ParseCookie"></a>[ParseCookie](#parsecookie)
   - <a id="index_CreateCookie"></a>[CreateCookie](#createcookie)
+  - <a id="index_GetCookieValue"></a>[GetCookieValue](#getcookievalue)
+  - <a id="index_SetCookieValue"></a>[SetCookieValue](#setcookievalue)
+  - <a id="index_RemoveCookieKey"></a>[RemoveCookieKey](#removecookiekey)
+  - <a id="index_HasCookieKey"></a>[HasCookieKey](#hascookiekey)
+  - <a id="index_MergeCookies"></a>[MergeCookies](#mergecookies)
+  - <a id="index_CookieCount"></a>[CookieCount](#cookiecount)
 - <a id="index_date"></a>[Date](#date)
   - <a id="index_ToUnixTimeSeconds"></a>[ToUnixTimeSeconds](#tounixtimeseconds)
   - <a id="index_ToUnixTimeMilliseconds"></a>[ToUnixTimeMilliseconds](#tounixtimemilliseconds)
@@ -144,6 +152,15 @@ It assumes familiarity with programming concepts and focuses on precision, compl
 - <a id="index_documentation"></a>[Documentation](#documentation)
   - <a id="index_DocumentationTyped"></a>[DocumentationTyped](#documentationtyped)
   - <a id="index_Documentation"></a>[Documentation](#documentation)
+- <a id="index_emojis"></a>[Emojis](#emojis)
+  - <a id="index_EmojiRaw"></a>[EmojiRaw](#emojiraw)
+  - <a id="index_EmojiAlias"></a>[EmojiAlias](#emojialias)
+  - <a id="index_Emojify"></a>[Emojify](#emojify)
+  - <a id="index_Demojify"></a>[Demojify](#demojify)
+  - <a id="index_EmojiFind"></a>[EmojiFind](#emojifind)
+  - <a id="index_EmojiFindAliases"></a>[EmojiFindAliases](#emojifindaliases)
+  - <a id="index_EmojiSkinToneVariants"></a>[EmojiSkinToneVariants](#emojiskintonevariants)
+  - <a id="index_EmojiRandom"></a>[EmojiRandom](#emojirandom)
 - <a id="index_encoding"></a>[Encoding](#encoding)
   - <a id="index_Base64Encode"></a>[Base64Encode](#base64encode)
   - <a id="index_Base64Decode"></a>[Base64Decode](#base64decode)
@@ -378,6 +395,9 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_IsGuid"></a>[IsGuid](#isguid)
 - <a id="index_weather"></a>[Weather](#weather)
   - <a id="index_FetchWeather"></a>[FetchWeather](#fetchweather)
+- <a id="index_wifi"></a>[Wifi](#wifi)
+  - <a id="index_WifiCode"></a>[WifiCode](#wificode)
+  - <a id="index_WifiCode_EAP"></a>[WifiCode_EAP](#wificodeeap)
 - <a id="index_x509certificates"></a>[X509Certificates](#x509certificates)
   - <a id="index_ParseX509"></a>[ParseX509](#parsex509)
   - <a id="index_CreateSelfSignedCertificate"></a>[CreateSelfSignedCertificate](#createselfsignedcertificate)
@@ -513,18 +533,15 @@ signature generated from the given message and key using the specified hash algo
 
 </pre></function>
 ## <a id="built-in" href="#index_built-in">Built-In</a>
-* <function><a id="count"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Count</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> dict) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Counts the number of key\-value pairs in a dictionary by retrieving the length value from the &apos;LengthKey&apos; special key.  
-***dict***: The input dictionary to be searched.  
-**Returns**: The count of key\-value pairs in the dictionary.  
-
-</pre></function>
+* <function><a id="length"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Length</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> obj) -> <span style="color:#5FAFAF">int</span></function>
 * <function><a id="type"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Type</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> data) -> <span style="color:#87AF00">DatabaseType</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Returns the database type based on the provided data.  
 ***data***: The data to determine the database type for.  
 **Returns**: The database type.  
 
 </pre></function>
+* <function><a id="tobytes"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToBytes</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">byte[]</span></function>
+* <function><a id="array"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Array</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> items) -> <span style="color:#87AF00">object[]</span></function>
 ## <a id="cache" href="#index_cache">Cache</a>
 * <function><a id="cacheget"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CacheGet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Caches a value retrieved from the application cache. If the key is not found in the cache, the method returns null.  
@@ -989,6 +1006,50 @@ pairs are separated by &apos;; &apos;. If the input dictionary contains no eleme
 **Returns**: A string representing a formatted cookie with all provided data.  
 
 </pre></function>
+* <function><a id="getcookievalue"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Retrieves the value of a specific cookie key from a cookie string.  
+***cookie***: The full cookie string to search.
+***key***: The cookie key whose value should be retrieved.  
+**Returns**: The value associated with the specified cookie key if found; otherwise, null.
+The returned value may be of type bool, int, long, double, DateTime, Guid, or string.  
+
+</pre></function>
+* <function><a id="setcookievalue"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Sets or updates a cookie key with the specified value and returns the updated cookie string.  
+***cookie***: The original cookie string.
+***key***: The cookie key to set or update.
+***value***: The value to assign to the cookie key.  
+**Returns**: A new cookie string containing the updated key\-value pair.  
+
+</pre></function>
+* <function><a id="removecookiekey"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemoveCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Removes a specific cookie key from a cookie string.  
+***cookie***: The original cookie string.
+***key***: The cookie key to remove.  
+**Returns**: A new cookie string with the specified key removed.  
+
+</pre></function>
+* <function><a id="hascookiekey"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HasCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a specific cookie key exists within a cookie string.  
+***cookie***: The cookie string to inspect.
+***key***: The cookie key to check for existence.  
+**Returns**: true if the specified key exists; otherwise, false.  
+
+</pre></function>
+* <function><a id="mergecookies"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MergeCookies</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> baseCookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> overrideCookie) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Merges two cookie strings, where values from the override cookie replace values
+from the base cookie when keys collide.  
+***baseCookie***: The base cookie string.
+***overrideCookie***: The cookie string whose values take precedence.  
+**Returns**: A merged cookie string containing keys from both inputs.  
+
+</pre></function>
+* <function><a id="cookiecount"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CookieCount</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Counts the number of distinct cookie key\-value pairs in a cookie string.  
+***cookie***: The cookie string to analyze.  
+**Returns**: The total number of parsed cookie entries.  
+
+</pre></function>
 ## <a id="date" href="#index_date">Date</a>
 * <function><a id="tounixtimeseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUnixTimeSeconds</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset</span> dt) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given DateTimeOffset to its Unix timestamp in seconds.
@@ -1051,6 +1112,70 @@ or plugin system that share the same context configuration.
 ***function***: The name of the function whose documentation is to be retrieved.  
 **Returns**: A string representing the raw XML documentation for the specified function, 
         or null if no documentation is found.  
+
+</pre></function>
+## <a id="emojis" href="#index_emojis">Emojis</a>
+* <function><a id="emojiraw"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRaw</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> alias) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Gets the raw Unicode string of the emoji associated with the given alias.  
+***alias***: The emoji alias (e.g. :tada:).  
+**Returns**: The raw Unicode emoji, or an empty string if not found.  
+**Examples**:
+EmojiRaw(&quot;:tada:&quot;); // &quot;🎉&quot;  
+
+</pre></function>
+* <function><a id="emojialias"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiAlias</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> raw) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Gets the primary alias of the emoji represented by the raw Unicode string.  
+***raw***: The raw Unicode emoji (e.g. 🎉).  
+**Returns**: The emoji alias, or an empty alias if not found.  
+**Examples**:
+EmojiAlias(&quot;🎉&quot;); // &quot;:tada:&quot;  
+
+</pre></function>
+* <function><a id="emojify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Emojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Replaces emoji aliases in the input text with their raw Unicode equivalents.  
+***text***: A text containing emoji aliases.  
+**Returns**: The emojified text.  
+**Examples**:
+Emojify(&quot;initial :tada: commit&quot;); // &quot;initial 🎉 commit&quot;  
+
+</pre></function>
+* <function><a id="demojify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Demojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Replaces raw Unicode emojis in the input text with their alias representations.  
+***text***: A text containing raw Unicode emojis.  
+**Returns**: The demojified text.  
+**Examples**:
+Demojify(&quot;initial 🎉 commit&quot;); // &quot;initial :tada: commit&quot;  
+
+</pre></function>
+* <function><a id="emojifind"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFind</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Finds emojis that match the given query and returns their raw Unicode values.  
+***query***: A search value matched against emoji description, category, aliases or tags.  
+**Returns**: An array of raw Unicode emojis.  
+**Examples**:
+EmojiFind(&quot;party&quot;); // \[&quot;🎉&quot;, &quot;🥳&quot;, ...\]  
+
+</pre></function>
+* <function><a id="emojifindaliases"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFindAliases</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Finds emojis that match the given query and returns their primary aliases.  
+***query***: A search value matched against emoji description, category, aliases or tags.  
+**Returns**: An array of emoji aliases.  
+**Examples**:
+EmojiFindAliases(&quot;party&quot;); // \[&quot;:tada:&quot;, &quot;:partying\_face:&quot;, ...\]  
+
+</pre></function>
+* <function><a id="emojiskintonevariants"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiSkinToneVariants</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Gets all raw Unicode skin tone variants for the specified emoji.  
+***value***: An emoji alias or raw Unicode string that supports skin tone modifiers.  
+**Returns**: An array of raw Unicode skin tone variants.  
+**Examples**:
+EmojiSkinToneVariants(&quot;✌️&quot;); // \[&quot;✌🏻&quot;,&quot;✌🏼&quot;,&quot;✌🏽&quot;,&quot;✌🏾&quot;,&quot;✌🏿&quot;\]  
+
+</pre></function>
+* <function><a id="emojirandom"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRandom</span>() -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Gets a random emoji from the global emoji set.  
+**Returns**: A raw Unicode emoji.  
+**Examples**:
+EmojiRandom(); // &quot;🎉&quot;  
 
 </pre></function>
 ## <a id="encoding" href="#index_encoding">Encoding</a>
@@ -2506,6 +2631,9 @@ Utilizes the double.TryParse method to check if the conversion is successful.
 </pre></function>
 ## <a id="weather" href="#index_weather">Weather</a>
 * <function><a id="fetchweather"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchWeather</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, object\>\></span></function>
+## <a id="wifi" href="#index_wifi">Wifi</a>
+* <function><a id="wificode"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiAuth</span> auth, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="wificodeeap"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode_EAP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> identity, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiEapMethod</span> eap, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiPhase2</span> phase2 = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.WifiPlugin+WifiPhase2.MSCHAPV2</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> anonymousIdentity = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
 ## <a id="x509certificates" href="#index_x509certificates">X509Certificates</a>
 * <function><a id="parsex509"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseX509</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> certPemString) -> <span style="color:#87AF00">Certificate</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses an X.509 certificate from a PEM\-formatted string and creates a Certificate object containing detailed information about the certificate.  
