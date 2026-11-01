@@ -1,211 +1,91 @@
+# Krynetic Database Documentation
 
-# Releases
-**[https://github.com/Krynetic/Database-Releases](https://github.com/Krynetic/Database-Releases)**
+Krynetic Database is a hierarchical, path-addressed data platform that exposes one shared data store through many network protocols at the same time. A value written through one protocol (for example GraphQL) is immediately readable and observable through every other protocol you have enabled (for example MQTT, gRPC, Socket.IO or SPARQL).
 
-# Installation
+Releases and container images: <https://github.com/Krynetic/Database-Releases>
 
-## Docker
+## Where to start
 
-### Image: ghcr.io/krynetic/database-releases:latest
+| I want to… | Read |
+|---|---|
+| Run Krynetic for the first time | [Getting Started](Getting-Started/README.md) |
+| Understand paths, values and subscriptions | [Concepts](Concepts/README.md) |
+| See every command-line option | [Command line](Commandline.md) |
+| Pick and use a protocol server | [Servers](Servers/README.md) |
+| Modify values on the server (increment, toggle, append…) | [Operations](Operations.md) |
+| Write expressions and computed values | [Expression syntax](Syntax/README.md) |
+| Look up a function | [Using functions](Guides/Using-Functions.md) and the [function reference](Functions/README.md) |
+| Run jobs on a schedule | [Handlers](Handlers/README.md) and [Schedule](Handlers/Schedule.md) |
+| Back up and restore data | [Backup and restore](Guides/Backup-and-Restore.md) |
+| Monitor a running instance | [Observability](Guides/Observability.md) |
+| Secure a deployment | [Security](Guides/Security.md) |
+| Copy a worked example | [Recipes](Guides/Recipes.md) |
+| Fix an error | [Troubleshooting](Guides/Troubleshooting.md) |
+| Look up ports, server names, terms | [Reference](Reference/README.md) |
 
-### Instant: Community edition using GraphQL
+## Contents
 
-```ruby
-docker run --rm -it -p 8085:8085 ghcr.io/krynetic/database-releases:latest
+```text
+README.md
+Commandline.md                 Command-line reference
+Operations.md                  Server-side operations (_op)
+Benchmarks.md                  Benchmarks
+
+Getting-Started/
+  README.md                    Quick start
+  Docker.md
+  Docker-Compose.md
+  Kubernetes.md
+  Configuration.md             Environment variables and storage
+
+Concepts/
+  README.md                    Paths, nodes and values
+  Data-Types.md                Types and typed string encoding
+  Change-Types.md
+  Subscriptions.md
+  Computed-Values.md
+
+Syntax/
+  README.md                    Expression syntax
+
+Servers/
+  README.md                    Overview, selection, ports, settings
+  GraphQL/
+  GRPC/
+  SocketIO/
+  MQTT/
+  WCF/
+  Sparql/
+  MongoDB/
+  SQL/
+  Redis/
+  S3/
+  Couchbase/
+  CouchDB/
+  AMQP/
+  FTP/
+  SSH/
+  OData/
+  HTTP/
+  OIDC/
+  VirtualDisk/
+  KubernetesProbe/
+  Announce/
+
+Handlers/
+  README.md                    Handlers and the @ namespaces
+  Schedule.md                  Scheduler
+
+Functions/                     Function reference (one page per category)
+
+Guides/
+  Using-Functions.md
+  Backup-and-Restore.md
+  Observability.md
+  Security.md
+  Recipes.md
+  Troubleshooting.md
+
+Reference/
+  README.md                    Ports, server names, glossary
 ```
-
-### Compose: Community edition using GraphQL
-
-```ruby
-#docker-compose.yml
-services:
-  database:
-    image: ghcr.io/krynetic/database-releases:latest
-    command: ["--server", "graphql"]
-    volumes:
-      - ./data:/data
-    environment:
-      - STORAGE_DIRECTORY=/data
-    ports:
-      - "8085:8085"
-```
-
-### Compose: Licensed edition using GraphQL
-
-```ruby
-#docker-compose.yml
-services:
-  database:
-    image: ghcr.io/krynetic/database-releases:latest
-    command: ["--server", "graphql"]
-    volumes:
-      - ./data:/data
-      - ./license.key:/license.key
-    environment:
-      - LICENSE_FILE=/license.key
-      - STORAGE_DIRECTORY=/data
-    ports:
-      - "8085:8085"
-```
-
-### Kubernetes: Community edition using GraphQL
-```ruby
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: database
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: database
-  template:
-    metadata:
-      labels:
-        app: database
-    spec:
-      containers:
-        - name: database
-          image: ghcr.io/krynetic/database-releases:latest
-          args: ["--server", "graphql"]
-          env:
-            - name: STORAGE_DIRECTORY
-              value: /data
-            - name: HOST
-              value: "*"
-          ports:
-            - containerPort: 8085
-          volumeMounts:
-            - name: data
-              mountPath: /data
-      volumes:
-        - name: data
-          persistentVolumeClaim:
-            claimName: db-data
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: db-data
-spec:
-  accessModes: [ReadWriteOnce]
-  resources:
-    requests:
-      storage: 5Gi
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: database
-spec:
-  selector:
-    app: database
-  ports:
-    - name: http
-      port: 8085
-      targetPort: 8085
-      protocol: TCP
-```
-
-### Kubernetes: Licensed edition using GraphQL
-```ruby
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: database
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: database
-  template:
-    metadata:
-      labels:
-        app: database
-    spec:
-      containers:
-        - name: database
-          image: ghcr.io/krynetic/database-releases:latest
-          args: ["--server", "graphql"]
-          env:
-            - name: LICENSE_FILE
-              value: /license.key
-            - name: STORAGE_DIRECTORY
-              value: /data
-            - name: HOST
-              value: "*"
-          ports:
-            - containerPort: 8085
-          volumeMounts:
-            - name: data
-              mountPath: /data
-            - name: license
-              mountPath: /license.key
-              subPath: license.key
-      volumes:
-        - name: data
-          persistentVolumeClaim:
-            claimName: db-data
-        - name: license
-          configMap:
-            name: db-license
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: db-license
-data:
-  license.key: |
-    # paste license content here
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: db-data
-spec:
-  accessModes: [ReadWriteOnce]
-  resources:
-    requests:
-      storage: 5Gi
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: database
-spec:
-  selector:
-    app: database
-  ports:
-    - name: http
-      port: 8085
-      targetPort: 8085
-      protocol: TCP
-```
-### Exported docker ports
-
-```dockerfile
-EXPOSE port/protocol
-```
-
-| Service   | Port     |
-|-----------|----------|
-| Redis     | 6380/tcp |
-| MQTT      | 1883/tcp |
-| S3        | 9000/tcp |
-| MongoDB   | 27017/tcp|
-| Kafka     | 9092/tcp |
-| Couchbase | 11210/tcp|
-| CouchDB   | 5984/tcp |
-| SQL       | 5432/tcp |
-| FTP       | 2121/tcp |
-| SSH       | 22/tcp   |
-| WCF TCP   | 8090/tcp |
-| WCF HTTP  | 8086/tcp |
-| GraphQL   | 8085/tcp |
-| OpenAPI   | 8080/tcp |
-| OData     | 8081/tcp |
-| GRPC      | 50051/tcp|
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Krynetic/Database-Documentation,Krynetic/Database-Releases&type=date&legend=top-left)](https://www.star-history.com/#Krynetic/Database-Documentation&Krynetic/Database-Releases&type=date&legend=top-left)

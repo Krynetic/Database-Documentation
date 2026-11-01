@@ -1,75 +1,64 @@
-# Krynetic SPARQL
+# SPARQL
 
-### `Default Endpoint` 
-#### [http://localhost:3001](http://localhost:3001)
+**Default endpoint:** <http://localhost:3001> · **Server name:** `Sparql`
 
-### Subjects
+The SPARQL server presents the path tree as an RDF graph so that linked-data tooling can query it.
 
-http://krynetic/ + `path name`
-
-### Predicates
-
-http://krynetic/ + `#value` \
-http://krynetic/ + `#value.parent` \
-http://krynetic/ + `#length`
-
-### Objects
-
-#### - Uri node
-http://krynetic/ + `path name`
-
-#### - Value node
-"data"^^<http://www.w3.org/2001/XMLSchema#datatype>
-
----
-
-## Query dummy data
-
-```csharp
-storage["users"] = new[]
-{
-    new { name = "admin" },
-    new { name = "guest" },
-    new { name = "neighbour" },
-    new { name = "classmate" },
-};
-
-storage["static"] = "1";
+```bash
+Krynetic.Database --server Sparql
 ```
 
-## Query
+## Mapping
 
-```SQL
+**Subjects** are IRIs built from the path: `http://krynetic.com/` followed by the path (for example `http://krynetic.com/users/0/name`).
+
+**Predicates**
+
+| Predicate | Meaning |
+|---|---|
+| `http://krynetic.com/#value` | The stored value of a leaf |
+| `http://krynetic.com/#value.parent` | The node that contains a leaf |
+| `http://krynetic.com/#parent` | The parent of a node |
+| `http://krynetic.com/#length` | The number of children of a node |
+
+**Objects** are IRI nodes (a path IRI) or typed literals such as `"data"^^<http://www.w3.org/2001/XMLSchema#string>`.
+
+## Example data
+
+Create it through any server, for example GraphQL:
+
+```graphql
+mutation {
+  set(key: "/users", value: [
+    { name: "admin" }, { name: "guest" }, { name: "neighbour" }, { name: "classmate" }
+  ])
+  set(key: "/static", value: "1")
+}
+```
+
+## Queries
+
+### Everything
+
+```sparql
 SELECT * WHERE { ?subject ?predicate ?object } LIMIT 100
 ```
 
 | subject | predicate | object |
-|---------|-----------|--------|
-| <http://krynetic.com/users/0/name> | <http://krynetic.com/#value.parent> | <http://krynetic.com/users/0> |
-| <http://krynetic.com/users/2/name> | <http://krynetic.com/#value.parent> | <http://krynetic.com/users/2> |
-| <http://krynetic.com/users/3/name> | <http://krynetic.com/#value.parent> | <http://krynetic.com/users/3> |
-| <http://krynetic.com/static> | <http://krynetic.com/#value.parent> | <http://krynetic.com/> |
-| <http://krynetic.com/users/0/name> | <http://krynetic.com/#value> | "admin"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/1/name> | <http://krynetic.com/#value> | "guest"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/2/name> | <http://krynetic.com/#value> | "neighbour"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/3/name> | <http://krynetic.com/#value> | "classmate"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/static> | <http://krynetic.com/#value> | "1"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/0> | <http://krynetic.com/#parent> | <http://krynetic.com/users> |
-| <http://krynetic.com/users/1> | <http://krynetic.com/#parent> | <http://krynetic.com/users> |
-| <http://krynetic.com/users/2> | <http://krynetic.com/#parent> | <http://krynetic.com/users> |
-| <http://krynetic.com/users/3> | <http://krynetic.com/#parent> | <http://krynetic.com/users> |
-| <http://krynetic.com/users> | <http://krynetic.com/#parent> | <http://krynetic.com/> |
-| <http://krynetic.com/users/0> | <http://krynetic.com/#length> | "1"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/users/1> | <http://krynetic.com/#length> | "1"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/users/2> | <http://krynetic.com/#length> | "1"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/users/3> | <http://krynetic.com/#length> | "1"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/users> | <http://krynetic.com/#length> | "4"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/> | <http://krynetic.com/#length> | "2"^^<http://www.w3.org/2001/XMLSchema#int> |
+|---|---|---|
+| `<http://krynetic.com/users/0/name>` | `<http://krynetic.com/#value.parent>` | `<http://krynetic.com/users/0>` |
+| `<http://krynetic.com/users/0/name>` | `<http://krynetic.com/#value>` | `"admin"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/static>` | `<http://krynetic.com/#value>` | `"1"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/users/0>` | `<http://krynetic.com/#parent>` | `<http://krynetic.com/users>` |
+| `<http://krynetic.com/users>` | `<http://krynetic.com/#length>` | `"4"^^<http://www.w3.org/2001/XMLSchema#int>` |
+| `<http://krynetic.com/>` | `<http://krynetic.com/#length>` | `"2"^^<http://www.w3.org/2001/XMLSchema#int>` |
 
----
+### One node
 
-```SQL
-SELECT * WHERE { 
+Scope a query to a node with a `GRAPH` clause:
+
+```sparql
+SELECT * WHERE {
   GRAPH <http://krynetic.com/users/0> {
     SELECT ?s ?p ?o WHERE { ?s ?p ?o }
   }
@@ -77,15 +66,15 @@ SELECT * WHERE {
 ```
 
 | subject | predicate | object |
-|---------|-----------|--------|
-| <http://krynetic.com/users/0> | <http://krynetic.com/#parent> | <http://krynetic.com/users> |
-| <http://krynetic.com/users/0> | <http://krynetic.com/#length> | "1"^^<http://www.w3.org/2001/XMLSchema#int> |
-| <http://krynetic.com/users/0/name> | <http://krynetic.com/#value> | "admin"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/0/name> | <http://krynetic.com/#value.parent> |<http://krynetic.com/users/0> |
+|---|---|---|
+| `<http://krynetic.com/users/0>` | `<http://krynetic.com/#parent>` | `<http://krynetic.com/users>` |
+| `<http://krynetic.com/users/0>` | `<http://krynetic.com/#length>` | `"1"^^<http://www.w3.org/2001/XMLSchema#int>` |
+| `<http://krynetic.com/users/0/name>` | `<http://krynetic.com/#value>` | `"admin"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/users/0/name>` | `<http://krynetic.com/#value.parent>` | `<http://krynetic.com/users/0>` |
 
----
+### All values below a node
 
-```SQL
+```sparql
 SELECT * WHERE {
   GRAPH <http://krynetic.com/users> {
     SELECT ?name ?value WHERE {
@@ -96,32 +85,16 @@ SELECT * WHERE {
 ```
 
 | name | value |
-|------|-------|
-| <http://krynetic.com/users/0/name> | "admin"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/1/name> | "guest"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/2/name> | "neighbour"^^<http://www.w3.org/2001/XMLSchema#string> |
-| <http://krynetic.com/users/3/name> | "classmate"^^<http://www.w3.org/2001/XMLSchema#string> |
+|---|---|
+| `<http://krynetic.com/users/0/name>` | `"admin"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/users/1/name>` | `"guest"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/users/2/name>` | `"neighbour"^^<http://www.w3.org/2001/XMLSchema#string>` |
+| `<http://krynetic.com/users/3/name>` | `"classmate"^^<http://www.w3.org/2001/XMLSchema#string>` |
 
----
+### Children of a node
 
-```SQL
-SELECT * WHERE { 
-  GRAPH <http://krynetic.com/> {
-    SELECT ?child WHERE {
-      ?child <http://krynetic.com/#parent> <http://krynetic.com/> .
-    }
-  }
-}
-```
-
-| child |
-|-------|
-| <http://krynetic.com/users> |
-
----
-
-```SQL
-SELECT * WHERE { 
+```sparql
+SELECT * WHERE {
   GRAPH <http://krynetic.com/users> {
     SELECT ?child WHERE {
       ?child <http://krynetic.com/#parent> <http://krynetic.com/users> .
@@ -130,21 +103,13 @@ SELECT * WHERE {
 }
 ```
 
-| child |
-|-------|
-| <http://krynetic.com/users/0> |
-| <http://krynetic.com/users/1> |
-| <http://krynetic.com/users/2> |
-| <http://krynetic.com/users/3> |
+Returns `users/0` to `users/3`. For the root, use `GRAPH <http://krynetic.com/>` and `#parent <http://krynetic.com/>`.
 
----
+## Inserting data
 
-## Inserting data at a given path (*comming!*)
+`INSERT DATA` is planned and not yet available. When it ships it will use the path as subject, `#value` as the required predicate, and a typed literal as object:
 
-- `Path` \<http://krynetic.com/users/4/name>
-- `Relation` \<http://krynetic.com/#value> (**REQUIRED**)
-- `Value` "value"^^<http://www.w3.org/2001/XMLSchema#datatype>
-```SQL
+```sparql
 INSERT DATA {
   GRAPH <http://krynetic.com/users> {
     <http://krynetic.com/users/4/name> <http://krynetic.com/#value> "tester"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -152,24 +117,20 @@ INSERT DATA {
 }
 ```
 
+Until then, write through another [server](../README.md).
 
 ## Datatypes
 
-| Type          | Description |
-|------------------|-------------|
-| `null`           | Represents no value |
-| `byte`           | 8-bit unsigned integer |
-| `sbyte`          | 8-bit signed integer |
-| `ushort`         | 16-bit unsigned integer |
-| `short`          | 16-bit signed integer |
-| `uint`           | 32-bit unsigned integer |
-| `int`            | 32-bit signed integer |
-| `ulong`          | 64-bit unsigned integer |
-| `long`           | 64-bit signed integer |
-| `float`          | 32-bit floating-point |
-| `double`         | 64-bit floating-point |
-| `decimal`        | High-precision decimal |
-| `string`         | Textual data |
-| `boolean`        | True/False logical value |
-| `dateTime`       | ISO 8601 date-time |
-| `dateTimeStamp`  | Date-time with timezone |
+| Type | Description |
+|---|---|
+| `null` | No value |
+| `byte`, `sbyte` | 8-bit unsigned / signed integer |
+| `ushort`, `short` | 16-bit unsigned / signed integer |
+| `uint`, `int` | 32-bit unsigned / signed integer |
+| `ulong`, `long` | 64-bit unsigned / signed integer |
+| `float`, `double` | 32-bit / 64-bit floating point |
+| `decimal` | High-precision decimal |
+| `string` | Text |
+| `boolean` | True / false |
+| `dateTime` | ISO 8601 date and time |
+| `dateTimeStamp` | Date and time with time zone |
