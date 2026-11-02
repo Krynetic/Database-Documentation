@@ -1,11 +1,11 @@
 ## Multipurpose Internet Mail Extensions (MIME)
-* <function><a id="getmimefromextension"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetMimeFromExtension</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ext) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getmimefromextension"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetMimeFromExtension</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ext) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the MIME type associated with a given file extension.  
 ***ext***: The file extension for which to retrieve the MIME type. Must not be null or whitespace.  
 **Returns**: A string representing the MIME type, or an empty string if the extension is null, whitespace, or has no associated MIME type.  
 
 </pre></function>
-* <function><a id="getextensionfrommime"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetExtensionFromMime</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mime) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getextensionfrommime"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetExtensionFromMime</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mime) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the file extension associated with a given MIME type. If the MIME type is null, empty, or whitespace,
 an empty string is returned. Otherwise, the method trims any leading or trailing whitespace from the input and 
 attempts to find the first corresponding extension using the MimeTypes.GetMimeTypeExtensions method.

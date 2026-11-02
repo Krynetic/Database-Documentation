@@ -1,5 +1,5 @@
 ## Roman Numerals
-* <function><a id="toromannumeral"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToRomanNumeral</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> number) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="toromannumeral"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToRomanNumeral</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> number) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an integer to its corresponding Roman numeral representation.
 This function does not support negative numbers and returns &quot;N&quot; for zero.  
 ***number***: The integer value to convert.  
@@ -9,7 +9,7 @@ This function does not support negative numbers and returns &quot;N&quot; for ze
 **Description**: Thrown when a negative number is provided, as Roman numerals do not support negatives.  
 
 </pre></function>
-* <function><a id="fromromannumeral"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromRomanNumeral</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> roman) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fromromannumeral"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromRomanNumeral</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> roman) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a Roman numeral string to its corresponding integer value.  
 ***roman***: The Roman numeral string to convert. The input should be in uppercase and 
 can optionally contain whitespace which will be ignored.  

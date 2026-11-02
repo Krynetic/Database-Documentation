@@ -1,0 +1,16 @@
+## QRCode
+* <function><a id="generateqrcode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateQRCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> payload, <span style="color:#87AF00; margin-left:1px; margin-right:1px">Generator</span> generator = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.QRCodePlugin+Generator.PNG</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pixelsPerModule = <span style="color:#5FAFAF; margin-right:1px">20</span>) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates a QR code based on the provided payload and image generator.  
+***payload***: The data to encode in the QR code.
+***generator***: The type of image generator to use. Defaults to PNG.
+***pixelsPerModule***: The number of pixels per module in the generated QR code.  
+**Returns**: An object representing the generated QR code, string or byte\[\].  
+
+</pre></function>
+* <function><a id="generateswedishpaymentqr"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateSwedishPaymentQR</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">SwedishPaymentInfo</span> paymentInfo, <span style="color:#87AF00; margin-left:1px; margin-right:1px">Generator</span> generator = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.QRCodePlugin+Generator.PNG</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pixelsPerModule = <span style="color:#5FAFAF; margin-right:1px">20</span>) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates QR code compliant with Swedish QR payment codes from https://qrkod.info  
+***dto***: 
+***generator***: 
+***pixelsPerModule***:   
+
+</pre></function>

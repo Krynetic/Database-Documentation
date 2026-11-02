@@ -47,39 +47,12 @@ It assumes familiarity with programming concepts and focuses on precision, compl
 <hr>
 
 ## Documentation Navigation Index
-- <a id="index_csharp"></a>[CSharp](#csharp)
-  - <a id="index_CSharp"></a>[CSharp](#csharp)
-- <a id="index_javascript"></a>[JavaScript](#javascript)
-  - <a id="index_JavaScript"></a>[JavaScript](#javascript)
-- <a id="index_lua"></a>[Lua](#lua)
-  - <a id="index_Lua"></a>[Lua](#lua)
-- <a id="index_python"></a>[Python](#python)
-  - <a id="index_Python"></a>[Python](#python)
-- <a id="index_ruby"></a>[Ruby](#ruby)
-  - <a id="index_Ruby"></a>[Ruby](#ruby)
-- <a id="index_elliptic-curve-digital-signature-algorithm-esdsa"></a>[Elliptic Curve Digital Signature Algorithm (ESDSA)](#elliptic-curve-digital-signature-algorithm-esdsa)
-  - <a id="index_ECDSAGenerate"></a>[ECDSAGenerate](#ecdsagenerate)
-  - <a id="index_ECDSASign"></a>[ECDSASign](#ecdsasign)
-  - <a id="index_ECDSAVerify"></a>[ECDSAVerify](#ecdsaverify)
-- <a id="index_hash-based-message-authentication-code-hmac"></a>[Hash-based Message Authentication Code (HMAC)](#hash-based-message-authentication-code-hmac)
-  - <a id="index_HMACGenerate"></a>[HMACGenerate](#hmacgenerate)
-  - <a id="index_HMACSign"></a>[HMACSign](#hmacsign)
-  - <a id="index_HMACVerify"></a>[HMACVerify](#hmacverify)
-- <a id="index_advanced-encryption-standard-aes"></a>[Advanced Encryption Standard (AES)](#advanced-encryption-standard-aes)
-  - <a id="index_AESGenerate"></a>[AESGenerate](#aesgenerate)
-  - <a id="index_AESEncrypt"></a>[AESEncrypt](#aesencrypt)
-  - <a id="index_AESDecrypt"></a>[AESDecrypt](#aesdecrypt)
-- <a id="index_rivest-shamir-adleman-rsa"></a>[Rivest Shamir Adleman (RSA)](#rivest-shamir-adleman-rsa)
-  - <a id="index_RSAGenerate"></a>[RSAGenerate](#rsagenerate)
-  - <a id="index_RSAEncrypt"></a>[RSAEncrypt](#rsaencrypt)
-  - <a id="index_RSADecrypt"></a>[RSADecrypt](#rsadecrypt)
-- <a id="index_barcode"></a>[Barcode](#barcode)
-  - <a id="index_GenerateQRCode"></a>[GenerateQRCode](#generateqrcode)
 - <a id="index_built-in"></a>[Built-In](#built-in)
   - <a id="index_Length"></a>[Length](#length)
   - <a id="index_Type"></a>[Type](#type)
   - <a id="index_ToBytes"></a>[ToBytes](#tobytes)
   - <a id="index_Array"></a>[Array](#array)
+  - <a id="index_Coalesce"></a>[Coalesce](#coalesce)
 - <a id="index_cache"></a>[Cache](#cache)
   - <a id="index_CacheGet"></a>[CacheGet](#cacheget)
   - <a id="index_CacheSet"></a>[CacheSet](#cacheset)
@@ -141,6 +114,50 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_HasCookieKey"></a>[HasCookieKey](#hascookiekey)
   - <a id="index_MergeCookies"></a>[MergeCookies](#mergecookies)
   - <a id="index_CookieCount"></a>[CookieCount](#cookiecount)
+- <a id="index_cross-units"></a>[Cross units](#cross-units)
+  - <a id="index_MilesToKilometers"></a>[MilesToKilometers](#milestokilometers)
+  - <a id="index_KilometersToMiles"></a>[KilometersToMiles](#kilometerstomiles)
+  - <a id="index_InchesToCentimeters"></a>[InchesToCentimeters](#inchestocentimeters)
+  - <a id="index_CentimetersToInches"></a>[CentimetersToInches](#centimeterstoinches)
+  - <a id="index_FeetToMeters"></a>[FeetToMeters](#feettometers)
+  - <a id="index_MetersToFeet"></a>[MetersToFeet](#meterstofeet)
+  - <a id="index_YardsToMeters"></a>[YardsToMeters](#yardstometers)
+  - <a id="index_MetersToYards"></a>[MetersToYards](#meterstoyards)
+  - <a id="index_NauticalMilesToKilometers"></a>[NauticalMilesToKilometers](#nauticalmilestokilometers)
+  - <a id="index_KilometersToNauticalMiles"></a>[KilometersToNauticalMiles](#kilometerstonauticalmiles)
+  - <a id="index_PoundsToKilograms"></a>[PoundsToKilograms](#poundstokilograms)
+  - <a id="index_KilogramsToPounds"></a>[KilogramsToPounds](#kilogramstopounds)
+  - <a id="index_OuncesToGrams"></a>[OuncesToGrams](#ouncestograms)
+  - <a id="index_GramsToOunces"></a>[GramsToOunces](#gramstoounces)
+  - <a id="index_StonesToKilograms"></a>[StonesToKilograms](#stonestokilograms)
+  - <a id="index_KilogramsToStones"></a>[KilogramsToStones](#kilogramstostones)
+  - <a id="index_USTonsToKilograms"></a>[USTonsToKilograms](#ustonstokilograms)
+  - <a id="index_KilogramsToUSTons"></a>[KilogramsToUSTons](#kilogramstoustons)
+  - <a id="index_USGallonsToLiters"></a>[USGallonsToLiters](#usgallonstoliters)
+  - <a id="index_LitersToUSGallons"></a>[LitersToUSGallons](#literstousgallons)
+  - <a id="index_QuartsToLiters"></a>[QuartsToLiters](#quartstoliters)
+  - <a id="index_LitersToQuarts"></a>[LitersToQuarts](#literstoquarts)
+  - <a id="index_PintsToLiters"></a>[PintsToLiters](#pintstoliters)
+  - <a id="index_LitersToPints"></a>[LitersToPints](#literstopints)
+  - <a id="index_FluidOuncesToMilliliters"></a>[FluidOuncesToMilliliters](#fluidouncestomilliliters)
+  - <a id="index_MillilitersToFluidOunces"></a>[MillilitersToFluidOunces](#milliliterstofluidounces)
+  - <a id="index_AcresToHectares"></a>[AcresToHectares](#acrestohectares)
+  - <a id="index_HectaresToAcres"></a>[HectaresToAcres](#hectarestoacres)
+  - <a id="index_SquareMilesToSquareKilometers"></a>[SquareMilesToSquareKilometers](#squaremilestosquarekilometers)
+  - <a id="index_SquareKilometersToSquareMiles"></a>[SquareKilometersToSquareMiles](#squarekilometerstosquaremiles)
+  - <a id="index_SquareFeetToSquareMeters"></a>[SquareFeetToSquareMeters](#squarefeettosquaremeters)
+  - <a id="index_SquareMetersToSquareFeet"></a>[SquareMetersToSquareFeet](#squaremeterstosquarefeet)
+  - <a id="index_MphToKph"></a>[MphToKph](#mphtokph)
+  - <a id="index_KphToMph"></a>[KphToMph](#kphtomph)
+  - <a id="index_FeetPerSecondToMetersPerSecond"></a>[FeetPerSecondToMetersPerSecond](#feetpersecondtometerspersecond)
+  - <a id="index_MetersPerSecondToFeetPerSecond"></a>[MetersPerSecondToFeetPerSecond](#meterspersecondtofeetpersecond)
+  - <a id="index_MpgToLitersPer100Km"></a>[MpgToLitersPer100Km](#mpgtolitersper100km)
+  - <a id="index_LitersPer100KmToMpg"></a>[LitersPer100KmToMpg](#litersper100kmtompg)
+  - <a id="index_PsiToKilopascals"></a>[PsiToKilopascals](#psitokilopascals)
+  - <a id="index_KilopascalsToPsi"></a>[KilopascalsToPsi](#kilopascalstopsi)
+  - <a id="index_PoundForceToNewtons"></a>[PoundForceToNewtons](#poundforcetonewtons)
+  - <a id="index_NewtonsToPoundForce"></a>[NewtonsToPoundForce](#newtonstopoundforce)
+  - <a id="index_BtuToJoules"></a>[BtuToJoules](#btutojoules)
 - <a id="index_date"></a>[Date](#date)
   - <a id="index_ToUnixTimeSeconds"></a>[ToUnixTimeSeconds](#tounixtimeseconds)
   - <a id="index_ToUnixTimeMilliseconds"></a>[ToUnixTimeMilliseconds](#tounixtimemilliseconds)
@@ -149,6 +166,7 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_NowPrecise"></a>[NowPrecise](#nowprecise)
   - <a id="index_Now"></a>[Now](#now)
   - <a id="index_NowNtp"></a>[NowNtp](#nowntp)
+  - <a id="index_HumanizeTimeSpan"></a>[HumanizeTimeSpan](#humanizetimespan)
 - <a id="index_documentation"></a>[Documentation](#documentation)
   - <a id="index_DocumentationTyped"></a>[DocumentationTyped](#documentationtyped)
   - <a id="index_Documentation"></a>[Documentation](#documentation)
@@ -172,12 +190,15 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_ExpandEnv"></a>[ExpandEnv](#expandenv)
   - <a id="index_SetEnv"></a>[SetEnv](#setenv)
   - <a id="index_ClearEnv"></a>[ClearEnv](#clearenv)
+  - <a id="index_DumpEnv"></a>[DumpEnv](#dumpenv)
 - <a id="index_exchange-rate"></a>[Exchange rate](#exchange-rate)
   - <a id="index_ExchangeRate"></a>[ExchangeRate](#exchangerate)
 - <a id="index_extraction"></a>[Extraction](#extraction)
   - <a id="index_ExtractEmails"></a>[ExtractEmails](#extractemails)
   - <a id="index_ExtractUrls"></a>[ExtractUrls](#extracturls)
   - <a id="index_ExtractEmailUser"></a>[ExtractEmailUser](#extractemailuser)
+- <a id="index_format"></a>[Format](#format)
+  - <a id="index_FormatBytes"></a>[FormatBytes](#formatbytes)
 - <a id="index_geolocation"></a>[Geolocation](#geolocation)
   - <a id="index_Haversine"></a>[Haversine](#haversine)
   - <a id="index_Vincenty"></a>[Vincenty](#vincenty)
@@ -212,8 +233,43 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_MD5"></a>[MD5](#md5)
   - <a id="index_HMAC_SHA256"></a>[HMAC_SHA256](#hmacsha256)
   - <a id="index_HMAC_SHA512"></a>[HMAC_SHA512](#hmacsha512)
+- <a id="index_helm"></a>[Helm](#helm)
+  - <a id="index_RenderHelmChart"></a>[RenderHelmChart](#renderhelmchart)
 - <a id="index_hypertext-transfer-protocol-http"></a>[Hypertext Transfer Protocol (HTTP)](#hypertext-transfer-protocol-http)
   - <a id="index_HTTP"></a>[HTTP](#http)
+- <a id="index_image"></a>[Image](#image)
+  - <a id="index_GenerateImage"></a>[GenerateImage](#generateimage)
+- <a id="index_imperial-units"></a>[Imperial units](#imperial-units)
+  - <a id="index_MilesToYards"></a>[MilesToYards](#milestoyards)
+  - <a id="index_YardsToMiles"></a>[YardsToMiles](#yardstomiles)
+  - <a id="index_YardsToFeet"></a>[YardsToFeet](#yardstofeet)
+  - <a id="index_FeetToYards"></a>[FeetToYards](#feettoyards)
+  - <a id="index_FeetToInches"></a>[FeetToInches](#feettoinches)
+  - <a id="index_InchesToFeet"></a>[InchesToFeet](#inchestofeet)
+  - <a id="index_MilesToFeet"></a>[MilesToFeet](#milestofeet)
+  - <a id="index_FeetToMiles"></a>[FeetToMiles](#feettomiles)
+  - <a id="index_FurlongsToYards"></a>[FurlongsToYards](#furlongstoyards)
+  - <a id="index_YardsToFurlongs"></a>[YardsToFurlongs](#yardstofurlongs)
+  - <a id="index_ChainsToYards"></a>[ChainsToYards](#chainstoyards)
+  - <a id="index_YardsToChains"></a>[YardsToChains](#yardstochains)
+  - <a id="index_FurlongsToChains"></a>[FurlongsToChains](#furlongstochains)
+  - <a id="index_ChainsToFurlongs"></a>[ChainsToFurlongs](#chainstofurlongs)
+  - <a id="index_MilesToFurlongs"></a>[MilesToFurlongs](#milestofurlongs)
+  - <a id="index_FurlongsToMiles"></a>[FurlongsToMiles](#furlongstomiles)
+  - <a id="index_PoundsToOunces"></a>[PoundsToOunces](#poundstoounces)
+  - <a id="index_OuncesToPounds"></a>[OuncesToPounds](#ouncestopounds)
+  - <a id="index_StonesToPounds"></a>[StonesToPounds](#stonestopounds)
+  - <a id="index_PoundsToStones"></a>[PoundsToStones](#poundstostones)
+  - <a id="index_HundredweightToPounds"></a>[HundredweightToPounds](#hundredweighttopounds)
+  - <a id="index_PoundsToHundredweight"></a>[PoundsToHundredweight](#poundstohundredweight)
+  - <a id="index_LongTonsToPounds"></a>[LongTonsToPounds](#longtonstopounds)
+  - <a id="index_PoundsToLongTons"></a>[PoundsToLongTons](#poundstolongtons)
+  - <a id="index_GallonsToQuarts"></a>[GallonsToQuarts](#gallonstoquarts)
+  - <a id="index_QuartsToGallons"></a>[QuartsToGallons](#quartstogallons)
+  - <a id="index_QuartsToPints"></a>[QuartsToPints](#quartstopints)
+  - <a id="index_PintsToQuarts"></a>[PintsToQuarts](#pintstoquarts)
+  - <a id="index_PintsToFluidOunces"></a>[PintsToFluidOunces](#pintstofluidounces)
+  - <a id="index_FluidOuncesToPints"></a>[FluidOuncesToPints](#fluidouncestopints)
 - <a id="index_json"></a>[JSON](#json)
   - <a id="index_ToJSON"></a>[ToJSON](#tojson)
   - <a id="index_FormatJSON"></a>[FormatJSON](#formatjson)
@@ -229,6 +285,8 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_Lookup"></a>[Lookup](#lookup)
   - <a id="index_Parent"></a>[Parent](#parent)
   - <a id="index_Self"></a>[Self](#self)
+- <a id="index_markdown"></a>[Markdown](#markdown)
+  - <a id="index_Markdown"></a>[Markdown](#markdown)
 - <a id="index_math"></a>[Math](#math)
   - <a id="index_Acos"></a>[Acos](#acos)
   - <a id="index_Acosh"></a>[Acosh](#acosh)
@@ -263,6 +321,39 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_IsPowerOfTwo"></a>[IsPowerOfTwo](#ispoweroftwo)
   - <a id="index_NextPowerOfTwo"></a>[NextPowerOfTwo](#nextpoweroftwo)
   - <a id="index_Signum"></a>[Signum](#signum)
+- <a id="index_metadata"></a>[Metadata](#metadata)
+  - <a id="index_ExtractMetadata"></a>[ExtractMetadata](#extractmetadata)
+- <a id="index_metric-units"></a>[Metric units](#metric-units)
+  - <a id="index_KilometersToMeters"></a>[KilometersToMeters](#kilometerstometers)
+  - <a id="index_MetersToKilometers"></a>[MetersToKilometers](#meterstokilometers)
+  - <a id="index_MetersToCentimeters"></a>[MetersToCentimeters](#meterstocentimeters)
+  - <a id="index_CentimetersToMeters"></a>[CentimetersToMeters](#centimeterstometers)
+  - <a id="index_CentimetersToMillimeters"></a>[CentimetersToMillimeters](#centimeterstomillimeters)
+  - <a id="index_MillimetersToCentimeters"></a>[MillimetersToCentimeters](#millimeterstocentimeters)
+  - <a id="index_MetersToMillimeters"></a>[MetersToMillimeters](#meterstomillimeters)
+  - <a id="index_MillimetersToMeters"></a>[MillimetersToMeters](#millimeterstometers)
+  - <a id="index_KilometersToCentimeters"></a>[KilometersToCentimeters](#kilometerstocentimeters)
+  - <a id="index_CentimetersToKilometers"></a>[CentimetersToKilometers](#centimeterstokilometers)
+  - <a id="index_MetersToDecimeters"></a>[MetersToDecimeters](#meterstodecimeters)
+  - <a id="index_DecimetersToMeters"></a>[DecimetersToMeters](#decimeterstometers)
+  - <a id="index_DecimetersToCentimeters"></a>[DecimetersToCentimeters](#decimeterstocentimeters)
+  - <a id="index_CentimetersToDecimeters"></a>[CentimetersToDecimeters](#centimeterstodecimeters)
+  - <a id="index_KilogramsToGrams"></a>[KilogramsToGrams](#kilogramstograms)
+  - <a id="index_GramsToKilograms"></a>[GramsToKilograms](#gramstokilograms)
+  - <a id="index_GramsToMilligrams"></a>[GramsToMilligrams](#gramstomilligrams)
+  - <a id="index_MilligramsToGrams"></a>[MilligramsToGrams](#milligramstograms)
+  - <a id="index_TonnesToKilograms"></a>[TonnesToKilograms](#tonnestokilograms)
+  - <a id="index_KilogramsToTonnes"></a>[KilogramsToTonnes](#kilogramstotonnes)
+  - <a id="index_LitersToMilliliters"></a>[LitersToMilliliters](#literstomilliliters)
+  - <a id="index_MillilitersToLiters"></a>[MillilitersToLiters](#milliliterstoliters)
+  - <a id="index_CubicMetersToLiters"></a>[CubicMetersToLiters](#cubicmeterstoliters)
+  - <a id="index_LitersToCubicMeters"></a>[LitersToCubicMeters](#literstocubicmeters)
+  - <a id="index_SquareKilometersToSquareMeters"></a>[SquareKilometersToSquareMeters](#squarekilometerstosquaremeters)
+  - <a id="index_SquareMetersToSquareKilometers"></a>[SquareMetersToSquareKilometers](#squaremeterstosquarekilometers)
+  - <a id="index_HectaresToSquareMeters"></a>[HectaresToSquareMeters](#hectarestosquaremeters)
+  - <a id="index_SquareMetersToHectares"></a>[SquareMetersToHectares](#squaremeterstohectares)
+  - <a id="index_KilopascalsToPascals"></a>[KilopascalsToPascals](#kilopascalstopascals)
+  - <a id="index_PascalsToKilopascals"></a>[PascalsToKilopascals](#pascalstokilopascals)
 - <a id="index_multipurpose-internet-mail-extensions-mime"></a>[Multipurpose Internet Mail Extensions (MIME)](#multipurpose-internet-mail-extensions-mime)
   - <a id="index_GetMimeFromExtension"></a>[GetMimeFromExtension](#getmimefromextension)
   - <a id="index_GetExtensionFromMime"></a>[GetExtensionFromMime](#getextensionfrommime)
@@ -303,8 +394,18 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_PathParent"></a>[PathParent](#pathparent)
   - <a id="index_PathParts"></a>[PathParts](#pathparts)
   - <a id="index_PathId"></a>[PathId](#pathid)
+- <a id="index_postgres-compat"></a>[Postgres Compat](#postgres-compat)
+  - <a id="index_current_time"></a>[current_time](#currenttime)
+  - <a id="index_pg_cancel_backend"></a>[pg_cancel_backend](#pgcancelbackend)
+  - <a id="index_current_schema"></a>[current_schema](#currentschema)
+  - <a id="index_version"></a>[version](#version)
+  - <a id="index_pg_backend_pid"></a>[pg_backend_pid](#pgbackendpid)
+  - <a id="index_current_database"></a>[current_database](#currentdatabase)
 - <a id="index_print"></a>[Print](#print)
   - <a id="index_Print"></a>[Print](#print)
+- <a id="index_qrcode"></a>[QRCode](#qrcode)
+  - <a id="index_GenerateQRCode"></a>[GenerateQRCode](#generateqrcode)
+  - <a id="index_GenerateSwedishPaymentQR"></a>[GenerateSwedishPaymentQR](#generateswedishpaymentqr)
 - <a id="index_random"></a>[Random](#random)
   - <a id="index_RandomBool"></a>[RandomBool](#randombool)
   - <a id="index_RandomInt64"></a>[RandomInt64](#randomint64)
@@ -342,6 +443,7 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_Slugify"></a>[Slugify](#slugify)
   - <a id="index_JoinStrings"></a>[JoinStrings](#joinstrings)
   - <a id="index_SplitString"></a>[SplitString](#splitstring)
+  - <a id="index_SplitWords"></a>[SplitWords](#splitwords)
   - <a id="index_RemoveWhitespace"></a>[RemoveWhitespace](#removewhitespace)
   - <a id="index_CountOccurrences"></a>[CountOccurrences](#countoccurrences)
   - <a id="index_StartsWithIgnoreCase"></a>[StartsWithIgnoreCase](#startswithignorecase)
@@ -366,6 +468,7 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_System_IsInMemory"></a>[System_IsInMemory](#systemisinmemory)
   - <a id="index_System_Compact"></a>[System_Compact](#systemcompact)
   - <a id="index_System_ImportFromFile"></a>[System_ImportFromFile](#systemimportfromfile)
+  - <a id="index_System_ImportFromInternet"></a>[System_ImportFromInternet](#systemimportfrominternet)
   - <a id="index_System_ExportToFile"></a>[System_ExportToFile](#systemexporttofile)
   - <a id="index_System_Shutdowm"></a>[System_Shutdowm](#systemshutdowm)
   - <a id="index_System_Info"></a>[System_Info](#systeminfo)
@@ -376,6 +479,13 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_CelsiusToFahrenheit"></a>[CelsiusToFahrenheit](#celsiustofahrenheit)
   - <a id="index_KelvinToCelsius"></a>[KelvinToCelsius](#kelvintocelsius)
   - <a id="index_KelvinToFahrenheit"></a>[KelvinToFahrenheit](#kelvintofahrenheit)
+  - <a id="index_IsFreezingCelsius"></a>[IsFreezingCelsius](#isfreezingcelsius)
+  - <a id="index_IsFreezingFahrenheit"></a>[IsFreezingFahrenheit](#isfreezingfahrenheit)
+  - <a id="index_IsFreezingKelvin"></a>[IsFreezingKelvin](#isfreezingkelvin)
+  - <a id="index_IsBoilingCelsius"></a>[IsBoilingCelsius](#isboilingcelsius)
+  - <a id="index_IsBoilingFahrenheit"></a>[IsBoilingFahrenheit](#isboilingfahrenheit)
+  - <a id="index_IsBoilingKelvin"></a>[IsBoilingKelvin](#isboilingkelvin)
+  - <a id="index_WindChillCelsius"></a>[WindChillCelsius](#windchillcelsius)
 - <a id="index_templating"></a>[Templating](#templating)
   - <a id="index_SmartFormat"></a>[SmartFormat](#smartformat)
   - <a id="index_ScribanFormat"></a>[ScribanFormat](#scribanformat)
@@ -383,6 +493,8 @@ It assumes familiarity with programming concepts and focuses on precision, compl
 - <a id="index_uniform-resource-locator-url"></a>[Uniform Resource Locator (URL)](#uniform-resource-locator-url)
   - <a id="index_ParseUriQuery"></a>[ParseUriQuery](#parseuriquery)
   - <a id="index_ParseUriParts"></a>[ParseUriParts](#parseuriparts)
+  - <a id="index_EncodePunycode"></a>[EncodePunycode](#encodepunycode)
+  - <a id="index_DecodePunycode"></a>[DecodePunycode](#decodepunycode)
 - <a id="index_user-agent-ua"></a>[User agent (UA)](#user-agent-ua)
   - <a id="index_ParseUserAgent"></a>[ParseUserAgent](#parseuseragent)
 - <a id="index_validation"></a>[Validation](#validation)
@@ -404,152 +516,51 @@ It assumes familiarity with programming concepts and focuses on precision, compl
   - <a id="index_CreateCertificateAuthority"></a>[CreateCertificateAuthority](#createcertificateauthority)
   - <a id="index_SignCertificate"></a>[SignCertificate](#signcertificate)
   - <a id="index_CreateCertificateChain"></a>[CreateCertificateChain](#createcertificatechain)
-## <a id="csharp" href="#index_csharp">CSharp</a>
-* <function><a id="csharp"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CSharp</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">CSharpScript</span>, <span style="color:#D75F00">Cs</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Evaluates C\# code using the CSharpScript runtime  
-***code***: C\# code that should be executed
-***input***: Configuration parameters when executing  
-**Returns**: Output from execution  
-**Examples**:
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;input&quot;: {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Globals.expression&quot;: &quot;$()&quot;,
-&nbsp;&nbsp;&nbsp;&nbsp;},
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;code&quot;: &quot;&quot;&quot;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using System; 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 1234 \+ 5678;
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;,
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;result.expression&quot;: &quot;CSharp(code, input)&quot;
-}  
-
-</pre></function>
-## <a id="javascript" href="#index_javascript">JavaScript</a>
-* <function><a id="javascript"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">JavaScript</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Js</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Evaluates Javascript code using the YantraJS runtime  
-***code***: Javascript code that should be executed
-***input***: Configuration parameters when executing  
-**Returns**: Output from execution  
-**Examples**:
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;code&quot;: &quot;&quot;&quot;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function fib(n) {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return n &lt;= 1 ? n : fib(n \- 1) \+ fib(n \- 2);
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return fib(7);
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;,
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;result.expression&quot;: &quot;JavaScript(code)&quot;
-}  
-
-</pre></function>
-## <a id="lua" href="#index_lua">Lua</a>
-* <function><a id="lua"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Lua</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span></function>
-## <a id="python" href="#index_python">Python</a>
-* <function><a id="python"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Python</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Py</span>)</function>
-## <a id="ruby" href="#index_ruby">Ruby</a>
-* <function><a id="ruby"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Ruby</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Rb</span>)</function>
-## <a id="elliptic-curve-digital-signature-algorithm-esdsa" href="#index_elliptic-curve-digital-signature-algorithm-esdsa">Elliptic Curve Digital Signature Algorithm (ESDSA)</a>
-* <function><a id="ecdsagenerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSAGenerate</span>() -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Generates an ECDSA key pair using the NIST P\-256 curve.  
-**Returns**: A tuple containing the Base64\-encoded  
-
-</pre></function>
-* <function><a id="ecdsasign"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSASign</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PrivateKey) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Signs a message using the ECDSA algorithm with a provided  
-***message***: The original message to be signed.
-***base64PrivateKey***: The base64 encoded private key  
-
-</pre></function>
-* <function><a id="ecdsaverify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSAVerify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Signature, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PublicKey) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Verifies an ECDSA (Elliptic Curve Digital Signature Algorithm) signature for a given message.  
-***message***: The original message that was signed.
-***base64Signature***: The base64 encoded string representing the signature to be verified.
-***base64PublicKey***: The base64 encoded public key  
-
-</pre></function>
-## <a id="hash-based-message-authentication-code-hmac" href="#index_hash-based-message-authentication-code-hmac">Hash-based Message Authentication Code (HMAC)</a>
-* <function><a id="hmacgenerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACGenerate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Generates a Base64 encoded HMAC key for the specified algorithm.  
-***algorithm***: The hashing algorithm to use for HMAC (e.g., &quot;SHA256&quot;).  
-**Returns**: A string representing the Base64 encoded HMAC key.  
-
-</pre></function>
-* <function><a id="hmacsign"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACSign</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Creates an HMAC (Hash\-based Message Authentication Code) signature for a given message using the specified key and algorithm.  
-***message***: The input string message to be signed.
-***base64Key***: The base64\-encoded secret key used for creating the HMAC signature.
-***algorithm***: The hashing algorithm to use, with a default of &quot;SHA256&quot;.  
-**Returns**: A base64\-encoded string representing the HMAC signature of the message.  
-**Remarks**:
-This function uses UTF\-8 encoding for converting the input message into bytes. 
-It creates an HMAC using the specified or default algorithm and computes the hash of the input message bytes.
-The computed hash is then converted to a base64 string and returned as the signature.
-Ensure that the key provided in base64 format is correctly decoded to prevent errors during HMAC generation.  
-
-</pre></function>
-* <function><a id="hmacverify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACVerify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Signature, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Verifies if the provided Base64\-encoded HMAC signature matches the expected HMAC 
-signature generated from the given message and key using the specified hash algorithm.  
-***message***: The original message for which the HMAC signature is to be verified.
-***base64Signature***: The Base64\-encoded HMAC signature to verify against the expected signature.
-***base64Key***: The Base64\-encoded key used to generate the HMAC signature.
-***algorithm***: The hash algorithm to use for generating the HMAC signature (default is &quot;SHA256&quot;).  
-**Returns**: True if the provided signature matches the generated signature; otherwise, false.  
-
-</pre></function>
-## <a id="advanced-encryption-standard-aes" href="#index_advanced-encryption-standard-aes">Advanced Encryption Standard (AES)</a>
-* <function><a id="aesgenerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESGenerate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySizeBits = <span style="color:#5FAFAF; margin-right:1px">256</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Generates a new pair of AES Key and Initial Vector (IV)  
-***keySizeBits***: AES key size to be created  
-**Returns**: Key and IV pair  
-
-</pre></function>
-* <function><a id="aesencrypt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESEncrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plaintext, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64IV) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Encrypts a given plaintext using AES encryption with the provided base64 key and IV.  
-***plaintext***: The text to be encrypted.
-***base64Key***: The base64\-encoded AES key.
-***base64IV***: The base64\-encoded IV.  
-**Returns**: The base64\-encoded encrypted ciphertext.  
-
-</pre></function>
-* <function><a id="aesdecrypt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESDecrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64CipherText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64IV) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Decrypts a base64\-encrypted data using the provided key and initialization vector.  
-***base64CipherText***: The encrypted base64 string.
-***base64Key***: The base64\-encoded encryption key.
-***base64IV***: The base64\-encoded initialization vector.  
-**Returns**: The decrypted AES data as a UTF8 string.  
-
-</pre></function>
-## <a id="rivest-shamir-adleman-rsa" href="#index_rivest-shamir-adleman-rsa">Rivest Shamir Adleman (RSA)</a>
-* <function><a id="rsagenerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSAGenerate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span></function>
-* <function><a id="rsaencrypt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSAEncrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plaintext, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PublicKey) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="rsadecrypt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSADecrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64CipherText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PrivateKey) -> <span style="color:#87AF00">string</span></function>
-## <a id="barcode" href="#index_barcode">Barcode</a>
-* <function><a id="generateqrcode"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateQRCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> payload, <span style="color:#87AF00; margin-left:1px; margin-right:1px">Generator</span> generator = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.BarcodePlugin+Generator.PNG</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pixelsPerModule = <span style="color:#5FAFAF; margin-right:1px">20</span>) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
-**Summary**: Generates a QR code based on the provided payload and image generator.  
-***payload***: The data to encode in the QR code.
-***generator***: The type of image generator to use. Defaults to PNG.
-***pixelsPerModule***: The number of pixels per module in the generated QR code.  
-**Returns**: An object representing the generated QR code, string or byte\[\].  
-
-</pre></function>
+- <a id="index_csharp"></a>[CSharp](#csharp)
+  - <a id="index_CSharp"></a>[CSharp](#csharp)
+- <a id="index_javascript"></a>[JavaScript](#javascript)
+  - <a id="index_JavaScript"></a>[JavaScript](#javascript)
+- <a id="index_lua"></a>[Lua](#lua)
+  - <a id="index_Lua"></a>[Lua](#lua)
+- <a id="index_python"></a>[Python](#python)
+  - <a id="index_Python"></a>[Python](#python)
+- <a id="index_ruby"></a>[Ruby](#ruby)
+  - <a id="index_Ruby"></a>[Ruby](#ruby)
+- <a id="index_elliptic-curve-digital-signature-algorithm-esdsa"></a>[Elliptic Curve Digital Signature Algorithm (ESDSA)](#elliptic-curve-digital-signature-algorithm-esdsa)
+  - <a id="index_ECDSAGenerate"></a>[ECDSAGenerate](#ecdsagenerate)
+  - <a id="index_ECDSASign"></a>[ECDSASign](#ecdsasign)
+  - <a id="index_ECDSAVerify"></a>[ECDSAVerify](#ecdsaverify)
+- <a id="index_hash-based-message-authentication-code-hmac"></a>[Hash-based Message Authentication Code (HMAC)](#hash-based-message-authentication-code-hmac)
+  - <a id="index_HMACGenerate"></a>[HMACGenerate](#hmacgenerate)
+  - <a id="index_HMACSign"></a>[HMACSign](#hmacsign)
+  - <a id="index_HMACVerify"></a>[HMACVerify](#hmacverify)
+- <a id="index_advanced-encryption-standard-aes"></a>[Advanced Encryption Standard (AES)](#advanced-encryption-standard-aes)
+  - <a id="index_AESGenerate"></a>[AESGenerate](#aesgenerate)
+  - <a id="index_AESEncrypt"></a>[AESEncrypt](#aesencrypt)
+  - <a id="index_AESDecrypt"></a>[AESDecrypt](#aesdecrypt)
+- <a id="index_rivest-shamir-adleman-rsa"></a>[Rivest Shamir Adleman (RSA)](#rivest-shamir-adleman-rsa)
+  - <a id="index_RSAGenerate"></a>[RSAGenerate](#rsagenerate)
+  - <a id="index_RSAEncrypt"></a>[RSAEncrypt](#rsaencrypt)
+  - <a id="index_RSADecrypt"></a>[RSADecrypt](#rsadecrypt)
 ## <a id="built-in" href="#index_built-in">Built-In</a>
-* <function><a id="length"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Length</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> obj) -> <span style="color:#5FAFAF">int</span></function>
-* <function><a id="type"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Type</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> data) -> <span style="color:#87AF00">DatabaseType</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="length"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Length</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> obj) -> <span style="color:#5FAFAF">int</span></function>
+* <function><a id="type"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Type</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> data) -> <span style="color:#87AF00">DatabaseType</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Returns the database type based on the provided data.  
 ***data***: The data to determine the database type for.  
 **Returns**: The database type.  
 
 </pre></function>
-* <function><a id="tobytes"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToBytes</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">byte[]</span></function>
-* <function><a id="array"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Array</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> items) -> <span style="color:#87AF00">object[]</span></function>
+* <function><a id="tobytes"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToBytes</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">byte[]</span></function>
+* <function><a id="array"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Array</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> items) -> <span style="color:#87AF00">object[]</span></function>
+* <function><a id="coalesce"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Coalesce</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> items) -> <span style="color:#87AF00">object</span></function>
 ## <a id="cache" href="#index_cache">Cache</a>
-* <function><a id="cacheget"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CacheGet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cacheget"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CacheGet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Caches a value retrieved from the application cache. If the key is not found in the cache, the method returns null.  
 ***key***: The key of the value to retrieve.  
 **Returns**: The cached value or null if it was not found.  
 
 </pre></function>
-* <function><a id="cacheset"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheSet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">TimeSpan?</span> ttl = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cacheset"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheSet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">TimeSpan?</span> ttl = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Sets a value in the cache with an optional time\-to\-live (TTL).  
 ***key***: The key to set.
 ***value***: The value to store.
@@ -557,17 +568,17 @@ signature generated from the given message and key using the specified hash algo
 **Returns**: True if the cache was successfully set. False otherwise.  
 
 </pre></function>
-* <function><a id="cacheremove"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheRemove</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cacheremove"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheRemove</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Removes the specified key from the cache.  
 ***key***: The key to be removed.  
 
 </pre></function>
-* <function><a id="cacheclear"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheClear</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cacheclear"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CacheClear</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Clears the cache by calling the Clear method on the underlying cache.  
 
 </pre></function>
 ## <a id="captcha" href="#index_captcha">Captcha</a>
-* <function><a id="createcaptcha"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCaptcha</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length = <span style="color:#5FAFAF; margin-right:1px">6</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> width = <span style="color:#5FAFAF; margin-right:1px">200</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> height = <span style="color:#5FAFAF; margin-right:1px">70</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> ttlSeconds = <span style="color:#5FAFAF; margin-right:1px">300</span>) -> <span style="color:#87AF00">ValueTuple\<string, byte[]\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="createcaptcha"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCaptcha</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length = <span style="color:#5FAFAF; margin-right:1px">6</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> width = <span style="color:#5FAFAF; margin-right:1px">200</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> height = <span style="color:#5FAFAF; margin-right:1px">70</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> ttlSeconds = <span style="color:#5FAFAF; margin-right:1px">300</span>) -> <span style="color:#87AF00">ValueTuple\<string, byte[]\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Creates a CAPTCHA challenge with the specified parameters.  
 ***length***: The length of the CAPTCHA code. Defaults to 6.
 ***width***: The width of the CAPTCHA image. Defaults to 200 pixels.
@@ -576,7 +587,7 @@ signature generated from the given message and key using the specified hash algo
 **Returns**: A tuple containing the generated token and PNG image.  
 
 </pre></function>
-* <function><a id="validatecaptcha"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ValidateCaptcha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> userInput) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="validatecaptcha"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ValidateCaptcha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> userInput) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Validates a CAPTCHA token against the stored tokens.  
 ***token***: The CAPTCHA token to validate.
 ***userInput***: The user&apos;s input string for comparison.  
@@ -584,7 +595,7 @@ signature generated from the given message and key using the specified hash algo
 
 </pre></function>
 ## <a id="colors" href="#index_colors">Colors</a>
-* <function><a id="parsehexcolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseHexColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hexColorString) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsehexcolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseHexColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hexColorString) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a hexadecimal color string to an ARGBColor object. The input string can be in the format of 6 characters (RRGGBB) or 8 characters (AARRGGBB), 
 optionally prefixed with &apos;\#&apos;. The function parses the hex string into its corresponding alpha, red, green, and blue components.  
 ***hexColorString***: The hexadecimal color string to be converted. This should be in the format of &apos;\#RRGGBB&apos; or &apos;\#AARRGGBB&apos;, 
@@ -596,39 +607,39 @@ where RR is the red component, GG is the green component, BB is the blue compone
 requirements of 6 or 8 characters, contains non\-hexadecimal characters, or other parsing errors occur.  
 
 </pre></function>
-* <function><a id="rgbtohsv"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RGBToHSV</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">HSVColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="rgbtohsv"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RGBToHSV</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">HSVColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an RGB color (with alpha transparency) to its HSV equivalent.  
 ***c***: The ARGBColor object containing the red, green, blue, and alpha values.  
 **Returns**: A new HSVColor object representing the hue, saturation, value, and alpha of the original color.  
 
 </pre></function>
-* <function><a id="hsvtorgb"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HSVToRGB</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HSVColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hsvtorgb"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HSVToRGB</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HSVColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a color from HSV (Hue, Saturation, Value) space to ARGB (Alpha, Red, Green, Blue) color format.  
 ***c***: The HSVColor object containing the hue, saturation, value, and alpha components to be converted.  
 **Returns**: Returns an ARGBColor object representing the equivalent color in ARGB format.  
 
 </pre></function>
-* <function><a id="adjustcolorbrightness"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorBrightness</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> factor) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="adjustcolorbrightness"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorBrightness</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> factor) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Adjusts the brightness of an ARGB color by a specified factor. The factor should be between \-1 and 1, where negative values darken the color, positive values brighten it, and zero leaves it unchanged.  
 ***c***: The original ARGBColor to adjust.
 ***factor***: A double value representing the brightness adjustment factor. It must be within the range \[\-1, 1\].  
 **Returns**: A new ARGBColor instance with adjusted brightness based on the specified factor.  
 
 </pre></function>
-* <function><a id="invertcolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InvertColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="invertcolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InvertColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Inverts the color of an ARGBColor object by subtracting each RGB component from 255, while retaining the alpha value.
 This function utilizes a custom attribute PluginFunction to denote its behavior as part of a plugin system.  
 ***c***: The original ARGBColor object whose color is to be inverted.  
 **Returns**: A new ARGBColor object with the inverted RGB values and unchanged alpha value.  
 
 </pre></function>
-* <function><a id="grayscalecolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GrayscaleColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="grayscalecolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GrayscaleColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given color to its grayscale equivalent.  
 ***c***: The original color to be converted.  
 **Returns**: A new ARGBColor instance representing the grayscale version of the input color, preserving the alpha channel.  
 
 </pre></function>
-* <function><a id="blendcolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BlendColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> t) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="blendcolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BlendColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> t) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Blends two ARGB colors based on the specified blend factor.  
 ***a***: The first color to blend.
 ***b***: The second color to blend.
@@ -636,7 +647,7 @@ This function utilizes a custom attribute PluginFunction to denote its behavior 
 **Returns**: A new ARGBColor representing the blended result of &apos;a&apos; and &apos;b&apos; based on the blend factor &apos;t&apos;.  
 
 </pre></function>
-* <function><a id="adjustcolorsaturation"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorSaturation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> factor) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="adjustcolorsaturation"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorSaturation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> factor) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Adjusts the saturation of a given ARGBColor by a specified factor.
 The method converts the color to HSV (Hue, Saturation, Value), modifies 
 its saturation component based on the input factor, and then converts it back 
@@ -647,7 +658,7 @@ A factor greater than 1 increases saturation, while a factor between 0 and 1 dec
 **Returns**: An ARGBColor object with the adjusted saturation.  
 
 </pre></function>
-* <function><a id="adjustcolorhue"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorHue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degrees) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="adjustcolorhue"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorHue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degrees) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Adjusts the hue of a given ARGBColor by a specified number of degrees.
 This function converts the color from RGB to HSV, modifies the hue,
 and then converts it back to RGB.  
@@ -657,14 +668,14 @@ increase the hue (clockwise), while negative values decrease it (counterclockwis
 **Returns**: An ARGBColor with the adjusted hue based on the input degrees.  
 
 </pre></function>
-* <function><a id="adjustcoloralpha"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorAlpha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">byte</span> alpha) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="adjustcoloralpha"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AdjustColorAlpha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">byte</span> alpha) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Adjusts the alpha component of an ARGB color while preserving its red, green, and blue components.  
 ***c***: The original ARGBColor object whose alpha is to be adjusted.
 ***alpha***: The new alpha value to set for the ARGBColor. Must be a byte between 0 and 255.  
 **Returns**: A new ARGBColor object with the specified alpha component and the same red, green, and blue components as the original color.  
 
 </pre></function>
-* <function><a id="multiplycolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MultiplyColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="multiplycolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MultiplyColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Multiplies two ARGBColor values component\-wise and returns the result.
 Each channel (A, R, G, B) of the resulting color is calculated by multiplying the corresponding channels
 of the input colors and dividing by 255 to normalize the value back into a byte range.  
@@ -675,14 +686,14 @@ divided by 255 to fit within the byte range. This represents a blend between the
 alpha, red, green, and blue values respectively.  
 
 </pre></function>
-* <function><a id="screencolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ScreenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="screencolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ScreenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Combines two ARGBColor values using the &quot;screen&quot; blend mode. This method calculates the resulting color by applying the screen blending formula to each channel (red, green, and blue) while taking the maximum alpha value from either of the input colors.  
 ***a***: The first ARGBColor object representing a color with its alpha, red, green, and blue components.
 ***b***: The second ARGBColor object representing a color with its alpha, red, green, and blue components.  
 **Returns**: A new ARGBColor object where the result of the screen blend is applied to the color channels. The alpha channel contains the maximum alpha value from both input colors.  
 
 </pre></function>
-* <function><a id="overlaycolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">OverlayColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="overlaycolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">OverlayColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Applies an overlay blending mode to two ARGBColor objects and returns the resulting color.
 The overlay effect is a combination of multiply and screen blend modes, which enhances contrast by darkening or lightening colors depending on their luminance.  
 ***a***: The first ARGBColor object representing the background color.
@@ -690,14 +701,14 @@ The overlay effect is a combination of multiply and screen blend modes, which en
 **Returns**: An ARGBColor object resulting from applying the overlay blending mode to the input colors.  
 
 </pre></function>
-* <function><a id="lightencolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LightenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="lightencolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LightenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Lightens two ARGBColor objects by comparing their respective channels and selecting the maximum value for each channel.  
 ***a***: The first ARGBColor object.
 ***b***: The second ARGBColor object.  
 **Returns**: A new ARGBColor object where each channel is the maximum of the corresponding channels from the input colors.  
 
 </pre></function>
-* <function><a id="darkencolor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DarkenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="darkencolor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DarkenColor</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> a, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ARGBColor</span> b) -> <span style="color:#87AF00">ARGBColor</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Darkens the specified ARGBColor by combining it with another ARGBColor.
 The alpha channel is set to the maximum of both colors,
 while the red, green, and blue channels are set to the minimum of each respective pair from the two colors.  
@@ -709,7 +720,7 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 
 </pre></function>
 ## <a id="compression" href="#index_compression">Compression</a>
-* <function><a id="zstdcompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZstdCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="zstdcompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZstdCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Compresses a byte array using the Zstandard compression algorithm with specified level.  
 ***data***: The input byte array to be compressed.
 ***level***: The compression level. Can be one of the following values:
@@ -720,13 +731,13 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Returns**: The compressed byte array.  
 
 </pre></function>
-* <function><a id="zstddecompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZstdDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="zstddecompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZstdDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decompression of Zstd compressed byte array to a bytes array  
 ***data***: The input byte array  
 **Returns**: The decompressed byte array  
 
 </pre></function>
-* <function><a id="gzipcompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GzipCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="gzipcompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GzipCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Compresses the given byte array to a Gzip compressed stream.  
 ***data***: The input byte array to be compressed.
 ***level***: The compression level. Can be one of the following values:
@@ -737,13 +748,13 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Returns**: The compressed byte array as a bytes array.  
 
 </pre></function>
-* <function><a id="gzipdecompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GzipDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="gzipdecompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GzipDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decompresses a byte array from GZip format to the caller&apos;s memory stream.  
 ***data***: The input byte array in GZip format.  
 **Returns**: The decompressed data as an array of bytes.  
 
 </pre></function>
-* <function><a id="zipcompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZipCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> entryName = <span style="color:#D70000; margin-right:1px">"data"</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="zipcompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZipCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> entryName = <span style="color:#D70000; margin-right:1px">"data"</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Compresses the given byte array to a Zip compressed stream.  
 ***data***: The data to be compressed.
 ***level***: The compression level. Can be one of the following values:
@@ -755,12 +766,12 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Returns**: A byte array containing the zipped data.  
 
 </pre></function>
-* <function><a id="zipdecompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZipDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> entryName = <span style="color:#D70000; margin-right:1px">"data"</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="zipdecompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ZipDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> entryName = <span style="color:#D70000; margin-right:1px">"data"</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decompresses a ZIP file by extracting the specified entry.  
 **Returns**: A byte array representing the decompressed data.  
 
 </pre></function>
-* <function><a id="brotlicompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BrotliCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="brotlicompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BrotliCompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data, <span style="color:#87AF00; margin-left:1px; margin-right:1px">CompressionLevel</span> level = <span style="color:#87AF00; margin-right:1px">System.IO.Compression.CompressionLevel.Optimal</span>) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Compresses the input byte array using Brotli algorithm with the specified compression level.  
 ***data***: The byte array to be compressed.
 ***level***: The compression level. Can be one of the following values:
@@ -771,14 +782,14 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Returns**: A byte array containing the compressed data.  
 
 </pre></function>
-* <function><a id="brotlidecompress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BrotliDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="brotlidecompress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BrotliDecompress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decompresses a byte array using the Brotli compression algorithm.  
 ***data***: The compressed data to decompress.  
 **Returns**: A byte array containing the decompressed data.  
 
 </pre></function>
 ## <a id="containers" href="#index_containers">Containers</a>
-* <function><a id="container"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Container</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> containerName, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param string[]</span> command) -> <span style="color:#87AF00">Task\<object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="container"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Container</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> containerName, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param string[]</span> command) -> <span style="color:#87AF00">Task\<object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Executes a command within the specified container asynchronously.  
 ***containerName***: The name of the container to execute the command in.
 ***command***: An array of strings representing the command and its arguments to be executed.  
@@ -786,7 +797,7 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 
 </pre></function>
 ## <a id="conversions" href="#index_conversions">Conversions</a>
-* <function><a id="convertangle"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertAngle</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertangle"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertAngle</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an angle value from one unit to another.  
 ***value***: The numeric value of the angle.
 ***fromUnit***: The current unit of the angle, which can be &quot;rad&quot;, &quot;radian&quot;, &quot;radians&quot;, &quot;deg&quot;, &quot;degree&quot;, &quot;degrees&quot;, &quot;grad&quot;, &quot;gradian&quot;, or &quot;gradians&quot;.
@@ -797,7 +808,7 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Description**: Thrown when either &apos;fromUnit&apos; or &apos;toUnit&apos; is unsupported.  
 
 </pre></function>
-* <function><a id="convertfuelefficiency"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertFuelEfficiency</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertfuelefficiency"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertFuelEfficiency</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts fuel efficiency between different units.  
 ***value***: The value of fuel efficiency in the source unit.
 ***fromUnit***: The current unit of measurement (&quot;l/100km&quot;, &quot;mpg&quot; for US miles per gallon, or &quot;ukmpg&quot; for UK miles per gallon).
@@ -808,7 +819,7 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Description**: Thrown when an unsupported fromUnit or toUnit is specified.  
 
 </pre></function>
-* <function><a id="convertluminance"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertLuminance</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertluminance"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertLuminance</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a luminance value from one unit to another.  
 ***value***: The luminance value to be converted.
 ***fromUnit***: The unit of the input luminance value. Supported units are &quot;cd/m2&quot;, &quot;candela per square meter&quot;, &quot;nits&quot;, &quot;lambert&quot;, and &quot;foot\-lambert&quot;.
@@ -819,7 +830,7 @@ while the red, green, and blue channels are set to the minimum of each respectiv
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertfrequency"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertFrequency</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertfrequency"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertFrequency</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a frequency value from one unit of measurement to another.
 The function supports conversions between Hertz (Hz), Kilohertz (kHz),
 Megahertz (MHz), and Gigahertz (GHz).  
@@ -834,7 +845,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when either \`fromUnit\` or \`toUnit\` is not supported.  
 
 </pre></function>
-* <function><a id="convertforce"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertForce</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertforce"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertForce</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a force value from one unit to another.  
 ***value***: The magnitude of the force to convert.
 ***fromUnit***: The original unit of the force. Supported units are &quot;N&quot;, &quot;newton&quot;, &quot;newtons&quot;, 
@@ -848,7 +859,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertsoundlevel"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertSoundLevel</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertsoundlevel"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertSoundLevel</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a sound level between decibels (dB) and power ratio.  
 ***value***: The value to convert.
 ***fromUnit***: The unit of the input value. Supported values are &quot;db&quot; or &quot;ratio&quot;.
@@ -859,7 +870,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when unsupported units are provided or if there&apos;s an attempt to convert between unsupported units.  
 
 </pre></function>
-* <function><a id="convertpressure"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertPressure</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertpressure"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertPressure</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a pressure value from one unit of measurement to another.  
 ***value***: The numerical value of the pressure to convert.
 ***fromUnit***: The unit of measurement of the input pressure. Supported units are &apos;Pa&apos;, &apos;Pascal&apos;, &apos;Pascals&apos;, &apos;bar&apos;, &apos;bars&apos;, &apos;psi&apos;, &apos;pound per square inch&apos;, &apos;pounds per square inch&apos;, &apos;atm&apos;, &apos;atmosphere&apos;, and &apos;atmospheres&apos;.
@@ -870,7 +881,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertenergy"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertEnergy</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertenergy"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertEnergy</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an energy value from one unit to another.  
 ***value***: The energy value to convert.
 ***fromUnit***: The unit of the input energy value. Supported units include:
@@ -891,7 +902,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertpower"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertPower</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertpower"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertPower</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a power value from one unit to another.  
 ***value***: The numerical value of the power.
 ***fromUnit***: The unit of the input power, supported units are: &quot;w&quot;, &quot;watt&quot;, &quot;watts&quot;, &quot;kw&quot;, &quot;kilowatt&quot;, &quot;kilowatts&quot;, &quot;hp&quot;, &quot;horsepower&quot;.
@@ -902,7 +913,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertdatasize"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertDataSize</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertdatasize"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertDataSize</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a data size from one unit to another.  
 ***value***: The numeric value representing the amount of data.
 ***fromUnit***: The unit of measurement for the input value (e.g., &quot;bytes&quot;, &quot;KB&quot;).
@@ -913,7 +924,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertmass"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertMass</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertmass"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertMass</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a mass value from one unit to another.  
 ***value***: The numeric value of the mass to be converted.
 ***fromUnit***: A string representing the initial unit of measurement (e.g., &quot;kg&quot;, &quot;g&quot;, &quot;lb&quot;).
@@ -924,7 +935,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertvolume"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertVolume</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertvolume"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertVolume</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a volume from one unit to another.  
 ***value***: The numerical value of the volume to convert.
 ***fromUnit***: The unit of the input volume. Supported units include liters (l, liter, liters), milliliters (ml, milliliter, milliliters), gallons (gal, gallon, gallons), cups (cup, cups), and fluid ounces (floz, fluid ounce, fluid ounces).
@@ -935,7 +946,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when either the \`fromUnit\` or \`toUnit\` is unsupported.  
 
 </pre></function>
-* <function><a id="convertarea"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertArea</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertarea"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertArea</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a specified area value from one unit of measurement to another.  
 ***value***: The numeric value representing the area to convert.
 ***fromUnit***: The unit of measurement for the input area (e.g., &quot;m2&quot;, &quot;km2&quot;, &quot;ft2&quot;).
@@ -946,7 +957,7 @@ Megahertz (MHz), and Gigahertz (GHz).
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertspeed"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertSpeed</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertspeed"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertSpeed</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a speed value from one unit of measurement to another.
 Supported units for conversion are meters per second (mps, m/s, meters per second),
 kilometers per hour (kmh, km/h, kilometers per hour), miles per hour (mph, miles per hour),
@@ -963,7 +974,7 @@ then converts it to the desired output unit.
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="converttime"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertTime</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="converttime"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertTime</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a time value from one unit to another.  
 ***value***: The numeric value representing the time.
 ***fromUnit***: The unit of the input time value. Supported units are &quot;s&quot;, &quot;sec&quot;, &quot;second&quot;, &quot;seconds&quot;,
@@ -978,7 +989,7 @@ then converts it to the desired output unit.
 **Description**: Thrown when an unsupported fromUnit or toUnit is provided.  
 
 </pre></function>
-* <function><a id="convertlength"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertLength</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="convertlength"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ConvertLength</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fromUnit, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toUnit) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a length value from one unit to another.  
 ***value***: The numerical value representing the length.
 ***fromUnit***: The unit of measurement for the input value. Supported units include meters (m, meter, meters), kilometers (km, kilometer, kilometers), centimeters (cm, centimeter, centimeters), millimeters (mm, millimeter, millimeters), miles (mi, mile, miles), US miles (usmile, us mile, us miles), yards (yd, yard, yards), feet (ft, foot, feet), and inches (in, inch, inches).
@@ -990,7 +1001,7 @@ then converts it to the desired output unit.
 
 </pre></function>
 ## <a id="cookies" href="#index_cookies">Cookies</a>
-* <function><a id="parsecookie"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseCookie</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie) -> <span style="color:#87AF00">Dictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsecookie"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseCookie</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie) -> <span style="color:#87AF00">Dictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a cookie string into a dictionary of key\-value pairs, where values are dynamically typed objects.  
 ***cookie***: The cookie string to parse.  
 **Returns**: A dictionary containing the parsed key\-value pairs from the cookie string. The keys are strings and
@@ -998,7 +1009,7 @@ then converts it to the desired output unit.
         If the input is empty or null, an empty dictionary with case\-insensitive string comparison for keys is returned.  
 
 </pre></function>
-* <function><a id="createcookie"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCookie</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> data) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="createcookie"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCookie</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> data) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Creates a cookie string from the provided key\-value pairs in the data dictionary.
 Each key and value pair is concatenated with an &apos;=&apos; character, and multiple
 pairs are separated by &apos;; &apos;. If the input dictionary contains no elements, an empty string is returned.  
@@ -1006,7 +1017,7 @@ pairs are separated by &apos;; &apos;. If the input dictionary contains no eleme
 **Returns**: A string representing a formatted cookie with all provided data.  
 
 </pre></function>
-* <function><a id="getcookievalue"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getcookievalue"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the value of a specific cookie key from a cookie string.  
 ***cookie***: The full cookie string to search.
 ***key***: The cookie key whose value should be retrieved.  
@@ -1014,7 +1025,7 @@ pairs are separated by &apos;; &apos;. If the input dictionary contains no eleme
 The returned value may be of type bool, int, long, double, DateTime, Guid, or string.  
 
 </pre></function>
-* <function><a id="setcookievalue"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="setcookievalue"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SetCookieValue</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Sets or updates a cookie key with the specified value and returns the updated cookie string.  
 ***cookie***: The original cookie string.
 ***key***: The cookie key to set or update.
@@ -1022,21 +1033,21 @@ The returned value may be of type bool, int, long, double, DateTime, Guid, or st
 **Returns**: A new cookie string containing the updated key\-value pair.  
 
 </pre></function>
-* <function><a id="removecookiekey"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemoveCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="removecookiekey"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemoveCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Removes a specific cookie key from a cookie string.  
 ***cookie***: The original cookie string.
 ***key***: The cookie key to remove.  
 **Returns**: A new cookie string with the specified key removed.  
 
 </pre></function>
-* <function><a id="hascookiekey"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HasCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hascookiekey"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HasCookieKey</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether a specific cookie key exists within a cookie string.  
 ***cookie***: The cookie string to inspect.
 ***key***: The cookie key to check for existence.  
 **Returns**: true if the specified key exists; otherwise, false.  
 
 </pre></function>
-* <function><a id="mergecookies"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MergeCookies</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> baseCookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> overrideCookie) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="mergecookies"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MergeCookies</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> baseCookie, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> overrideCookie) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Merges two cookie strings, where values from the override cookie replace values
 from the base cookie when keys collide.  
 ***baseCookie***: The base cookie string.
@@ -1044,14 +1055,187 @@ from the base cookie when keys collide.
 **Returns**: A merged cookie string containing keys from both inputs.  
 
 </pre></function>
-* <function><a id="cookiecount"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CookieCount</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cookiecount"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CookieCount</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cookie) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Counts the number of distinct cookie key\-value pairs in a cookie string.  
 ***cookie***: The cookie string to analyze.  
 **Returns**: The total number of parsed cookie entries.  
 
 </pre></function>
+## <a id="cross-units" href="#index_cross-units">Cross units</a>
+* <function><a id="milestokilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MilesToKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MiToKm</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a distance from miles to kilometers.  
+
+</pre></function>
+* <function><a id="kilometerstomiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilometersToMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> km) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KmToMi</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a distance from kilometers to miles.  
+
+</pre></function>
+* <function><a id="inchestocentimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InchesToCentimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> inch) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">InToCm</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from inches to centimeters.  
+
+</pre></function>
+* <function><a id="centimeterstoinches"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CentimetersToInches</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CmToIn</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from centimeters to inches.  
+
+</pre></function>
+* <function><a id="feettometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FeetToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ft) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtToM</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from feet to meters.  
+
+</pre></function>
+* <function><a id="meterstofeet"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToFeet</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToFt</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from meters to feet.  
+
+</pre></function>
+* <function><a id="yardstometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">YardsToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> yd) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">YdToM</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from yards to meters.  
+
+</pre></function>
+* <function><a id="meterstoyards"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToYards</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToYd</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a length from meters to yards.  
+
+</pre></function>
+* <function><a id="nauticalmilestokilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NauticalMilesToKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> nmi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">NmiToKm</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a distance from nautical miles to kilometers.  
+
+</pre></function>
+* <function><a id="kilometerstonauticalmiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilometersToNauticalMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> km) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KmToNmi</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a distance from kilometers to nautical miles.  
+
+</pre></function>
+* <function><a id="poundstokilograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundsToKilograms</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lb) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbToKg</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from pounds to kilograms.  
+
+</pre></function>
+* <function><a id="kilogramstopounds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilogramsToPounds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KgToLb</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from kilograms to pounds.  
+
+</pre></function>
+* <function><a id="ouncestograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">OuncesToGrams</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> oz) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">OzToG</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from ounces to grams.  
+
+</pre></function>
+* <function><a id="gramstoounces"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GramsToOunces</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> g) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GToOz</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from grams to ounces.  
+
+</pre></function>
+* <function><a id="stonestokilograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">StonesToKilograms</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> st) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">StToKg</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from stones to kilograms.  
+
+</pre></function>
+* <function><a id="kilogramstostones"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilogramsToStones</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KgToSt</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from kilograms to stones.  
+
+</pre></function>
+* <function><a id="ustonstokilograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">USTonsToKilograms</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ton) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">TonToKg</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from US short tons to kilograms.  
+
+</pre></function>
+* <function><a id="kilogramstoustons"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilogramsToUSTons</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KgToTon</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a mass from kilograms to US short tons.  
+
+</pre></function>
+* <function><a id="usgallonstoliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">USGallonsToLiters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> gal) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GalToL</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from US gallons to liters.  
+
+</pre></function>
+* <function><a id="literstousgallons"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersToUSGallons</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> l) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LToGal</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from liters to US gallons.  
+
+</pre></function>
+* <function><a id="quartstoliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">QuartsToLiters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> qt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">QtToL</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from US quarts to liters.  
+
+</pre></function>
+* <function><a id="literstoquarts"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersToQuarts</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> l) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LToQt</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from liters to US quarts.  
+
+</pre></function>
+* <function><a id="pintstoliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PintsToLiters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> pt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">PtToL</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from US pints to liters.  
+
+</pre></function>
+* <function><a id="literstopints"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersToPints</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> l) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LToPt</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from liters to US pints.  
+
+</pre></function>
+* <function><a id="fluidouncestomilliliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FluidOuncesToMilliliters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> flOz) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FlOzToMl</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from US fluid ounces to milliliters.  
+
+</pre></function>
+* <function><a id="milliliterstofluidounces"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MillilitersToFluidOunces</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ml) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MlToFlOz</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a volume from milliliters to US fluid ounces.  
+
+</pre></function>
+* <function><a id="acrestohectares"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AcresToHectares</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ac) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">AcToHa</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from acres to hectares.  
+
+</pre></function>
+* <function><a id="hectarestoacres"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HectaresToAcres</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ha) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">HaToAc</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from hectares to acres.  
+
+</pre></function>
+* <function><a id="squaremilestosquarekilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareMilesToSquareKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> sqMi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">Mi2ToKm2</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from square miles to square kilometers.  
+
+</pre></function>
+* <function><a id="squarekilometerstosquaremiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareKilometersToSquareMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> sqKm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">Km2ToMi2</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from square kilometers to square miles.  
+
+</pre></function>
+* <function><a id="squarefeettosquaremeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareFeetToSquareMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> sqFt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">Ft2ToM2</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from square feet to square meters.  
+
+</pre></function>
+* <function><a id="squaremeterstosquarefeet"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareMetersToSquareFeet</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> sqM) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">M2ToFt2</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an area from square meters to square feet.  
+
+</pre></function>
+* <function><a id="mphtokph"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MphToKph</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mph) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MphToKph</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a speed from miles per hour to kilometers per hour.  
+
+</pre></function>
+* <function><a id="kphtomph"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KphToMph</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kph) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KphToMph</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a speed from kilometers per hour to miles per hour.  
+
+</pre></function>
+* <function><a id="feetpersecondtometerspersecond"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FeetPerSecondToMetersPerSecond</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fps) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FpsToMps</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a speed from feet per second to meters per second.  
+
+</pre></function>
+* <function><a id="meterspersecondtofeetpersecond"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersPerSecondToFeetPerSecond</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mps) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MpsToFps</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a speed from meters per second to feet per second.  
+
+</pre></function>
+* <function><a id="mpgtolitersper100km"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MpgToLitersPer100Km</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mpg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MpgToL100km</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts fuel economy from US miles per gallon to liters per 100 kilometers.  
+
+</pre></function>
+* <function><a id="litersper100kmtompg"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersPer100KmToMpg</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lPer100km) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">L100kmToMpg</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts fuel economy from liters per 100 kilometers to US miles per gallon.  
+
+</pre></function>
+* <function><a id="psitokilopascals"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PsiToKilopascals</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> psi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">PsiToKpa</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a pressure from pounds per square inch to kilopascals.  
+
+</pre></function>
+* <function><a id="kilopascalstopsi"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilopascalsToPsi</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kpa) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KpaToPsi</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a pressure from kilopascals to pounds per square inch.  
+
+</pre></function>
+* <function><a id="poundforcetonewtons"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundForceToNewtons</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lbf) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbfToN</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a force from pound\-force to newtons.  
+
+</pre></function>
+* <function><a id="newtonstopoundforce"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NewtonsToPoundForce</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> n) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">NToLbf</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a force from newtons to pound\-force.  
+
+</pre></function>
+* <function><a id="btutojoules"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">BtuToJoules</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> btu) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">BtuToJ</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts an energy value from British Thermal Units (IT) to joules.  
+
+</pre></function>
 ## <a id="date" href="#index_date">Date</a>
-* <function><a id="tounixtimeseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUnixTimeSeconds</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset</span> dt) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tounixtimeseconds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUnixTimeSeconds</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset</span> dt) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given DateTimeOffset to its Unix timestamp in seconds.
 The Unix timestamp represents the number of seconds that have elapsed since 
 00:00:00 UTC on 1 January 1970, not counting leap seconds.  
@@ -1059,21 +1243,21 @@ The Unix timestamp represents the number of seconds that have elapsed since
 **Returns**: A long integer representing the Unix timestamp in seconds.  
 
 </pre></function>
-* <function><a id="tounixtimemilliseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUnixTimeMilliseconds</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset</span> dt) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tounixtimemilliseconds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUnixTimeMilliseconds</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset</span> dt) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the given DateTimeOffset to Unix time expressed in milliseconds.
 Unix time is defined as the number of milliseconds that have elapsed since 00:00:00 UTC on January 1, 1970 (excluding leap seconds).  
 ***dt***: The DateTimeOffset value to convert.  
 **Returns**: A long integer representing the number of milliseconds since the Unix epoch.  
 
 </pre></function>
-* <function><a id="fromunixtimeseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromUnixTimeSeconds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> seconds) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fromunixtimeseconds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromUnixTimeSeconds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> seconds) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a Unix timestamp (seconds since January 1, 1970) to a 
 DateTimeOffset value in the local time zone.  
 ***seconds***: The number of seconds that have elapsed since January 1, 1970.  
 **Returns**: A DateTimeOffset object representing the equivalent date and time in the local time zone.  
 
 </pre></function>
-* <function><a id="fromunixtimemilliseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromUnixTimeMilliseconds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> milliseconds) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fromunixtimemilliseconds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromUnixTimeMilliseconds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> milliseconds) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the specified Unix time in milliseconds to a DateTimeOffset value.  
 ***milliseconds***: The number of 100\-nanosecond intervals since January 1, 1970 (midnight UTC).  
 **Returns**: A DateTimeOffset value that is equivalent to the specified Unix time in milliseconds.  
@@ -1082,12 +1266,12 @@ DateTimeOffset value in the local time zone.
 **Description**: Thrown when the input value represents a date earlier than January 1, 0001. \-OR\- Thrown when the input value represents a date later than December 31, 9999.  
 
 </pre></function>
-* <function><a id="nowprecise"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NowPrecise</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="nowprecise"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NowPrecise</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Provides the current date and time in UTC with high precision.  
 **Returns**: A DateTimeOffset object representing the current date and time in Coordinated Universal Time (UTC).  
 
 </pre></function>
-* <function><a id="now"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Now</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="now"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Now</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the current date and time based on the loading options provided in the context.
 This function returns a DateTimeOffset value representing &quot;now&quot; as defined within the context&apos;s 
 LoadingOptions. It is used to ensure consistency in timing across different parts of an application 
@@ -1095,19 +1279,32 @@ or plugin system that share the same context configuration.
 **Returns**: A DateTimeOffset value representing the current date and time as specified by the context&apos;s LoadingOptions.NowShared property.  
 
 </pre></function>
-* <function><a id="nowntp"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NowNtp</span>() -> <span style="color:#87AF00">Task\<DateTimeOffset\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="nowntp"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NowNtp</span>() -> <span style="color:#87AF00">Task\<DateTimeOffset\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the current network time from an NTP server asynchronously.  
 **Returns**: A task that represents the asynchronous operation, and contains a DateTimeOffset object representing the current date and time as reported by the NTP server.  
 
 </pre></function>
+* <function><a id="humanizetimespan"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HumanizeTimeSpan</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">TimeSpan</span> timeSpan, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> precision = <span style="color:#5FAFAF; margin-right:1px">2</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Formats a time span using up to precision non\-zero
+components, such as 2y 3d or 4h 15m.  
+***timeSpan***: The time span to format.
+***precision***: The maximum number of components to include. Defaults to 2.  
+**Returns**: A human\-readable representation of the time span.  
+**Remarks**:
+Years are calculated as 365 days. Zero\-valued components are omitted.  
+**Exceptions**:
+**Type**: ArgumentOutOfRangeException
+**Description**: Thrown when precision is less than 1.  
+
+</pre></function>
 ## <a id="documentation" href="#index_documentation">Documentation</a>
-* <function><a id="documentationtyped"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DocumentationTyped</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function) -> <span style="color:#87AF00">XmlDocumentation</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="documentationtyped"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DocumentationTyped</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function) -> <span style="color:#87AF00">XmlDocumentation</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the typed XML documentation for a specified function.  
 ***function***: The name of the function whose documentation is being retrieved.  
 **Returns**: The parsed XML documentation object corresponding to the given function, or null if not found.  
 
 </pre></function>
-* <function><a id="documentation"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Documentation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="documentation"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Documentation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> function) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the XML documentation for a specified function within the given loader context data.  
 ***function***: The name of the function whose documentation is to be retrieved.  
 **Returns**: A string representing the raw XML documentation for the specified function, 
@@ -1115,7 +1312,7 @@ or plugin system that share the same context configuration.
 
 </pre></function>
 ## <a id="emojis" href="#index_emojis">Emojis</a>
-* <function><a id="emojiraw"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRaw</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> alias) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojiraw"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRaw</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> alias) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Gets the raw Unicode string of the emoji associated with the given alias.  
 ***alias***: The emoji alias (e.g. :tada:).  
 **Returns**: The raw Unicode emoji, or an empty string if not found.  
@@ -1123,7 +1320,7 @@ or plugin system that share the same context configuration.
 EmojiRaw(&quot;:tada:&quot;); // &quot;🎉&quot;  
 
 </pre></function>
-* <function><a id="emojialias"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiAlias</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> raw) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojialias"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiAlias</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> raw) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Gets the primary alias of the emoji represented by the raw Unicode string.  
 ***raw***: The raw Unicode emoji (e.g. 🎉).  
 **Returns**: The emoji alias, or an empty alias if not found.  
@@ -1131,7 +1328,7 @@ EmojiRaw(&quot;:tada:&quot;); // &quot;🎉&quot;
 EmojiAlias(&quot;🎉&quot;); // &quot;:tada:&quot;  
 
 </pre></function>
-* <function><a id="emojify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Emojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojify"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Emojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Replaces emoji aliases in the input text with their raw Unicode equivalents.  
 ***text***: A text containing emoji aliases.  
 **Returns**: The emojified text.  
@@ -1139,7 +1336,7 @@ EmojiAlias(&quot;🎉&quot;); // &quot;:tada:&quot;
 Emojify(&quot;initial :tada: commit&quot;); // &quot;initial 🎉 commit&quot;  
 
 </pre></function>
-* <function><a id="demojify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Demojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="demojify"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Demojify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Replaces raw Unicode emojis in the input text with their alias representations.  
 ***text***: A text containing raw Unicode emojis.  
 **Returns**: The demojified text.  
@@ -1147,7 +1344,7 @@ Emojify(&quot;initial :tada: commit&quot;); // &quot;initial 🎉 commit&quot;
 Demojify(&quot;initial 🎉 commit&quot;); // &quot;initial :tada: commit&quot;  
 
 </pre></function>
-* <function><a id="emojifind"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFind</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojifind"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFind</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Finds emojis that match the given query and returns their raw Unicode values.  
 ***query***: A search value matched against emoji description, category, aliases or tags.  
 **Returns**: An array of raw Unicode emojis.  
@@ -1155,7 +1352,7 @@ Demojify(&quot;initial 🎉 commit&quot;); // &quot;initial :tada: commit&quot;
 EmojiFind(&quot;party&quot;); // \[&quot;🎉&quot;, &quot;🥳&quot;, ...\]  
 
 </pre></function>
-* <function><a id="emojifindaliases"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFindAliases</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojifindaliases"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiFindAliases</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> query) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Finds emojis that match the given query and returns their primary aliases.  
 ***query***: A search value matched against emoji description, category, aliases or tags.  
 **Returns**: An array of emoji aliases.  
@@ -1163,7 +1360,7 @@ EmojiFind(&quot;party&quot;); // \[&quot;🎉&quot;, &quot;🥳&quot;, ...\]
 EmojiFindAliases(&quot;party&quot;); // \[&quot;:tada:&quot;, &quot;:partying\_face:&quot;, ...\]  
 
 </pre></function>
-* <function><a id="emojiskintonevariants"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiSkinToneVariants</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojiskintonevariants"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiSkinToneVariants</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Gets all raw Unicode skin tone variants for the specified emoji.  
 ***value***: An emoji alias or raw Unicode string that supports skin tone modifiers.  
 **Returns**: An array of raw Unicode skin tone variants.  
@@ -1171,7 +1368,7 @@ EmojiFindAliases(&quot;party&quot;); // \[&quot;:tada:&quot;, &quot;:partying\_f
 EmojiSkinToneVariants(&quot;✌️&quot;); // \[&quot;✌🏻&quot;,&quot;✌🏼&quot;,&quot;✌🏽&quot;,&quot;✌🏾&quot;,&quot;✌🏿&quot;\]  
 
 </pre></function>
-* <function><a id="emojirandom"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRandom</span>() -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="emojirandom"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EmojiRandom</span>() -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Gets a random emoji from the global emoji set.  
 **Returns**: A raw Unicode emoji.  
 **Examples**:
@@ -1179,20 +1376,20 @@ EmojiRandom(); // &quot;🎉&quot;
 
 </pre></function>
 ## <a id="encoding" href="#index_encoding">Encoding</a>
-* <function><a id="base64encode"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Base64Encode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plainText) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="base64encode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Base64Encode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plainText) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Encodes a given plain text string into its Base64 representation.  
 ***plainText***: The input string to be encoded in UTF\-8 and then converted to Base64.  
 **Returns**: A Base64\-encoded string derived from the provided plain text.  
 
 </pre></function>
-* <function><a id="base64decode"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Base64Decode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64EncodedData) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="base64decode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Base64Decode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64EncodedData) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decodes a Base64 encoded string into its original UTF\-8 representation.  
 ***base64EncodedData***: The Base64 encoded data to be decoded.  
 **Returns**: A string representing the decoded UTF\-8 text from the provided Base64 input.  
 
 </pre></function>
 ## <a id="environment" href="#index_environment">Environment</a>
-* <function><a id="getenv"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> defaultValue = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getenv"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> defaultValue = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the value of an environment variable specified by the given key.  
 ***key***: The name of the environment variable to retrieve.
 ***defaultValue***: The default value to return if the environment variable is not found or its value is null.
@@ -1204,7 +1401,7 @@ if the environment variable does not exist or has a null value.
 **Description**: Thrown when the key argument is null or empty.  
 
 </pre></function>
-* <function><a id="getenvorthrow"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetEnvOrThrow</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getenvorthrow"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetEnvOrThrow</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the value of a specified environment variable or throws an exception if it is not set.  
 ***key***: The key of the environment variable to retrieve.  
 **Returns**: The value of the specified environment variable.  
@@ -1215,7 +1412,7 @@ if the environment variable does not exist or has a null value.
 **Description**: Thrown when the environment variable with the specified key is not set.  
 
 </pre></function>
-* <function><a id="hasenv"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HasEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hasenv"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HasEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Checks if a specified environment variable exists.  
 ***key***: The key of the environment variable to check.  
 **Returns**: True if the environment variable with the given key exists and is not null; otherwise, false.  
@@ -1224,12 +1421,12 @@ if the environment variable does not exist or has a null value.
 **Description**: Thrown when the provided key is null or empty.  
 
 </pre></function>
-* <function><a id="getallenv"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetAllEnv</span>() -> <span style="color:#87AF00">Dictionary\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getallenv"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetAllEnv</span>() -> <span style="color:#87AF00">Dictionary\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves all environment variables as a dictionary with the variable names as keys and their corresponding values as strings.  
 **Returns**: A dictionary where each key is an environment variable name (string) and each value is its associated value (string), or null if not set.  
 
 </pre></function>
-* <function><a id="expandenv"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExpandEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="expandenv"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExpandEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Expands any environment variables contained within the specified string.  
 ***value***: The input string that may contain environment variable references.  
 **Returns**: A new string with all environment variables in &quot;value&quot; replaced by their corresponding values.  
@@ -1238,7 +1435,7 @@ if the environment variable does not exist or has a null value.
 **Description**: Thrown when the provided value is null.  
 
 </pre></function>
-* <function><a id="setenv"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">SetEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="setenv"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">SetEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Sets an environment variable for the current process.  
 ***key***: The name of the environment variable to set. Cannot be null or empty.
 ***value***: The value of the environment variable. Can be null, which removes any existing value for the key.  
@@ -1247,36 +1444,51 @@ if the environment variable does not exist or has a null value.
 **Description**: Thrown when the key is null or an empty string.  
 
 </pre></function>
-* <function><a id="clearenv"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">ClearEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="clearenv"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">ClearEnv</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Clears the environment variable specified by the given key. If the key exists in the environment variables, 
 it is removed by setting its value to null.  
 ***key***: The name of the environment variable to clear.  
 
 </pre></function>
+* <function><a id="dumpenv"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">DumpEnv</span>() -> <span style="color:#87AF00">void</span></function>
 ## <a id="exchange-rate" href="#index_exchange-rate">Exchange rate</a>
-* <function><a id="exchangerate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExchangeRate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> from, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> to) -> <span style="color:#87AF00">Task\<decimal\></span></function>
+* <function><a id="exchangerate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExchangeRate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> from, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> to) -> <span style="color:#87AF00">Task\<decimal\></span></function>
 ## <a id="extraction" href="#index_extraction">Extraction</a>
-* <function><a id="extractemails"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractEmails</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">List\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="extractemails"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractEmails</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">List\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Extracts and returns a list of email addresses found within the specified input string using regular expressions.  
 ***input***: The text from which to extract emails.  
 **Returns**: A list containing all email addresses identified in the input string.  
 
 </pre></function>
-* <function><a id="extracturls"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractUrls</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">List\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="extracturls"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractUrls</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">List\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Represents a plugin function that extracts URLs from the given input string.
 This method uses regular expressions to identify and return a list of URL strings found in the input.  
 ***input***: The input string from which URLs are extracted.  
 **Returns**: A list containing all URLs found within the input string. Returns an empty list if no URLs are found.  
 
 </pre></function>
-* <function><a id="extractemailuser"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractEmailUser</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> email) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="extractemailuser"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractEmailUser</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> email) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Extracts and returns the user portion of an email address.  
 ***email***: The full email address from which to extract the user.  
 **Returns**: A string representing the user part before the &apos;@&apos; symbol, or an empty string if invalid or null.  
 
 </pre></function>
+## <a id="format" href="#index_format">Format</a>
+* <function><a id="formatbytes"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">FormatBytes</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> bytes) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Formats a byte count using the largest appropriate binary unit
+(B, KB, MB, GB, etc.), with one decimal place.  
+***bytes***: The number of bytes to format. May be negative.  
+**Returns**: A human\-readable representation of bytes,
+for example &quot;1.5 KB&quot;, &quot;\-2.0 MB&quot;, or &quot;0.0 B&quot;.  
+**Remarks**:
+Uses binary multiples: 1 KB = 1024 B, 1 MB = 1024 KB, and so on.
+Values are always scaled by their absolute size, so negative values
+retain their sign while using the same unit as the corresponding
+positive value.  
+
+</pre></function>
 ## <a id="geolocation" href="#index_geolocation">Geolocation</a>
-* <function><a id="haversine"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Haversine</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GeoDistance</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="haversine"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Haversine</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GeoDistance</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the Haversine distance between two points on the Earth specified by their latitude and longitude.  
 ***lat1***: Latitude of the first point in degrees.
 ***lon1***: Longitude of the first point in degrees.
@@ -1285,7 +1497,7 @@ This method uses regular expressions to identify and return a list of URL string
 **Returns**: The distance between the two points in kilometers.  
 
 </pre></function>
-* <function><a id="vincenty"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Vincenty</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="vincenty"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Vincenty</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the distance between two points on Earth using the Vincenty formula for an ellipsoidal model.
 This method accounts for the Earth&apos;s flattening and is highly accurate over long distances.  
 ***lat1***: Latitude of the first point in degrees.
@@ -1295,7 +1507,7 @@ This method accounts for the Earth&apos;s flattening and is highly accurate over
 **Returns**: The distance between the two points in kilometers.  
 
 </pre></function>
-* <function><a id="initialbearing"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InitialBearing</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="initialbearing"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InitialBearing</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the initial bearing or forward azimuth needed to get from one geographic point 
 to another. The result is expressed in degrees as a compass direction.  
 ***lat1***: Latitude of the start point in degrees.
@@ -1305,7 +1517,7 @@ to another. The result is expressed in degrees as a compass direction.
 **Returns**: The initial bearing from the start point to the end point in degrees, ranging from 0 to 360.  
 
 </pre></function>
-* <function><a id="pointalongroute"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PointAlongRoute</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fraction) -> <span style="color:#87AF00">ValueTuple\<double, double\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="pointalongroute"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PointAlongRoute</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon1, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon2, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fraction) -> <span style="color:#87AF00">ValueTuple\<double, double\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes a point along the great\-circle route between two geographic coordinates.  
 ***lat1***: Latitude of the starting point in degrees.
 ***lon1***: Longitude of the starting point in degrees.
@@ -1316,21 +1528,21 @@ A value of 0.5 represents the midpoint, for example.
 **Returns**: A tuple containing the latitude and longitude of the computed point along the route.  
 
 </pre></function>
-* <function><a id="degreestometerslat"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DegreesToMetersLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degreesLat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="degreestometerslat"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DegreesToMetersLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degreesLat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts latitude in degrees to meters. 
 The conversion assumes a spherical Earth model.  
 ***degreesLat***: The latitude angle in degrees.  
 **Returns**: The equivalent distance in meters along the surface of the Earth at that latitude.  
 
 </pre></function>
-* <function><a id="meterstodegreeslon"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToDegreesLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> meters, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> atLat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="meterstodegreeslon"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToDegreesLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> meters, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> atLat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a distance in meters to an equivalent angular distance in degrees of longitude at a given latitude.  
 ***meters***: The distance in meters to be converted.
 ***atLat***: The latitude (in degrees) at which the conversion is performed. This affects the result due to Earth&apos;s curvature.  
 **Returns**: The equivalent angular distance in degrees of longitude corresponding to the given distance at the specified latitude.  
 
 </pre></function>
-* <function><a id="compassdirection"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CompassDirection</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> bearingDegrees) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="compassdirection"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CompassDirection</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> bearingDegrees) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given bearing in degrees to one of the 16 compass directions.
 The function rounds the input bearing to the nearest compass direction using the specified formula.  
 ***bearingDegrees***: The bearing angle in degrees, which should be between 0 and 360.  
@@ -1340,33 +1552,33 @@ This function assumes a predefined array \`directions\` containing the 16 compas
 in clockwise order starting from &quot;N&quot; (North), such as {&quot;N&quot;, &quot;NNE&quot;, &quot;NE&quot;, ...}.  
 
 </pre></function>
-* <function><a id="isvalidlat"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isvalidlat"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Checks if the provided latitude value is valid.
 A valid latitude must be in the range from \-90 to 90 degrees, inclusive.  
 ***lat***: The latitude value to check.  
 **Returns**: True if the latitude is within the valid range; otherwise, false.  
 
 </pre></function>
-* <function><a id="isvalidlon"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isvalidlon"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified longitude value is valid.
 A valid longitude must be within the range of \-180 to 180 degrees, inclusive.  
 ***lon***: The longitude value to validate.  
 **Returns**: true if the longitude is valid; otherwise, false.  
 
 </pre></function>
-* <function><a id="normalizelat"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NormalizeLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="normalizelat"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NormalizeLat</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Normalizes a given latitude to fall within the range of \-90 to 90 degrees.  
 ***lat***: The latitude value in degrees to be normalized.  
 **Returns**: A normalized latitude value within the range of \-90 to 90 degrees.  
 
 </pre></function>
-* <function><a id="normalizelon"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NormalizeLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="normalizelon"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NormalizeLon</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Normalizes a given longitude value to the range of \[\-180, 180\].  
 ***lon***: The longitude in degrees that needs normalization.  
 **Returns**: The normalized longitude within the range of \[\-180, 180\] degrees.  
 
 </pre></function>
-* <function><a id="parselatlon"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseLatLon</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">ValueTuple\<double, double\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parselatlon"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseLatLon</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">ValueTuple\<double, double\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a given string containing latitude and longitude information 
 in various formats and returns them as double values representing 
 the latitude and longitude.  
@@ -1377,14 +1589,14 @@ minutes, seconds (DMS) format and decimal degrees.
 the latitude and the second is the longitude parsed from the given input.  
 
 </pre></function>
-* <function><a id="parselatlonwithmetadata"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseLatLonWithMetadata</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">CoordinateResult</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parselatlonwithmetadata"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseLatLonWithMetadata</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">CoordinateResult</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the input string to extract latitude and longitude information along with metadata about the coordinate format.  
 ***input***: The input string containing latitude and longitude data.  
 **Returns**: A CoordinateResult object that includes parsed latitude, longitude, the detected format,
 whether the coordinates are in DMS (Degrees, Minutes, Seconds) or Decimal format, and the original input string.  
 
 </pre></function>
-* <function><a id="geocodelocation"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GeocodeLocation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> location, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, double\>\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="geocodelocation"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GeocodeLocation</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> location, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, double\>\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Geocodes the specified location using OpenWeatherMap&apos;s Geo API.  
 ***location***: The location string to geocode.
 ***openweathermapApiKey***: Your OpenWeatherMap API key for authentication.  
@@ -1393,25 +1605,25 @@ or an empty dictionary if the location cannot be geocoded.
 
 </pre></function>
 ## <a id="globally-unique-identifier-guid" href="#index_globally-unique-identifier-guid">Globally Unique Identifier (Guid)</a>
-* <function><a id="generateuuid1"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid1</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generateuuid1"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid1</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a UUID version 1 which is based on the current date and time, ensuring uniqueness through node and clock sequence identifiers.
 This function creates a new GUID by manually setting its components to align with the UUID v1 specification.  
 **Returns**: A Guid representing a UUID version 1.  
 
 </pre></function>
-* <function><a id="generateuuid3"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid3</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">Guid</span> namespaceId, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> name) -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generateuuid3"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid3</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">Guid</span> namespaceId, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> name) -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a UUID version 3 using MD5 hashing algorithm based on the provided namespace identifier and name.  
 ***namespaceId***: The GUID representing the UUID namespace.
 ***name***: The name used to generate the UUID.  
 **Returns**: A new Guid instance that represents a UUID version 3.  
 
 </pre></function>
-* <function><a id="generateuuid4"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid4</span>() -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">GenerateUuid</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generateuuid4"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid4</span>() -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">GenerateUuid</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a Version 4 Universally Unique Identifier (UUID) as a string.  
 **Returns**: A string representing the generated UUID in its canonical form.  
 
 </pre></function>
-* <function><a id="generateuuid5"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> namespaceId, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> name) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generateuuid5"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> namespaceId, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> name) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a UUID version 5 based on the given namespace ID and name.
 This method utilizes SHA1 hashing to ensure uniqueness according to RFC 4122 specifications.  
 ***namespaceId***: A valid GUID string representing the namespace.
@@ -1419,34 +1631,34 @@ This method utilizes SHA1 hashing to ensure uniqueness according to RFC 4122 spe
 **Returns**: A string representation of the generated UUID version 5.  
 
 </pre></function>
-* <function><a id="generateuuid6"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid6</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generateuuid6"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateUuid6</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a version 1.6 UUID using the current system time as its basis.
 The function creates a GUID by combining a timestamp and random bytes,
 conforming to the variant 1.6 specification of the UUID standard.  
 **Returns**: A unique identifier (GUID) formatted according to Version 1.6.  
 
 </pre></function>
-* <function><a id="generatecombguid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateCombGuid</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generatecombguid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateCombGuid</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a COMB (combined) GUID which is sorted lexicographically. 
 The method creates a new GUID using the current time in UTC and combines it with 
 a date\-based prefix to ensure that the GUIDs are ordered by creation time.  
 **Returns**: A new Guid object containing a timestamp component for sorting purposes.  
 
 </pre></function>
-* <function><a id="generatetimeorderedguid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateTimeOrderedGuid</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generatetimeorderedguid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateTimeOrderedGuid</span>() -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a time\-ordered GUID using the current system ticks to ensure temporal order.
 This function is marked as unsafe and serves as a plugin function with the specified identifier.  
 **Returns**: A unique identifier (GUID) that incorporates the current UTC timestamp for ordering.  
 
 </pre></function>
 ## <a id="hashing" href="#index_hashing">Hashing</a>
-* <function><a id="crc32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CRC32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="crc32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CRC32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the CRC\-32 hash of a given string using UTF\-8 encoding.  
 ***input***: The input string for which to compute the CRC\-32 hash.  
 **Returns**: A uint representing the computed CRC\-32 hash value.  
 
 </pre></function>
-* <function><a id="crc64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CRC64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="crc64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CRC64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the CRC\-64 checksum for a given input string.  
 ***input***: The input string to calculate the checksum for.  
 **Returns**: An unsigned long representing the 64\-bit CRC checksum of the input string.  
@@ -1454,21 +1666,21 @@ This function is marked as unsafe and serves as a plugin function with the speci
 This function uses UTF\-8 encoding to convert the input string into bytes and then computes the CRC\-64 hash.  
 
 </pre></function>
-* <function><a id="xxhash32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">XXHash32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> seed = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="xxhash32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">XXHash32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> seed = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes a 32\-bit hash value for the specified input string using the XXHash algorithm.  
 ***input***: The input string to be hashed.
 ***seed***: An optional seed value to initialize the hashing process. Default is 0.  
 **Returns**: A uint representing the computed hash value of the input string.  
 
 </pre></function>
-* <function><a id="xxhash64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">XXHash64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> seed = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="xxhash64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">XXHash64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">long</span> seed = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the XXH64 hash of a given input string using the specified seed value.  
 ***input***: The input string to be hashed.
 ***seed***: An optional seed value for the hash function. Defaults to 0 if not provided.  
 **Returns**: Returns the computed XXH64 hash as an unsigned long (ulong).  
 
 </pre></function>
-* <function><a id="sha1"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA1</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sha1"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA1</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the SHA\-1 hash for a given input string and returns it as a hexadecimal string.
 This method utilizes the provided hashing function from the SHA1 class to ensure 
 secure hashing of the specified value. The result is returned in a standard format 
@@ -1479,14 +1691,14 @@ mechanism.
 **Returns**: A hexadecimal string representation of the SHA\-1 hash of the input value.  
 
 </pre></function>
-* <function><a id="sha256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sha256"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the SHA\-256 hash of the specified input string.
 Utilizes a plugin function mechanism to apply the SHA\-256 hashing algorithm.  
 ***value***: The input string to be hashed.  
 **Returns**: A hexadecimal string representing the SHA\-256 hash of the input.  
 
 </pre></function>
-* <function><a id="sha512"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sha512"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SHA512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the SHA\-512 hash of a given input string.  
 ***value***: The input string to be hashed.  
 **Returns**: A hexadecimal string representation of the SHA\-512 hash.  
@@ -1494,31 +1706,75 @@ Utilizes a plugin function mechanism to apply the SHA\-256 hashing algorithm.
 This method is marked as a plugin function for dynamic loading.  
 
 </pre></function>
-* <function><a id="md5"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MD5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="md5"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MD5</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the MD5 hash of a given input string.
 This method utilizes a custom plugin function mechanism to process the string.  
 ***value***: The input string to be hashed.  
 **Returns**: A hexadecimal string representing the MD5 hash of the input.  
 
 </pre></function>
-* <function><a id="hmacsha256"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMAC_SHA256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hmacsha256"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMAC_SHA256</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the HMAC\-SHA256 hash for a given key and value.  
 ***key***: The secret key used in the hashing process.
 ***value***: The data to be hashed using the provided key.  
 **Returns**: A hexadecimal string representing the HMAC\-SHA256 hash of the input value.  
 
 </pre></function>
-* <function><a id="hmacsha512"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMAC_SHA512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hmacsha512"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMAC_SHA512</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> value) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the HMAC\-SHA512 hash for the given key and value.  
 ***key***: The secret key used for hashing.
 ***value***: The input data to be hashed.  
 **Returns**: A string representation of the resulting HMAC\-SHA512 hash.  
 
 </pre></function>
+## <a id="helm" href="#index_helm">Helm</a>
+* <function><a id="renderhelmchart"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">RenderHelmChart</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> path, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> namespace = <span style="color:#D70000; margin-right:1px">"default"</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> releaseName = <span style="color:#D70000; margin-right:1px">"RELEASE"</span>) -> <span style="color:#87AF00">Task\<CommandResult\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Path /example may be /example/Chart.yaml with content:
+apiVersion: v2
+name: test
+description: Test chart
+
+With template file /example/templates/file1.yaml
+hello: &quot;world&quot;  
+
+</pre></function>
 ## <a id="hypertext-transfer-protocol-http" href="#index_hypertext-transfer-protocol-http">Hypertext Transfer Protocol (HTTP)</a>
-* <function><a id="http"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HTTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> url, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> method, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> headers, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> body, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mode) -> <span style="color:#87AF00">Task\<object\></span></function>
+* <function><a id="http"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HTTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> url, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> method, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> headers, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> body, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mode) -> <span style="color:#87AF00">Task\<object\></span></function>
+## <a id="image" href="#index_image">Image</a>
+* <function><a id="generateimage"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">GenerateImage</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> pixels, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> width, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> height, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputWidth, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> outputHeight, <span style="color:#87AF00; margin-left:1px; margin-right:1px">ImageFormat</span> imageFormat) -> <span style="color:#87AF00">byte[]</span></function>
+## <a id="imperial-units" href="#index_imperial-units">Imperial units</a>
+* <function><a id="milestoyards"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MilesToYards</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MiToYd</span>)</function>
+* <function><a id="yardstomiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">YardsToMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> yd) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">YdToMi</span>)</function>
+* <function><a id="yardstofeet"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">YardsToFeet</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> yd) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">YdToFt</span>)</function>
+* <function><a id="feettoyards"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FeetToYards</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ft) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtToYd</span>)</function>
+* <function><a id="feettoinches"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FeetToInches</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ft) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtToIn</span>)</function>
+* <function><a id="inchestofeet"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">InchesToFeet</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> inch) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">InToFt</span>)</function>
+* <function><a id="milestofeet"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MilesToFeet</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MiToFt</span>)</function>
+* <function><a id="feettomiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FeetToMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ft) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtToMi</span>)</function>
+* <function><a id="furlongstoyards"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FurlongsToYards</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fur) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FurToYd</span>)</function>
+* <function><a id="yardstofurlongs"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">YardsToFurlongs</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> yd) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">YdToFur</span>)</function>
+* <function><a id="chainstoyards"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ChainsToYards</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ch) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">ChToYd</span>)</function>
+* <function><a id="yardstochains"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">YardsToChains</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> yd) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">YdToCh</span>)</function>
+* <function><a id="furlongstochains"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FurlongsToChains</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fur) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FurToCh</span>)</function>
+* <function><a id="chainstofurlongs"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ChainsToFurlongs</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ch) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">ChToFur</span>)</function>
+* <function><a id="milestofurlongs"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MilesToFurlongs</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mi) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MiToFur</span>)</function>
+* <function><a id="furlongstomiles"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FurlongsToMiles</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> fur) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FurToMi</span>)</function>
+* <function><a id="poundstoounces"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundsToOunces</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lb) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbToOz</span>)</function>
+* <function><a id="ouncestopounds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">OuncesToPounds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> oz) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">OzToLb</span>)</function>
+* <function><a id="stonestopounds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">StonesToPounds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> st) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">StToLb</span>)</function>
+* <function><a id="poundstostones"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundsToStones</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lb) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbToSt</span>)</function>
+* <function><a id="hundredweighttopounds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HundredweightToPounds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cwt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CwtToLb</span>)</function>
+* <function><a id="poundstohundredweight"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundsToHundredweight</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lb) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbToCwt</span>)</function>
+* <function><a id="longtonstopounds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LongTonsToPounds</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ton) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">TonToLb</span>)</function>
+* <function><a id="poundstolongtons"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PoundsToLongTons</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lb) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LbToTon</span>)</function>
+* <function><a id="gallonstoquarts"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GallonsToQuarts</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> gal) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GalToQt</span>)</function>
+* <function><a id="quartstogallons"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">QuartsToGallons</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> qt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">QtToGal</span>)</function>
+* <function><a id="quartstopints"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">QuartsToPints</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> qt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">QtToPt</span>)</function>
+* <function><a id="pintstoquarts"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PintsToQuarts</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> pt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">PtToQt</span>)</function>
+* <function><a id="pintstofluidounces"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PintsToFluidOunces</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> pt) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">PtToFlOz</span>)</function>
+* <function><a id="fluidouncestopints"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FluidOuncesToPints</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> flOz) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FlOzToPt</span>)</function>
 ## <a id="json" href="#index_json">JSON</a>
-* <function><a id="tojson"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> obj, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indented) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tojson"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> obj, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indented) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Serializes an object to a JSON string with optional indentation.  
 ***obj***: The object to serialize. Can be null.
 ***indented***: A boolean indicating whether the output JSON should be indented for readability.
@@ -1527,21 +1783,21 @@ If false, the resulting JSON will be compact without unnecessary spaces or newli
 **Returns**: A string representation of the serialized object in JSON format. Returns null if the input object is null.  
 
 </pre></function>
-* <function><a id="formatjson"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FormatJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indented = <span style="color:#5FAFAF; margin-right:1px">true</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="formatjson"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FormatJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indented = <span style="color:#5FAFAF; margin-right:1px">true</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Formats a JSON string with optional indentation.  
 ***json***: The JSON string to format. Can be null.
 ***indented***: A boolean indicating whether the output should be indented for readability. Default is true.  
 **Returns**: A formatted JSON string if input is valid; otherwise, null.  
 
 </pre></function>
-* <function><a id="parsejson"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsejson"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseJSON</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a JSON string and deserializes it into an object.  
 ***json***: The JSON string to parse.  
 **Returns**: An object representing the deserialized data from the input JSON, or null if the input is null.  
 
 </pre></function>
 ## <a id="json-web-token-jwt" href="#index_json-web-token-jwt">JSON Web Token (JWT)</a>
-* <function><a id="encodejwt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EncodeJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> claims, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> secret) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="encodejwt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EncodeJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> claims, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> secret) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Encodes a JSON Web Token (JWT) using the specified claims and secret key.
 The token is composed of three parts: header, payload, and signature. 
 The header specifies the algorithm (&quot;HS256&quot;) used for signing the JWT, 
@@ -1552,7 +1808,7 @@ Finally, the signature is generated using HMAC SHA\-256 with the secret key.
 **Returns**: A string representing the encoded JWT.  
 
 </pre></function>
-* <function><a id="decodejwt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DecodeJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> secret = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> includeMetadata = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">IDictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="decodejwt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DecodeJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> secret = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> includeMetadata = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">IDictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Decodes a JWT (JSON Web Token) and validates its HMAC\-SHA256 signature using an optional secret.
 Throws exceptions for invalid tokens or signatures. Optionally includes token metadata in the output.  
 ***token***: The JWT to decode.
@@ -1570,14 +1826,14 @@ Throws exceptions for invalid tokens or signatures. Optionally includes token me
 **Description**: Thrown when the signature of the token cannot be validated with the given secret.  
 
 </pre></function>
-* <function><a id="isjwt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isjwt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsJwt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> token) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines if the provided string is a valid JWT (JSON Web Token).  
 ***token***: The token to be validated as a JWT.  
 **Returns**: True if the token is a valid JWT; otherwise, false.  
 
 </pre></function>
 ## <a id="large-language-model-llm" href="#index_large-language-model-llm">Large Language Model (LLM)</a>
-* <function><a id="ailmstudio"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AI_LMStudio</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prompt, <span style="color:#87AF00; margin-left:1px; margin-right:1px">LMStudioConfig</span> config) -> <span style="color:#87AF00">Task\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="ailmstudio"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AI_LMStudio</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prompt, <span style="color:#87AF00; margin-left:1px; margin-right:1px">LMStudioConfig</span> config) -> <span style="color:#87AF00">Task\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Asynchronously communicates with the LMStudio AI model to generate a chat completion response.
 The function creates and sends a request using specified configurations, then returns the generated content as a string.  
 ***prompt***: The user input prompt for the AI model.
@@ -1587,7 +1843,7 @@ and temperature. The configuration cannot be null.
 containing the AI\-generated response based on the given prompt.  
 
 </pre></function>
-* <function><a id="aiopenai"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AI_OpenAI</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prompt, <span style="color:#87AF00; margin-left:1px; margin-right:1px">OpenAIConfig</span> config) -> <span style="color:#87AF00">Task\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="aiopenai"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AI_OpenAI</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prompt, <span style="color:#87AF00; margin-left:1px; margin-right:1px">OpenAIConfig</span> config) -> <span style="color:#87AF00">Task\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Asynchronously interacts with OpenAI&apos;s API to generate a response based on the provided prompt.
 Utilizes configuration settings for API key or endpoint, model specification,
 and various other parameters such as maximum tokens and temperature for generation.  
@@ -1599,31 +1855,47 @@ the generated response string from the AI based on the user prompt.
 
 </pre></function>
 ## <a id="lookup" href="#index_lookup">Lookup</a>
-* <function><a id="lookup"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Lookup</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fullkey = <span style="color:#D70000; margin-right:1px">""</span>) -> <span style="color:#87AF00">object</span> -- (alias <span style="color:#D75F00">$</span>)</function>
-* <function><a id="parent"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Parent</span>() -> <span style="color:#87AF00">string</span></function>
-* <function><a id="self"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Self</span>() -> <span style="color:#87AF00">string</span></function>
+* <function><a id="lookup"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Lookup</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> fullkey = <span style="color:#D70000; margin-right:1px">""</span>) -> <span style="color:#87AF00">object</span> -- (alias <span style="color:#D75F00">$</span>)</function>
+* <function><a id="parent"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Parent</span>() -> <span style="color:#87AF00">string</span></function>
+* <function><a id="self"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Self</span>() -> <span style="color:#87AF00">string</span></function>
+## <a id="markdown" href="#index_markdown">Markdown</a>
+* <function><a id="markdown"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Markdown</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> markdown) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts Markdown text to HTML using Markdig.  
+***markdown***: The Markdown source text to convert. Cannot be null, empty, or whitespace.  
+**Returns**: The Markdown input rendered as an HTML string.  
+**Remarks**:
+Uses a shared Markdig pipeline with advanced extensions enabled, including support for
+tables, task lists, autolinks, footnotes, and definition lists.  
+**Examples**:
+string html = MarkdownPlugin.Markdown(&quot;\# Hello\\n\\nThis is **Markdown**.&quot;);
+// html contains: Hello\\nThis is Markdown.  
+**Exceptions**:
+**Type**: ArgumentException
+**Description**: Thrown when markdown is null, empty, or consists only of whitespace.  
+
+</pre></function>
 ## <a id="math" href="#index_math">Math</a>
-* <function><a id="acos"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Acos</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="acos"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Acos</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the arc cosine (inverse cosine) of a specified number.
 The result is in radians and returns a value between 0 and π (inclusive).  
 ***input***: The number for which to calculate the inverse cosine. Must be within the range \[\-1, 1\].  
 **Returns**: The arc cosine of the specified number.  
 
 </pre></function>
-* <function><a id="acosh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Acosh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="acosh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Acosh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the inverse hyperbolic cosine (acosh) of a specified number.  
 ***input***: The number for which to calculate the acosh value.  
 **Returns**: The acosh of the specified number. Returns NaN if the input is less than 1.  
 
 </pre></function>
-* <function><a id="asin"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Asin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="asin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Asin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the arc sine (inverse sine) of a specified number, returning the result in radians.
 The value returned by this method is within the range \[\-π/2, π/2\].  
 ***input***: The angle, measured in radians, whose sine is to be calculated.  
 **Returns**: The angle in radians from \-π/2 through π/2 whose sine is the specified number. If the value specified by input is less than \-1 or greater than 1, Asin returns NaN.  
 
 </pre></function>
-* <function><a id="asinh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Asinh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="asinh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Asinh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the inverse hyperbolic sine (asinh) of a specified number.  
 ***input***: The value for which to calculate the asinh.  
 **Returns**: The inverse hyperbolic sine of the input number.  
@@ -1631,25 +1903,25 @@ The value returned by this method is within the range \[\-π/2, π/2\].
 double result = MathExtension.Asinh(1.0);  
 
 </pre></function>
-* <function><a id="atan"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Atan</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="atan"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Atan</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the arctangent of a specified number.  
 ***input***: The angle in radians for which to calculate the tangent.  
 **Returns**: The angle whose tangent is the specified number, measured in radians.  
 
 </pre></function>
-* <function><a id="atanh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Atanh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="atanh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Atanh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the inverse hyperbolic tangent (atanh) of a specified number.  
 ***input***: The number to calculate the inverse hyperbolic tangent for. The value must be in the range \-1 to 1, exclusive.  
 **Returns**: The inverse hyperbolic tangent of the specified number.  
 
 </pre></function>
-* <function><a id="cbrt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cbrt</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cbrt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cbrt</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the cube root of a given number.  
 ***input***: The number for which to calculate the cube root.  
 **Returns**: The cube root of the specified number.  
 
 </pre></function>
-* <function><a id="ceiling"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Ceiling</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="ceiling"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Ceiling</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Rounds the specified number up to the nearest whole number.
 This function utilizes the built\-in System.Math.Ceiling method 
 to perform the rounding operation and returns a double precision result.  
@@ -1657,14 +1929,14 @@ to perform the rounding operation and returns a double precision result.
 **Returns**: A double representing the smallest integral value that is greater than or equal to the input.  
 
 </pre></function>
-* <function><a id="cos"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cos</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cos"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cos</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the cosine of the specified angle, provided in radians.
 The function leverages the System.Math library to perform this trigonometric computation.  
 ***input***: The angle in radians for which the cosine value is calculated.  
 **Returns**: The cosine of the input angle as a double precision floating\-point number.  
 
 </pre></function>
-* <function><a id="cosh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cosh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="cosh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Cosh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the hyperbolic cosine of a specified angle.
 This method uses the built\-in Math.Cosh function to compute the result,
 which represents the hyperbolic cosine for a given double precision floating\-point number.  
@@ -1672,14 +1944,14 @@ which represents the hyperbolic cosine for a given double precision floating\-po
 **Returns**: The hyperbolic cosine of the specified input value.  
 
 </pre></function>
-* <function><a id="exp"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Exp</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="exp"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Exp</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the exponential of the specified number using the mathematical constant e (Euler&apos;s number).
 This function returns e raised to the power of the given input.  
 ***input***: The exponent value for which to calculate e^input.  
 **Returns**: The result of e raised to the power of &apos;input&apos; as a double precision floating\-point number.  
 
 </pre></function>
-* <function><a id="floor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Floor</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="floor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Floor</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the largest integer less than or equal to a specified decimal number.  
 ***input***: The decimal number to apply the floor operation.  
 **Returns**: The largest integer less than or equal to the input value.  
@@ -1687,7 +1959,7 @@ This function returns e raised to the power of the given input.
 This function is used for rounding down real numbers to their nearest integer.  
 
 </pre></function>
-* <function><a id="log"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="log"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the natural logarithm (base e) of a specified number.
 This function is intended to be used as a plugin and logs 
 its mathematical result. The input value must be greater than zero.  
@@ -1698,26 +1970,26 @@ its mathematical result. The input value must be greater than zero.
 **Description**: Thrown when the input is less than or equal to zero.  
 
 </pre></function>
-* <function><a id="log2"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log2</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="log2"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log2</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the base\-2 logarithm of a given number.  
 ***input***: The value to compute the base\-2 logarithm for. Must be greater than zero.  
 **Returns**: The base\-2 logarithm of the input value.  
 
 </pre></function>
-* <function><a id="log10"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log10</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="log10"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Log10</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the base\-10 logarithm of a specified number.  
 ***input***: The number to compute the logarithm for. Must be greater than zero.  
 **Returns**: The base\-10 logarithm of the input value.  
 
 </pre></function>
-* <function><a id="sin"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the sine of the specified angle, which is measured in radians.
 This function uses the System.Math class&apos;s Sin method to perform the calculation.  
 ***input***: The angle in radians for which to calculate the sine.  
 **Returns**: The sine of the specified angle as a double precision floating point number.  
 
 </pre></function>
-* <function><a id="sinh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sinh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sinh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sinh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the hyperbolic sine of a specified number.
 This function uses the built\-in System.Math.Sinh method to compute 
 the hyperbolic sine, which is defined as (e^x \- e^\-x) / 2 for any real number x.  
@@ -1725,38 +1997,38 @@ the hyperbolic sine, which is defined as (e^x \- e^\-x) / 2 for any real number 
 **Returns**: The hyperbolic sine of the specified input.  
 
 </pre></function>
-* <function><a id="sqrt"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sqrt</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="sqrt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Sqrt</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the square root of a specified number.  
 ***input***: The non\-negative value for which to compute the square root.  
 **Returns**: The square root of the specified number.  
 
 </pre></function>
-* <function><a id="tan"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Tan</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tan"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Tan</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the tangent of the specified angle.  
 ***input***: The angle in radians for which to calculate the tangent.  
 **Returns**: The tangent of the specified angle.  
 
 </pre></function>
-* <function><a id="tanh"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Tanh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tanh"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Tanh</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the hyperbolic tangent of a specified number using the Math.Tanh method.
 This function is decorated with the PluginFunction attribute to register it as &quot;Tanh&quot;.  
 ***input***: The input value for which to compute the hyperbolic tangent.  
 **Returns**: The hyperbolic tangent of the input value.  
 
 </pre></function>
-* <function><a id="abs"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Abs</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="abs"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Abs</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the absolute value of a specified number.  
 ***input***: The number for which to calculate the absolute value.  
 **Returns**: The absolute value of the provided number.  
 
 </pre></function>
-* <function><a id="round"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Round</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="round"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Round</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Rounds the specified input to the nearest integer using default rounding rules.  
 ***input***: The value to round.  
 **Returns**: A double representing the rounded value.  
 
 </pre></function>
-* <function><a id="truncate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Truncate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="truncate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Truncate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> input) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Provides a plugin function to truncate a given double\-precision floating\-point number.
 This function removes the fractional part of the number, returning only the integer part.
 The result is equivalent to rounding towards zero and returns the nearest integral value.  
@@ -1764,7 +2036,7 @@ The result is equivalent to rounding towards zero and returns the nearest integr
 **Returns**: The truncated value as a double\-precision number with no fractional component.  
 
 </pre></function>
-* <function><a id="degreestoradians"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DegreesToRadians</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degrees) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="degreestoradians"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DegreesToRadians</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> degrees) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an angle measured in degrees to its equivalent in radians.
 The conversion is based on the mathematical relationship that π radians 
 is equal to 180 degrees. This function multiplies the input degrees by 
@@ -1773,21 +2045,21 @@ is equal to 180 degrees. This function multiplies the input degrees by
 **Returns**: The equivalent angle measured in radians.  
 
 </pre></function>
-* <function><a id="radianstodegrees"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RadiansToDegrees</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> radians) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="radianstodegrees"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RadiansToDegrees</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> radians) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an angle from radians to degrees.
 Multiplies the input radians by 180 and divides by Math.PI to perform the conversion.  
 ***radians***: The angle in radians to be converted.  
 **Returns**: The equivalent angle in degrees.  
 
 </pre></function>
-* <function><a id="pow"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Pow</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> b) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="pow"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Pow</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> b) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the power of a number. Returns the result of raising &apos;a&apos; to the power of &apos;b&apos;.  
 ***a***: The base number.
 ***b***: The exponent value.  
 **Returns**: The result of &apos;a&apos; raised to the power of &apos;b&apos; as a double precision floating point number.  
 
 </pre></function>
-* <function><a id="clamp"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Clamp</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> min, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> max) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="clamp"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Clamp</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> min, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> max) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Clamps a specified value within the inclusive range of a minimum and maximum value.
 If the value is less than the minimum, the method returns the minimum value.
 If the value is greater than the maximum, it returns the maximum value.
@@ -1798,14 +2070,14 @@ Otherwise, it returns the value itself. This function utilizes .NET&apos;s built
 **Returns**: The clamped value within the specified range.  
 
 </pre></function>
-* <function><a id="isprime"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsPrime</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">ulong</span> number) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isprime"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsPrime</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">ulong</span> number) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether a given unsigned long integer is a prime number.
 A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.  
 ***number***: The unsigned long integer to be tested for primality.  
 **Returns**: Returns true if the specified number is prime; otherwise, false.  
 
 </pre></function>
-* <function><a id="greatestcommondivisor"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GreatestCommonDivisor</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> b) -> <span style="color:#5FAFAF">int</span> -- (alias <span style="color:#D75F00">Gcd</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="greatestcommondivisor"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GreatestCommonDivisor</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> b) -> <span style="color:#5FAFAF">int</span> -- (alias <span style="color:#D75F00">Gcd</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
 Also known as Highest Common Factor (HCF).  
 ***a***: The first integer.
@@ -1813,26 +2085,26 @@ Also known as Highest Common Factor (HCF).
 **Returns**: The greatest common divisor of the absolute values of the provided integers.  
 
 </pre></function>
-* <function><a id="leastcommonmultiple"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LeastCommonMultiple</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> b) -> <span style="color:#5FAFAF">int</span> -- (alias <span style="color:#D75F00">Lcm</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="leastcommonmultiple"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LeastCommonMultiple</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> a, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> b) -> <span style="color:#5FAFAF">int</span> -- (alias <span style="color:#D75F00">Lcm</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Computes the Least Common Multiple (LCM) of two integers.  
 ***a***: The first integer.
 ***b***: The second integer.  
 **Returns**: The LCM of the two integers. Returns 0 if either input is zero, as the LCM is undefined in that case.  
 
 </pre></function>
-* <function><a id="ispoweroftwo"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsPowerOfTwo</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> value) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="ispoweroftwo"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsPowerOfTwo</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> value) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether a specified integer is a power of two.  
 ***value***: The integer to check.  
 **Returns**: True if the provided integer is greater than zero and a power of two; otherwise, false.  
 
 </pre></function>
-* <function><a id="nextpoweroftwo"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NextPowerOfTwo</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> value) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="nextpoweroftwo"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">NextPowerOfTwo</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> value) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the next power of two greater than or equal to a given integer.  
 ***value***: The input integer for which the next power of two is calculated. Must be a non\-negative integer.  
 **Returns**: An integer representing the smallest power of two that is greater than or equal to the provided value. If the input is less than 1, returns 1.  
 
 </pre></function>
-* <function><a id="signum"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Signum</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="signum"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Signum</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> value) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines the sign of a given double value.  
 ***value***: The double value whose sign is to be determined.  
 **Returns**: Returns:
@@ -1841,14 +2113,47 @@ Also known as Highest Common Factor (HCF).
     * \-1 if the value is negative.  
 
 </pre></function>
+## <a id="metadata" href="#index_metadata">Metadata</a>
+* <function><a id="extractmetadata"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ExtractMetadata</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">byte[]</span> data) -> <span style="color:#87AF00">Metadata[]</span></function>
+## <a id="metric-units" href="#index_metric-units">Metric units</a>
+* <function><a id="kilometerstometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilometersToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> km) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KmToM</span>)</function>
+* <function><a id="meterstokilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToKm</span>)</function>
+* <function><a id="meterstocentimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToCentimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToCm</span>)</function>
+* <function><a id="centimeterstometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CentimetersToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CmToM</span>)</function>
+* <function><a id="centimeterstomillimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CentimetersToMillimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CmToMm</span>)</function>
+* <function><a id="millimeterstocentimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MillimetersToCentimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MmToCm</span>)</function>
+* <function><a id="meterstomillimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToMillimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToMm</span>)</function>
+* <function><a id="millimeterstometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MillimetersToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MmToM</span>)</function>
+* <function><a id="kilometerstocentimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilometersToCentimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> km) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KmToCm</span>)</function>
+* <function><a id="centimeterstokilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CentimetersToKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CmToKm</span>)</function>
+* <function><a id="meterstodecimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MetersToDecimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MToDm</span>)</function>
+* <function><a id="decimeterstometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DecimetersToMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> dm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">DmToM</span>)</function>
+* <function><a id="decimeterstocentimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DecimetersToCentimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> dm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">DmToCm</span>)</function>
+* <function><a id="centimeterstodecimeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CentimetersToDecimeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> cm) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CmToDm</span>)</function>
+* <function><a id="kilogramstograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilogramsToGrams</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KgToG</span>)</function>
+* <function><a id="gramstokilograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GramsToKilograms</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> g) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GToKg</span>)</function>
+* <function><a id="gramstomilligrams"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GramsToMilligrams</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> g) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">GToMg</span>)</function>
+* <function><a id="milligramstograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MilligramsToGrams</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> mg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MgToG</span>)</function>
+* <function><a id="tonnestokilograms"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">TonnesToKilograms</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> t) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">TToKg</span>)</function>
+* <function><a id="kilogramstotonnes"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilogramsToTonnes</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kg) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KgToT</span>)</function>
+* <function><a id="literstomilliliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersToMilliliters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> l) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LToMl</span>)</function>
+* <function><a id="milliliterstoliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">MillilitersToLiters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ml) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">MlToL</span>)</function>
+* <function><a id="cubicmeterstoliters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CubicMetersToLiters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m3) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">M3ToL</span>)</function>
+* <function><a id="literstocubicmeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">LitersToCubicMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> l) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">LToM3</span>)</function>
+* <function><a id="squarekilometerstosquaremeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareKilometersToSquareMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> km2) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">Km2ToM2</span>)</function>
+* <function><a id="squaremeterstosquarekilometers"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareMetersToSquareKilometers</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m2) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">M2ToKm2</span>)</function>
+* <function><a id="hectarestosquaremeters"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HectaresToSquareMeters</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> ha) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">HaToM2</span>)</function>
+* <function><a id="squaremeterstohectares"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SquareMetersToHectares</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> m2) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">M2ToHa</span>)</function>
+* <function><a id="kilopascalstopascals"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KilopascalsToPascals</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> kpa) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KpaToPa</span>)</function>
+* <function><a id="pascalstokilopascals"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PascalsToKilopascals</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> pa) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">PaToKpa</span>)</function>
 ## <a id="multipurpose-internet-mail-extensions-mime" href="#index_multipurpose-internet-mail-extensions-mime">Multipurpose Internet Mail Extensions (MIME)</a>
-* <function><a id="getmimefromextension"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetMimeFromExtension</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ext) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getmimefromextension"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetMimeFromExtension</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ext) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the MIME type associated with a given file extension.  
 ***ext***: The file extension for which to retrieve the MIME type. Must not be null or whitespace.  
 **Returns**: A string representing the MIME type, or an empty string if the extension is null, whitespace, or has no associated MIME type.  
 
 </pre></function>
-* <function><a id="getextensionfrommime"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetExtensionFromMime</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mime) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="getextensionfrommime"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GetExtensionFromMime</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> mime) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the file extension associated with a given MIME type. If the MIME type is null, empty, or whitespace,
 an empty string is returned. Otherwise, the method trims any leading or trailing whitespace from the input and 
 attempts to find the first corresponding extension using the MimeTypes.GetMimeTypeExtensions method.
@@ -1859,11 +2164,11 @@ if the input MIME type is null, empty, or only whitespace.
 
 </pre></function>
 ## <a id="networking" href="#index_networking">Networking</a>
-* <function><a id="istcpportopen"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsTcpPortOpen</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hostName, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> port, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> timeoutMs = <span style="color:#5FAFAF; margin-right:1px">5000</span>) -> <span style="color:#87AF00">Task\<bool\></span></function>
-* <function><a id="whois"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Whois</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ip) -> <span style="color:#87AF00">Task\<WhoisResponseScoped\></span></function>
-* <function><a id="isvpn"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsVPN</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ip) -> <span style="color:#87AF00">Task\<bool\></span></function>
+* <function><a id="istcpportopen"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsTcpPortOpen</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hostName, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> port, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> timeoutMs = <span style="color:#5FAFAF; margin-right:1px">5000</span>) -> <span style="color:#87AF00">Task\<bool\></span></function>
+* <function><a id="whois"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Whois</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ip) -> <span style="color:#87AF00">Task\<WhoisResponseScoped\></span></function>
+* <function><a id="isvpn"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsVPN</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ip) -> <span style="color:#87AF00">Task\<bool\></span></function>
 ## <a id="one-time-password-otp" href="#index_one-time-password-otp">One-Time Password (OTP)</a>
-* <function><a id="generatetotp"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateTOTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> at = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="generatetotp"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateTOTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> at = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a Time\-based One\-Time Password (TOTP) based on the provided secret key.  
 ***key***: The base32 encoded secret key used to generate the TOTP.
 ***at***: An optional DateTimeOffset representing the time for which the TOTP is calculated. 
@@ -1871,7 +2176,7 @@ If not specified, the current UTC time is used.
 **Returns**: A string representation of the 6\-digit TOTP code generated from the provided key and time.  
 
 </pre></function>
-* <function><a id="verifytotp"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">VerifyTOTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> window = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="verifytotp"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">VerifyTOTP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> window = <span style="color:#5FAFAF; margin-right:1px">0</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Verifies a Time\-based One\-Time Password (TOTP) against the provided key and time window.  
 ***key***: The base32\-encoded secret key used to generate TOTP.
 ***code***: The TOTP code to be verified.
@@ -1879,7 +2184,7 @@ If not specified, the current UTC time is used.
 **Returns**: True if the provided code matches a valid TOTP generated within the specified time window; otherwise, false.  
 
 </pre></function>
-* <function><a id="remainingtotpseconds"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemainingTOTPSeconds</span>() -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="remainingtotpseconds"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemainingTOTPSeconds</span>() -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the remaining time in seconds until the next Time\-based One\-Time Password (TOTP) changes.
 TOTPs are typically refreshed every 30 seconds, and this function computes how many seconds 
 remain before the next refresh. This can be useful for applications requiring synchronization
@@ -1889,7 +2194,7 @@ The return value will be an integer between 0 and 29, inclusive.
 
 </pre></function>
 ## <a id="parsing" href="#index_parsing">Parsing</a>
-* <function><a id="parsebool"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseBool</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsebool"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseBool</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Attempts to parse the provided string as a boolean value.  
 ***text***: The string representation of a boolean value.  
 **Returns**: A boolean value that represents the parsed result from the input text.  
@@ -1899,7 +2204,7 @@ The return value will be an integer between 0 and 29, inclusive.
 The exception message includes the invalid input string for clarity.  
 
 </pre></function>
-* <function><a id="parsesbyte"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseSByte</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">sbyte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsesbyte"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseSByte</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">sbyte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the given string into an sbyte value. Throws a FormatException if parsing fails.  
 ***text***: The string representation of a number to parse.  
 **Returns**: The parsed sbyte value.  
@@ -1909,7 +2214,7 @@ The exception message includes the invalid input string for clarity.
 the format is invalid for parsing into the specified range.  
 
 </pre></function>
-* <function><a id="parsebyte"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseByte</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">byte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsebyte"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseByte</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">byte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the specified string into a byte using invariant culture and integer number styles.
 If parsing fails, a FormatException is thrown.  
 ***text***: The input string to parse.  
@@ -1919,7 +2224,7 @@ If parsing fails, a FormatException is thrown.
 **Description**: Thrown when the format of the string is invalid or if it does not represent a valid byte value.  
 
 </pre></function>
-* <function><a id="parseint16"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt16</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">short</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseint16"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt16</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">short</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the specified text into a 16\-bit signed integer (Int16).  
 ***text***: The string representation of the number to parse.  
 **Returns**: A short value parsed from the input text.  
@@ -1930,7 +2235,7 @@ the format is not valid for an Int16 within the range of
 short.MinValue..short.MaxValue.  
 
 </pre></function>
-* <function><a id="parseuint16"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt16</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">ushort</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuint16"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt16</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">ushort</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the given string representation of a number into an unsigned 16\-bit integer (UInt16).  
 ***text***: The string that contains the number to be parsed.  
 **Returns**: The UInt16 value that results from parsing the specified string.  
@@ -1940,7 +2245,7 @@ short.MinValue..short.MaxValue.
 the range of a UInt16 (0..65535).  
 
 </pre></function>
-* <function><a id="parseint32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseint32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a string into an integer (Int32) using invariant culture formatting. 
 Throws a FormatException if the parsing is unsuccessful.  
 ***text***: The text to parse as an Int32.  
@@ -1950,7 +2255,7 @@ Throws a FormatException if the parsing is unsuccessful.
 **Description**: Thrown when the input string cannot be parsed into a valid Int32.  
 
 </pre></function>
-* <function><a id="parseuint32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuint32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt32</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">uint</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a string into an unsigned 32\-bit integer.  
 ***text***: The string representation of the number to be parsed.  
 **Returns**: The parsed unsigned 32\-bit integer value.  
@@ -1959,7 +2264,7 @@ Throws a FormatException if the parsing is unsuccessful.
 **Description**: Thrown when the input string cannot be converted to a valid UInt32 value within the range of uint.MinValue and uint.MaxValue.  
 
 </pre></function>
-* <function><a id="parseint64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseint64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseInt64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">long</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Attempts to parse the provided string into a 64\-bit integer (Int64). If parsing fails, it throws a FormatException.  
 ***text***: The string representation of a number to be parsed.  
 **Returns**: The successfully parsed long value if the conversion succeeds.  
@@ -1968,7 +2273,7 @@ Throws a FormatException if the parsing is unsuccessful.
 **Description**: Thrown when the input string cannot be parsed as an Int64.  
 
 </pre></function>
-* <function><a id="parseuint64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuint64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUInt64</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the specified string representation of a number into its equivalent unsigned 64\-bit integer (ulong).  
 ***text***: A string containing the number to convert.  
 **Returns**: The parsed unsigned 64\-bit integer value.  
@@ -1978,7 +2283,7 @@ Throws a FormatException if the parsing is unsuccessful.
 The exception message includes the text that could not be parsed and the range of valid values for an unsigned 64\-bit integer.  
 
 </pre></function>
-* <function><a id="parsefloat"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseFloat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">float</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsefloat"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseFloat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">float</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Attempts to parse the specified string into a single\-precision floating\-point number.  
 ***text***: The string representation of a number to parse.  
 **Returns**: A float value parsed from the given text if successful.  
@@ -1987,7 +2292,7 @@ The exception message includes the text that could not be parsed and the range o
 **Description**: Thrown when the parsing operation fails, indicating that the input string does not represent a valid single\-precision floating\-point number.  
 
 </pre></function>
-* <function><a id="parsedouble"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDouble</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsedouble"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDouble</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a string representation of a number into a double value.  
 ***text***: The string to be parsed.  
 **Returns**: The parsed double value if successful.  
@@ -1996,7 +2301,7 @@ The exception message includes the text that could not be parsed and the range o
 **Description**: Thrown when the input string cannot be parsed as a valid double.  
 
 </pre></function>
-* <function><a id="parsedecimal"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDecimal</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">decimal</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsedecimal"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDecimal</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">decimal</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Attempts to parse a string into a decimal number using invariant culture and specific number styles.
 If parsing is unsuccessful, it throws a FormatException with a message indicating the failure.  
 ***text***: The string representation of a decimal number to be parsed.  
@@ -2007,7 +2312,7 @@ If parsing is unsuccessful, it throws a FormatException with a message indicatin
 The exception message includes the input text that failed to parse.  
 
 </pre></function>
-* <function><a id="parsetimespan"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseTimeSpan</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">TimeSpan</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsetimespan"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseTimeSpan</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text, <span style="color:#87AF00; margin-left:1px; margin-right:1px">TimeSpan?</span> defaultValue = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">TimeSpan</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the specified string and converts it into a TimeSpan object using invariant culture settings.  
 ***text***: The string representation of time duration to parse.  
 **Returns**: A TimeSpan representing the parsed time duration.  
@@ -2016,7 +2321,7 @@ The exception message includes the input text that failed to parse.
 **Description**: Thrown when the format of the specified string is invalid or it does not represent a valid TimeSpan.  
 
 </pre></function>
-* <function><a id="parsedatetimeoffset"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDateTimeOffset</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsedatetimeoffset"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseDateTimeOffset</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a string into a DateTimeOffset object using the specified culture (InvariantCulture).
 Throws a FormatException if parsing fails.  
 ***text***: The string representation of the date and time offset.  
@@ -2026,7 +2331,7 @@ Throws a FormatException if parsing fails.
 **Description**: Thrown when the input string cannot be parsed as a DateTimeOffset.  
 
 </pre></function>
-* <function><a id="parseipaddress"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseIPAddress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">IPAddress</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseipaddress"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseIPAddress</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">IPAddress</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a string representation of an IP address into an IPAddress object.  
 ***text***: The string containing the IP address.  
 **Returns**: An IPAddress object representing the parsed IP address.  
@@ -2036,7 +2341,7 @@ Throws a FormatException if parsing fails.
 The exception message will specify the input string that failed to parse.  
 
 </pre></function>
-* <function><a id="parseguid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseGuid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseguid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseGuid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">Guid</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Attempts to parse the specified string into a GUID (Globally Unique Identifier).  
 ***text***: The string representation of a GUID to be parsed.  
 **Returns**: A GUID that matches the text if parsing succeeds.  
@@ -2045,7 +2350,7 @@ The exception message will specify the input string that failed to parse.
 **Description**: Thrown when the input string does not represent a valid GUID.  
 
 </pre></function>
-* <function><a id="parsesemver"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseSemVer</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> version) -> <span style="color:#87AF00">SemVer</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsesemver"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseSemVer</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> version) -> <span style="color:#87AF00">SemVer</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a given string into a Semantic Version (SemVer) object.
 This method uses a regular expression to validate and extract version components: major, minor, and patch.  
 ***version***: The semantic version string to be parsed.  
@@ -2057,7 +2362,7 @@ or if any of the numeric components (major, minor, patch) cannot be parsed as in
 
 </pre></function>
 ## <a id="password" href="#index_password">Password</a>
-* <function><a id="hashpassword"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HashPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> iterations = <span style="color:#5FAFAF; margin-right:1px">150000</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> expiresAt = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="hashpassword"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HashPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> iterations = <span style="color:#5FAFAF; margin-right:1px">150000</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> expiresAt = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Hashes the provided password using PBKDF2 with a random salt and specified number of iterations.
 Optionally sets an expiration time for the hash.  
 ***password***: The password to be hashed.
@@ -2066,7 +2371,7 @@ Optionally sets an expiration time for the hash.
 **Returns**: A formatted string containing the iteration count, expiration time (or default), salt, and hashed key.  
 
 </pre></function>
-* <function><a id="verifypassword"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">VerifyPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hash, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> now = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="verifypassword"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">VerifyPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hash, <span style="color:#87AF00; margin-left:1px; margin-right:1px">DateTimeOffset?</span> now = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Verifies whether a given password matches the provided hash and optionally checks for expiration.  
 ***password***: The plain text password to verify.
 ***hash***: The hashed string containing iterations, expiration time, salt, and expected hash.
@@ -2074,13 +2379,13 @@ Optionally sets an expiration time for the hash.
 **Returns**: True if the password matches the hash and is within the valid expiration period; otherwise, false.  
 
 </pre></function>
-* <function><a id="passwordentropybits"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PasswordEntropyBits</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="passwordentropybits"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PasswordEntropyBits</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password) -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Calculates the entropy in bits of a given password based on its character set diversity and length.  
 ***password***: The input password whose entropy is to be calculated.  
 **Returns**: The entropy value in bits, representing the unpredictability or randomness of the password.  
 
 </pre></function>
-* <function><a id="isstrongpassword"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsStrongPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> minEntropyBits = <span style="color:#5FAFAF; margin-right:1px">80</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isstrongpassword"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsStrongPassword</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> minEntropyBits = <span style="color:#5FAFAF; margin-right:1px">80</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified password meets the minimum entropy requirement.  
 ***password***: The password to evaluate.
 ***minEntropyBits***: The minimum number of bits of entropy required for a strong password. 
@@ -2089,63 +2394,86 @@ Default is 80 bits.
 
 </pre></function>
 ## <a id="path" href="#index_path">Path</a>
-* <function><a id="pathcombine"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathCombine</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param string[]</span> parts) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="pathchild"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathChild</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="pathparent"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParent</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="pathparts"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParts</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string[]</span></function>
-* <function><a id="pathid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathId</span>() -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Id</span>)</function>
+* <function><a id="pathcombine"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathCombine</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">param string[]</span> parts) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="pathchild"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathChild</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="pathparent"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParent</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="pathparts"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathParts</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> path) -> <span style="color:#87AF00">string[]</span></function>
+* <function><a id="pathid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">PathId</span>() -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Id</span>)</function>
+## <a id="postgres-compat" href="#index_postgres-compat">Postgres Compat</a>
+* <function><a id="currenttime"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">current_time</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext) -> <span style="color:#87AF00">DateTimeOffset</span></function>
+* <function><a id="pgcancelbackend"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">pg_cancel_backend</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pid) -> <span style="color:#5FAFAF">bool</span></function>
+* <function><a id="currentschema"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">current_schema</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="version"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">version</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="pgbackendpid"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">pg_backend_pid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext) -> <span style="color:#5FAFAF">int</span></function>
+* <function><a id="currentdatabase"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">current_database</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">HandlerContext</span> handlerContext) -> <span style="color:#87AF00">string</span></function>
 ## <a id="print" href="#index_print">Print</a>
-* <function><a id="print"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Print</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message) -> <span style="color:#87AF00">void</span> -- (alias <span style="color:#D75F00">Echo</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="print"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Print</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message) -> <span style="color:#87AF00">void</span> -- (alias <span style="color:#D75F00">Echo</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Prints the specified message to both the console and debug output.  
 ***message***: The message to print.  
 
 </pre></function>
+## <a id="qrcode" href="#index_qrcode">QRCode</a>
+* <function><a id="generateqrcode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateQRCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> payload, <span style="color:#87AF00; margin-left:1px; margin-right:1px">Generator</span> generator = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.QRCodePlugin+Generator.PNG</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pixelsPerModule = <span style="color:#5FAFAF; margin-right:1px">20</span>) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates a QR code based on the provided payload and image generator.  
+***payload***: The data to encode in the QR code.
+***generator***: The type of image generator to use. Defaults to PNG.
+***pixelsPerModule***: The number of pixels per module in the generated QR code.  
+**Returns**: An object representing the generated QR code, string or byte\[\].  
+
+</pre></function>
+* <function><a id="generateswedishpaymentqr"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">GenerateSwedishPaymentQR</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">SwedishPaymentInfo</span> paymentInfo, <span style="color:#87AF00; margin-left:1px; margin-right:1px">Generator</span> generator = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.QRCodePlugin+Generator.PNG</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> pixelsPerModule = <span style="color:#5FAFAF; margin-right:1px">20</span>) -> <span style="color:#87AF00">object</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates QR code compliant with Swedish QR payment codes from https://qrkod.info  
+***dto***: 
+***generator***: 
+***pixelsPerModule***:   
+
+</pre></function>
 ## <a id="random" href="#index_random">Random</a>
-* <function><a id="randombool"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomBool</span>() -> <span style="color:#5FAFAF">bool</span></function>
-* <function><a id="randomint64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt64</span>() -> <span style="color:#5FAFAF">long</span></function>
-* <function><a id="randomuint64"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt64</span>() -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randombool"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomBool</span>() -> <span style="color:#5FAFAF">bool</span></function>
+* <function><a id="randomint64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt64</span>() -> <span style="color:#5FAFAF">long</span></function>
+* <function><a id="randomuint64"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt64</span>() -> <span style="color:#5FAFAF">ulong</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a random unsigned 64\-bit integer using the underlying random number generator.
 This function is marked as a plugin function and can be used to obtain random values for various purposes.  
 **Returns**: A randomly generated 64\-bit unsigned integer.  
 
 </pre></function>
-* <function><a id="randomint32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt32</span>() -> <span style="color:#5FAFAF">int</span></function>
-* <function><a id="randomuint32"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt32</span>() -> <span style="color:#5FAFAF">uint</span></function>
-* <function><a id="randomint16"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt16</span>() -> <span style="color:#5FAFAF">short</span></function>
-* <function><a id="randomuint16"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt16</span>() -> <span style="color:#5FAFAF">ushort</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomint32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt32</span>() -> <span style="color:#5FAFAF">int</span></function>
+* <function><a id="randomuint32"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt32</span>() -> <span style="color:#5FAFAF">uint</span></function>
+* <function><a id="randomint16"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomInt16</span>() -> <span style="color:#5FAFAF">short</span></function>
+* <function><a id="randomuint16"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomUInt16</span>() -> <span style="color:#5FAFAF">ushort</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates and returns a random 16\-bit unsigned integer.  
 **Returns**: A random ushort value.  
 
 </pre></function>
-* <function><a id="randomsbyte"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomSByte</span>() -> <span style="color:#5FAFAF">sbyte</span></function>
-* <function><a id="randombyte"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomByte</span>() -> <span style="color:#5FAFAF">byte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomsbyte"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomSByte</span>() -> <span style="color:#5FAFAF">sbyte</span></function>
+* <function><a id="randombyte"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomByte</span>() -> <span style="color:#5FAFAF">byte</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a random byte using the underlying random number generator.  
 
 </pre></function>
-* <function><a id="randomfloat"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomFloat</span>() -> <span style="color:#5FAFAF">float</span></function>
-* <function><a id="randomdouble"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDouble</span>() -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomfloat"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomFloat</span>() -> <span style="color:#5FAFAF">float</span></function>
+* <function><a id="randomdouble"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDouble</span>() -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates and returns a random double value using the underlying random number generator.  
 **Returns**: A randomly generated double value.  
 
 </pre></function>
-* <function><a id="randomdecimal"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDecimal</span>() -> <span style="color:#87AF00">decimal</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomdecimal"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDecimal</span>() -> <span style="color:#87AF00">decimal</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a random decimal number using a predefined random number generator.  
 **Returns**: A randomly generated decimal value. The characteristics of the randomness depend on the implementation within rng.Decimal().  
 
 </pre></function>
-* <function><a id="randomstring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomString</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomstring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomString</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a random string of the specified length using a predefined random number generator.  
 ***length***: The desired length of the generated random string.  
 **Returns**: A randomly generated string with the given length. The content and characteristics of the randomness depend on the implementation within rng.String(length).  
 
 </pre></function>
-* <function><a id="randombytes"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomBytes</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> count) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randombytes"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomBytes</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> count) -> <span style="color:#87AF00">byte[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates an array of random bytes with the specified length.  
 ***count***: The number of random bytes to generate.  
 **Returns**: An array containing &apos;count&apos; randomly generated bytes.  
 
 </pre></function>
-* <function><a id="randomdatetime"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDateTime</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomdatetime"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomDateTime</span>() -> <span style="color:#87AF00">DateTimeOffset</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates and returns a random DateTimeOffset with the current date and 
 time offset set to zero. The function utilizes a pseudo\-random number generator 
 to produce a random long value representing seconds since Unix epoch (1970\-01\-01T00:00:00Z).
@@ -2154,23 +2482,23 @@ This ensures that the returned DateTimeOffset is within plausible historical bou
 
 </pre></function>
 ## <a id="really-simple-syndication-rss" href="#index_really-simple-syndication-rss">Really Simple Syndication (RSS)</a>
-* <function><a id="fetchrss"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchRSS</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> url) -> <span style="color:#87AF00">Task\<Feed\></span></function>
+* <function><a id="fetchrss"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchRSS</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> url) -> <span style="color:#87AF00">Task\<Feed\></span></function>
 ## <a id="regex" href="#index_regex">Regex</a>
-* <function><a id="regexismatch"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexIsMatch</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="regexismatch"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexIsMatch</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines if the specified input string matches a given regular expression pattern.  
 ***pattern***: The regular expression pattern to match against.
 ***input***: The input string to test for a match.  
 **Returns**: True if the input string matches the pattern; otherwise, false.  
 
 </pre></function>
-* <function><a id="regexmatch"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexMatch</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">Match</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="regexmatch"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexMatch</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">Match</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Finds the first match for a regular expression within a given input string.  
 ***pattern***: The regex pattern to be matched against the input string.
 ***input***: The input string in which to search for matches.  
 **Returns**: A Match object representing the first successful match of the pattern in the input, or an empty match if no patterns were found.  
 
 </pre></function>
-* <function><a id="regexmatches"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexMatches</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">Match[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="regexmatches"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RegexMatches</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> pattern, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">Match[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves an array of matches based on a regular expression pattern applied to the input string.  
 ***pattern***: The regex pattern used for matching.
 ***input***: The input string where the search is performed.  
@@ -2178,7 +2506,7 @@ This ensures that the returned DateTimeOffset is within plausible historical bou
 
 </pre></function>
 ## <a id="roman-numerals" href="#index_roman-numerals">Roman Numerals</a>
-* <function><a id="toromannumeral"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToRomanNumeral</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> number) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="toromannumeral"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToRomanNumeral</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> number) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts an integer to its corresponding Roman numeral representation.
 This function does not support negative numbers and returns &quot;N&quot; for zero.  
 ***number***: The integer value to convert.  
@@ -2188,7 +2516,7 @@ This function does not support negative numbers and returns &quot;N&quot; for ze
 **Description**: Thrown when a negative number is provided, as Roman numerals do not support negatives.  
 
 </pre></function>
-* <function><a id="fromromannumeral"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromRomanNumeral</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> roman) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fromromannumeral"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromRomanNumeral</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> roman) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a Roman numeral string to its corresponding integer value.  
 ***roman***: The Roman numeral string to convert. The input should be in uppercase and 
 can optionally contain whitespace which will be ignored.  
@@ -2202,7 +2530,7 @@ correspond to any Roman numeral symbols in SymbolMap.
 
 </pre></function>
 ## <a id="secure-string" href="#index_secure-string">Secure String</a>
-* <function><a id="tosecurestring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSecureString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tosecurestring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSecureString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Encrypts the specified input string using AES encryption and returns a secure string.
 The method throws an exception if the input is null. It performs AES encryption with 
 a 256\-bit key size, CBC mode, and PKCS7 padding. An HMAC\-SHA256 is computed over the IV 
@@ -2215,7 +2543,7 @@ cipher text, and HMAC\-SHA256 MAC.
 Set custom secret via ENV &apos;SECURE\_SECRET&apos;  
 
 </pre></function>
-* <function><a id="fromsecurestring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromSecureString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> encrypted) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fromsecurestring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FromSecureString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> encrypted) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a Base64 encoded string that represents an encrypted and HMAC\-protected payload into its plaintext form.
 This method performs decryption using AES with CBC mode and verifies the integrity of the data using HMAC\-SHA256.  
 ***encrypted***: The Base64 encoded string containing the encrypted data, initialization vector (IV), 
@@ -2231,7 +2559,7 @@ and message authentication code (MAC). The input must not be null.
 
 </pre></function>
 ## <a id="string" href="#index_string">String</a>
-* <function><a id="reverse"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Reverse</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="reverse"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Reverse</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> text) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Reverses the order of characters in a given input string using an efficient method.
 This function leverages the Span&lt;T&gt; and String.Create to perform the reversal operation 
 in place, minimizing allocations and enhancing performance.  
@@ -2239,14 +2567,14 @@ in place, minimizing allocations and enhancing performance.
 **Returns**: A new string with its characters in reverse order compared to the input.  
 
 </pre></function>
-* <function><a id="repeatstring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RepeatString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> times) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="repeatstring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RepeatString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> times) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Repeat</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Repeats the given input string a specified number of times.  
 ***input***: The string to be repeated.
 ***times***: The number of times to repeat the string. Must be non\-negative.  
 **Returns**: A new string consisting of the input string repeated &apos;times&apos; times concatenated together. If &apos;times&apos; is zero, an empty string is returned.  
 
 </pre></function>
-* <function><a id="truncate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Truncate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> suffix = <span style="color:#D70000; margin-right:1px">"…"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="truncate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Truncate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> suffix = <span style="color:#D70000; margin-right:1px">"…"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Truncates the given input string to a specified length and appends a suffix if truncation occurs.  
 ***input***: The original string to be truncated.
 ***length***: The maximum allowed length for the output string. If the input is shorter, it&apos;s returned unchanged.
@@ -2254,13 +2582,13 @@ in place, minimizing allocations and enhancing performance.
 **Returns**: The truncated string with suffix appended if necessary; otherwise, returns the original string.  
 
 </pre></function>
-* <function><a id="countwords"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CountWords</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="countwords"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CountWords</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Counts the number of words in the provided input string using a regular expression pattern.  
 ***input***: The input string from which to count the words.  
 **Returns**: The total number of words found in the input string.  
 
 </pre></function>
-* <function><a id="randomstring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomString</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> allowedChars = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="randomstring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RandomString</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> length, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> allowedChars = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Generates a random string of the specified length using either provided allowed characters or a default character set.  
 ***length***: The length of the random string to generate. Must be non\-negative.
 ***allowedChars***: An optional parameter specifying which characters can be used in the generated string. 
@@ -2273,7 +2601,7 @@ If null, a default set of alphanumeric characters is used.
 **Description**: Thrown when the character set (either provided or default) is empty.  
 
 </pre></function>
-* <function><a id="slugify"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Slugify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> separator = <span style="color:#D70000; margin-right:1px">"-"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="slugify"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Slugify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> separator = <span style="color:#D70000; margin-right:1px">"-"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Transforms the input string into a URL\-friendly slug format.
 Converts all characters to lowercase, replaces non\-alphanumeric 
 characters with hyphens, and trims leading/trailing hyphens.  
@@ -2281,21 +2609,35 @@ characters with hyphens, and trims leading/trailing hyphens.
 **Returns**: A URL\-friendly version of the input string as a lowercase string with hyphens.  
 
 </pre></function>
-* <function><a id="joinstrings"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">JoinStrings</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IEnumerable\<string\></span> items, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> delimiter = <span style="color:#D70000; margin-right:1px">","</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="joinstrings"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">JoinStrings</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">IEnumerable\<string\></span> items, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> delimiter = <span style="color:#D70000; margin-right:1px">","</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Joins a collection of strings into a single string using the specified delimiter.  
 ***items***: The collection of strings to join.
 ***delimiter***: A string used to separate each element in the joined string. Defaults to &quot;,&quot; if not provided.  
 **Returns**: A single string that is the concatenation of the elements in items, separated by occurrences of delimiter.  
 
 </pre></function>
-* <function><a id="splitstring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SplitString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> delimiter = <span style="color:#D70000; margin-right:1px">","</span>) -> <span style="color:#87AF00">List\<string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="splitstring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SplitString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> delimiter = <span style="color:#D70000; margin-right:1px">","</span>) -> <span style="color:#87AF00">List\<string\></span> -- (alias <span style="color:#D75F00">Split</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Splits the input string into a list of substrings based on the specified delimiter.  
 ***input***: The string to be split.
 ***delimiter***: The delimiter used to separate the substrings. Defaults to a comma (&quot;,&quot;) if not provided.  
 **Returns**: A list containing each substring resulting from the split operation.  
 
 </pre></function>
-* <function><a id="removewhitespace"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemoveWhitespace</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="splitwords"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SplitWords</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string[]</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Splits camel\-case and Pascal\-case words while preserving existing whitespace.  
+***input***: The text to split.  
+**Returns**: An array of individual words and whitespace runs, in their original order.  
+**Remarks**:
+Words are split at transitions from a lowercase character to an uppercase character.
+Existing spaces are returned as separate &quot; &quot; entries; consecutive whitespace
+is preserved as a single whitespace entry.  
+**Examples**:
+SplitWords(&quot;This is a StringThatShouldSplit&quot;);
+// Returns:
+// \[&quot;This&quot;, &quot; &quot;, &quot;is&quot;, &quot; &quot;, &quot;a&quot;, &quot; &quot;, &quot;String&quot;, &quot;That&quot;, &quot;Should&quot;, &quot;Split&quot;\]  
+
+</pre></function>
+* <function><a id="removewhitespace"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RemoveWhitespace</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Removes all whitespace characters from the specified input string.
 This function utilizes a regular expression to identify and eliminate all forms of 
 whitespace, including spaces, tabs, and newlines. The result is returned as a single,
@@ -2304,7 +2646,7 @@ contiguous string without any whitespace characters.
 **Returns**: A new string with all whitespace characters removed.  
 
 </pre></function>
-* <function><a id="countoccurrences"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CountOccurrences</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> source, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> substring) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="countoccurrences"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CountOccurrences</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> source, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> substring) -> <span style="color:#5FAFAF">int</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Counts the occurrences of a specified substring within the provided source string.
 Utilizes regular expressions to ensure accurate matching. If either input is null or empty, they are treated as empty strings by default.  
 ***source***: The string in which to search for occurrences.
@@ -2312,7 +2654,7 @@ Utilizes regular expressions to ensure accurate matching. If either input is nul
 **Returns**: The number of times the specified substring occurs in the source string.  
 
 </pre></function>
-* <function><a id="startswithignorecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">StartsWithIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prefix) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="startswithignorecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">StartsWithIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> prefix) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified input string begins with a given prefix,
 ignoring case differences.  
 ***input***: The string to test.
@@ -2320,7 +2662,7 @@ ignoring case differences.
 **Returns**: true if input starts with prefix, ignoring case; otherwise, false.  
 
 </pre></function>
-* <function><a id="endswithignorecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EndsWithIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> suffix) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="endswithignorecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EndsWithIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> suffix) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether a specified string ends with the given suffix,
 ignoring case. If either the input or the suffix is null, appropriate
 handling ensures no exceptions are thrown.  
@@ -2329,7 +2671,7 @@ handling ensures no exceptions are thrown.
 **Returns**: True if the input ends with the specified suffix ignoring case; otherwise, false.  
 
 </pre></function>
-* <function><a id="containsignorecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ContainsIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> source, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toCheck) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="containsignorecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ContainsIgnoreCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> source, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> toCheck) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified substring is present in the given string, 
 ignoring case sensitivity.  
 ***source***: The source string to search within.
@@ -2337,7 +2679,7 @@ ignoring case sensitivity.
 **Returns**: True if the substring is found; otherwise, false. Returns false if either input is null.  
 
 </pre></function>
-* <function><a id="isalpha"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsAlpha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isalpha"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsAlpha</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified string contains only alphabetic characters.
 Utilizes a regular expression to match the entire input against alphabet\-only patterns. 
 If the input is null, it defaults to an empty string before performing the check.  
@@ -2345,7 +2687,7 @@ If the input is null, it defaults to an empty string before performing the check
 **Returns**: true if the input contains only alphabetic characters; otherwise, false.  
 
 </pre></function>
-* <function><a id="isalphanumeric"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsAlphaNumeric</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isalphanumeric"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsAlphaNumeric</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified string contains only alphanumeric characters.
 Uses a predefined regular expression pattern to check if each character in the input 
 is either a letter (uppercase or lowercase) or a digit. Returns true if all characters 
@@ -2355,7 +2697,7 @@ to an empty string and evaluates accordingly.
 **Returns**: True if the string is composed solely of letters and digits; otherwise, false.  
 
 </pre></function>
-* <function><a id="islowercase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsLowerCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="islowercase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsLowerCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines if a given string is in lowercase.  
 ***input***: The string to check.  
 **Returns**: True if the input string is entirely in lowercase, or null/empty; otherwise, false.  
@@ -2364,13 +2706,13 @@ Uses string.ToLowerInvariant to perform case\-insensitive comparison,
 ensuring that culture\-specific casing rules do not affect the result.  
 
 </pre></function>
-* <function><a id="isuppercase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsUpperCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isuppercase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsUpperCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified string is entirely in uppercase.  
 ***input***: The string to evaluate.  
 **Returns**: true if the input is null or an empty string, or if all characters in the input are uppercase; otherwise, false.  
 
 </pre></function>
-* <function><a id="tostring"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Str</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tostring"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToString</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">object</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">Str</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the specified object to its string representation. Returns a special 
 string for null objects, uses invariant culture formatting for convertible 
 objects, and handles tracked dictionaries uniquely by including their Id.  
@@ -2380,7 +2722,7 @@ for null, tracked dictionaries, and convertible types. Returns null
 if conversion fails for non\-conformant objects.  
 
 </pre></function>
-* <function><a id="format"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Format</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> format, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> args) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="format"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">Format</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> format, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> args) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Formats the specified string using the provided arguments.  
 ***format***: The composite format string.
 ***args***: An array of objects to write using format.  
@@ -2388,19 +2730,19 @@ if conversion fails for non\-conformant objects.
 
 </pre></function>
 ## <a id="string-casing" href="#index_string-casing">String Casing</a>
-* <function><a id="tolowercase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToLowerCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">LowerCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tolowercase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToLowerCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">LowerCase</span>, <span style="color:#D75F00">Lower</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the specified string to lowercase using culture\-invariant settings.  
 ***input***: The string to be converted to lowercase. Can be null or empty.  
 **Returns**: A new string with all characters converted to lowercase, or the original input if it is null or empty.  
 
 </pre></function>
-* <function><a id="touppercase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUpperCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">UpperCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="touppercase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToUpperCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">UpperCase</span>, <span style="color:#D75F00">Upper</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the specified string to uppercase using the current culture&apos;s TextInfo.  
 ***input***: The string to be converted to uppercase. If null or empty, returns as is.  
 **Returns**: The uppercase representation of the input string, or the original input if it is null or empty.  
 
 </pre></function>
-* <function><a id="totitlecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToTitleCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">TitleCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="totitlecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToTitleCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">TitleCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the specified string to title case using invariant culture.
 This method ensures that each word in the input string is capitalized,
 while maintaining any existing casing for words that should remain unchanged.  
@@ -2408,13 +2750,13 @@ while maintaining any existing casing for words that should remain unchanged.
 **Returns**: A string with each word converted to title case. If the input is null or empty, returns the original input.  
 
 </pre></function>
-* <function><a id="tokebabcase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToKebabCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">KebabCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tokebabcase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToKebabCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">KebabCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given string to Kebab Case format. This involves replacing spaces and underscores with hyphens, converting uppercase letters to lowercase, and ensuring no consecutive hyphens are present. It handles null or empty input gracefully by returning the input as is  
 ***input***: The string to be converted to Kebab Case.  
 **Returns**: A new string formatted in Kebab Case or the original input if it was null or empty.  
 
 </pre></function>
-* <function><a id="tocamelcase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToCamelCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">CamelCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tocamelcase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToCamelCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">CamelCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a given string to CamelCase format. It transforms the input by 
 capitalizing the first letter of each word while removing spaces and other 
 whitespace characters, ensuring that only the initial character of the entire 
@@ -2424,7 +2766,7 @@ string is in lowercase unless it was originally uppercase.
 the original string if it is null or empty.  
 
 </pre></function>
-* <function><a id="tosnakecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSnakeCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">SnakeCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tosnakecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSnakeCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">SnakeCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the provided input string from PascalCase or CamelCase to snake\_case.
 The conversion involves replacing uppercase letters with underscores followed by their lowercase equivalents. 
 Consecutive underscores are reduced to a single underscore, and any leading/trailing underscores are removed.  
@@ -2432,7 +2774,7 @@ Consecutive underscores are reduced to a single underscore, and any leading/trai
 **Returns**: A new string in snake\_case format or the original input if it is null or empty.  
 
 </pre></function>
-* <function><a id="tosentencecase"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSentenceCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">SentenceCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="tosentencecase"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ToSentenceCase</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#87AF00">string</span> -- (alias <span style="color:#D75F00">SentenceCase</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts the first character of a given string to uppercase while converting all other characters in the string to lowercase.
 If the input is null or empty, it returns the input unchanged.  
 ***input***: The string to be converted to sentence case.  
@@ -2440,42 +2782,43 @@ If the input is null or empty, it returns the input unchanged.
 
 </pre></function>
 ## <a id="system" href="#index_system">System</a>
-* <function><a id="systemthrottlercallspersecond"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">System_ThrottlerCallsPerSecond</span>() -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemthrottlercallspersecond"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">System_ThrottlerCallsPerSecond</span>() -> <span style="color:#5FAFAF">double</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves the number of allowed calls per second for the current throttler.  
 **Returns**: The calls per second limit set by the Throttler. Returns double.MaxValue if no Throttler is present.  
 
 </pre></function>
-* <function><a id="systemisinmemory"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">System_IsInMemory</span>() -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemisinmemory"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">System_IsInMemory</span>() -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the system is operating in memory mode.  
 **Returns**: A boolean value indicating if the store configuration specifies an in\-memory mode.  
 
 </pre></function>
-* <function><a id="systemcompact"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Compact</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemcompact"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Compact</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Initiates a compaction process on the data store associated with the given loader context.
 This operation reduces storage space and improves efficiency by optimizing stored data.  
 
 </pre></function>
-* <function><a id="systemimportfromfile"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_ImportFromFile</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> filepath) -> <span style="color:#87AF00">DataChangeType</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemimportfromfile"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_ImportFromFile</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> filepath) -> <span style="color:#87AF00">DataChangeType</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Imports data from a specified JSON file and applies import options through the given context.  
 ***filepath***: The path to the JSON file that should be imported.  
 **Returns**: A DataChangeType indicating the result of the import operation.  
 
 </pre></function>
-* <function><a id="systemexporttofile"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_ExportToFile</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> filepath, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indent = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemimportfrominternet"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_ImportFromInternet</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> url) -> <span style="color:#87AF00">Task\<DataChangeType\></span></function>
+* <function><a id="systemexporttofile"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_ExportToFile</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> filepath, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> indent = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Exports the data from the provided LoaderContextData store to a specified file.  
 ***filepath***: The path of the file where the data should be exported.
 ***indent***: A boolean value indicating whether the exported data should be formatted with indentation.
 Default is false, which results in no indentation.  
 
 </pre></function>
-* <function><a id="systemshutdowm"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Shutdowm</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systemshutdowm"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Shutdowm</span>() -> <span style="color:#87AF00">void</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Initiates the shutdown process for the system by cancelling the 
 ongoing operations linked to a specific shutdown token source. This 
 function is protected and should be executed within contexts where
 it&apos;s safe to invoke system\-level shutdown procedures.  
 
 </pre></function>
-* <function><a id="systeminfo"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Info</span>() -> <span style="color:#87AF00">SystemInfo</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="systeminfo"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">System_Info</span>() -> <span style="color:#87AF00">SystemInfo</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Retrieves system information including runtime statistics, memory usage,
 disk status, and environment details. The method calculates CPU usage percentage
 based on the current process&apos;s processor time relative to uptime, checks for degraded 
@@ -2488,51 +2831,84 @@ architecture and processor count.
 
 </pre></function>
 ## <a id="temperature" href="#index_temperature">Temperature</a>
-* <function><a id="fahrenheittocelsius"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FahrenheitToCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtoC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fahrenheittocelsius"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FahrenheitToCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtoC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature from Fahrenheit to Celsius.  
 ***f***: The temperature in Fahrenheit.  
 **Returns**: The equivalent temperature in Celsius.  
 
 </pre></function>
-* <function><a id="fahrenheittokelvin"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FahrenheitToKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtoK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="fahrenheittokelvin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FahrenheitToKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">FtoK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature from Fahrenheit to Kelvin.  
 ***f***: The temperature in degrees Fahrenheit.  
 **Returns**: The equivalent temperature in Kelvin.  
 
 </pre></function>
-* <function><a id="celsiustokelvin"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CelsiusToKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CtoK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="celsiustokelvin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CelsiusToKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CtoK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature value from Celsius to Kelvin.  
 ***c***: The temperature in degrees Celsius.  
 **Returns**: The equivalent temperature in Kelvin.  
 
 </pre></function>
-* <function><a id="celsiustofahrenheit"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CelsiusToFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CtoF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="celsiustofahrenheit"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CelsiusToFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">CtoF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature value from Celsius to Fahrenheit.  
 ***c***: The temperature in degrees Celsius.  
 **Returns**: The equivalent temperature in degrees Fahrenheit.  
 
 </pre></function>
-* <function><a id="kelvintocelsius"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KelvinToCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KtoC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="kelvintocelsius"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KelvinToCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KtoC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature from Kelvin to Celsius.  
 ***k***: The temperature in Kelvin.  
 **Returns**: The equivalent temperature in Celsius.  
 
 </pre></function>
-* <function><a id="kelvintofahrenheit"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KelvinToFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KtoF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="kelvintofahrenheit"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">KelvinToFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">KtoF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Converts a temperature from Kelvin to Fahrenheit.  
 ***k***: The temperature in Kelvin.  
 **Returns**: The equivalent temperature in Fahrenheit.  
 
 </pre></function>
+* <function><a id="isfreezingcelsius"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsFreezingCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsFreezingC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Celsius temperature is at or below the freezing point of water.  
+
+</pre></function>
+* <function><a id="isfreezingfahrenheit"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsFreezingFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsFreezingF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Fahrenheit temperature is at or below the freezing point of water.  
+
+</pre></function>
+* <function><a id="isfreezingkelvin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsFreezingKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsFreezingK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Kelvin temperature is at or below the freezing point of water.  
+
+</pre></function>
+* <function><a id="isboilingcelsius"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsBoilingCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsBoilingC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Celsius temperature is at or above the boiling point of water (sea level).  
+
+</pre></function>
+* <function><a id="isboilingfahrenheit"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsBoilingFahrenheit</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> f) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsBoilingF</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Fahrenheit temperature is at or above the boiling point of water (sea level).  
+
+</pre></function>
+* <function><a id="isboilingkelvin"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsBoilingKelvin</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> k) -> <span style="color:#5FAFAF">bool</span> -- (alias <span style="color:#D75F00">IsBoilingK</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Determines whether a Kelvin temperature is at or above the boiling point of water (sea level).  
+
+</pre></function>
+* <function><a id="windchillcelsius"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WindChillCelsius</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> c, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> windSpeedKmh) -> <span style="color:#5FAFAF">double</span> -- (alias <span style="color:#D75F00">WindChillC</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Converts a Celsius temperature to its &quot;feels like&quot; wind chill approximation
+using a simplified linear model (for demonstration; not scientifically precise
+for all wind speeds).  
+***c***: The air temperature in degrees Celsius.
+***windSpeedKmh***: The wind speed in kilometers per hour.  
+**Returns**: The approximate wind chill temperature in degrees Celsius.  
+
+</pre></function>
 ## <a id="templating" href="#index_templating">Templating</a>
-* <function><a id="smartformat"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">SmartFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> format, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> args) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="smartformat"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">SmartFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> format, <span style="color:#87AF00; margin-left:1px; margin-right:1px">param object[]</span> args) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Formats the input string using smart formatting with extended capabilities. This function leverages a custom formatter that can be influenced by context data passed as a parameter. The formatted output adheres to culture\-invariant rules.  
 ***format***: The format string specifying how the arguments should be formatted and combined.
 ***args***: An array of objects containing the data to format according to the specified format string.  
 **Returns**: A string resulting from applying smart formatting rules to the input data, using culture\-invariant formatting conventions.  
 
 </pre></function>
-* <function><a id="scribanformat"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">ScribanFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> templateText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> model = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="scribanformat"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">ScribanFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> templateText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> model = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Formats a provided template text using the Scriban templating engine, optionally applying a model as context data.
 Incorporates custom methods from the loader context into the rendering process if available.
 Throws an InvalidOperationException if the parsed template contains errors.  
@@ -2541,7 +2917,7 @@ Throws an InvalidOperationException if the parsed template contains errors.
 **Returns**: A string result of the rendered template after applying the given model data or default contexts.  
 
 </pre></function>
-* <function><a id="handlebarsformat"></a><b>function</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">HandlebarsFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> templateText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> model = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="handlebarsformat"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">HandlebarsFormat</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> templateText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">IDictionary\<string, object\></span> model = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Formats a given text using Handlebars syntax with an optional model for data binding.
 The function creates a Handlebars instance and configures it to use custom compile\-time features,
 then compiles the template and renders it with the provided model (or an empty dictionary if none is supplied).  
@@ -2551,14 +2927,14 @@ then compiles the template and renders it with the provided model (or an empty d
 
 </pre></function>
 ## <a id="uniform-resource-locator-url" href="#index_uniform-resource-locator-url">Uniform Resource Locator (URL)</a>
-* <function><a id="parseuriquery"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUriQuery</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> uri) -> <span style="color:#87AF00">Dictionary\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuriquery"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUriQuery</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> uri) -> <span style="color:#87AF00">Dictionary\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the query parameters from a given URI and returns them as a dictionary.  
 ***uri***: The absolute URI containing query parameters to parse.  
 **Returns**: A dictionary where each key is a parameter name and each value is the corresponding parameter value. 
 If a parameter has no value, its entry in the dictionary will have an empty string as the value.  
 
 </pre></function>
-* <function><a id="parseuriparts"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUriParts</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> uriString) -> <span style="color:#87AF00">Dictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuriparts"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUriParts</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> uriString) -> <span style="color:#87AF00">Dictionary\<string, object\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses the given URI string into its components and returns them as a dictionary.  
 ***uriString***: The URI string to be parsed.  
 **Returns**: A dictionary containing the components of the URI such as scheme, host, port, path,
@@ -2570,8 +2946,20 @@ If the input is a relative URI, only the original string is treated as the path.
 if an unexpected error occurs during parsing.  
 
 </pre></function>
+* <function><a id="encodepunycode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">EncodePunycode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> unicodeString) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Encodes a Unicode domain name string to its ASCII Punycode representation.  
+***unicodeString***: The Unicode string to encode (e.g., &quot;münchen&quot;).  
+**Returns**: The ASCII Punycode representation (e.g., &quot;xn\-\-mnchen\-3ya&quot;).  
+
+</pre></function>
+* <function><a id="decodepunycode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">DecodePunycode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> punycodeString) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Decodes an ASCII Punycode domain name string back to its Unicode representation.  
+***punycodeString***: The Punycode string to decode (e.g., &quot;xn\-\-mnchen\-3ya&quot;).  
+**Returns**: The decoded Unicode string (e.g., &quot;münchen&quot;).  
+
+</pre></function>
 ## <a id="user-agent-ua" href="#index_user-agent-ua">User agent (UA)</a>
-* <function><a id="parseuseragent"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUserAgent</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> userAgent) -> <span style="color:#87AF00">UserAgent</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parseuseragent"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseUserAgent</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> userAgent) -> <span style="color:#87AF00">UserAgent</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses a user agent string to extract information about the browser or device.  
 ***userAgent***: The user agent string to be parsed.  
 **Returns**: A UserAgent object containing the name, version, and optionally platform type and name.  
@@ -2581,20 +2969,20 @@ if an unexpected error occurs during parsing.
 
 </pre></function>
 ## <a id="validation" href="#index_validation">Validation</a>
-* <function><a id="isvalidemail"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidEmail</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> address) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isvalidemail"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidEmail</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> address) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Validates whether a given email address string is valid.  
 ***address***: The email address to validate.  
 **Returns**: True if the email address is valid and not null; otherwise, false.  
 
 </pre></function>
-* <function><a id="isvalidphonenumber"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidPhoneNumber</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> number, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> defaultRegion = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isvalidphonenumber"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsValidPhoneNumber</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> number, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> defaultRegion = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines if the provided phone number is valid based on regional formatting rules.  
 ***number***: The phone number to be validated. If null, returns false.
 ***defaultRegion***: Optional region code used when no region is specified in the phone number; can also be null.  
 **Returns**: True if the phone number is valid according to regional rules, otherwise false.  
 
 </pre></function>
-* <function><a id="iscreditcardinfovalid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsCreditCardInfoValid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cardNo, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> expiryDate = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cvv = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="iscreditcardinfovalid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsCreditCardInfoValid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cardNo, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> expiryDate = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> cvv = <span style="color:#D70000; margin-right:1px">null</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines if the credit card information provided is valid.
 Validates the credit card number, CVV, and expiry date according to specified patterns and conditions.  
 ***cardNo***: The credit card number as a string.
@@ -2603,45 +2991,45 @@ Validates the credit card number, CVV, and expiry date according to specified pa
 **Returns**: True if all provided credit card information is valid; otherwise, false.  
 
 </pre></function>
-* <function><a id="validatejson"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ValidateJson</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> schema) -> <span style="color:#87AF00">Task\<bool\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="validatejson"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ValidateJson</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> json, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> schema) -> <span style="color:#87AF00">Task\<bool\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Validates a JSON string against the provided JSON Schema.  
 ***json***: The JSON string to validate.
 ***schema***: The JSON schema in string format used for validation.  
 **Returns**: A task that represents the asynchronous operation. The task result contains a boolean indicating whether the JSON is valid against the schema (true if valid, false otherwise).  
 
 </pre></function>
-* <function><a id="isurl"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsUrl</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isurl"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsUrl</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Checks if the provided string is a valid absolute URL.  
 ***input***: The string to be checked as a potential URL.  
 **Returns**: True if the input is a valid absolute URL, otherwise false.  
 
 </pre></function>
-* <function><a id="isnumeric"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsNumeric</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isnumeric"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsNumeric</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified string can be parsed as a numeric value.
 Utilizes the double.TryParse method to check if the conversion is successful.  
 ***input***: The input string to evaluate for its numeric nature.  
 **Returns**: true if the string represents a valid double; otherwise, false.  
 
 </pre></function>
-* <function><a id="isguid"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsGuid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="isguid"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">IsGuid</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> input) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Determines whether the specified string is a valid GUID.  
 ***input***: The string to check for being a valid GUID.  
 **Returns**: True if the input string represents a valid GUID; otherwise, false.  
 
 </pre></function>
 ## <a id="weather" href="#index_weather">Weather</a>
-* <function><a id="fetchweather"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchWeather</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, object\>\></span></function>
+* <function><a id="fetchweather"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">FetchWeather</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lat, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">double</span> lon, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> openweathermapApiKey) -> <span style="color:#87AF00">Task\<Dictionary\<string, object\>\></span></function>
 ## <a id="wifi" href="#index_wifi">Wifi</a>
-* <function><a id="wificode"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiAuth</span> auth, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="wificodeeap"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode_EAP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> identity, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiEapMethod</span> eap, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiPhase2</span> phase2 = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.WifiPlugin+WifiPhase2.MSCHAPV2</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> anonymousIdentity = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="wificode"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiAuth</span> auth, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="wificodeeap"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">WifiCode_EAP</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> ssid, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> identity, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> password, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiEapMethod</span> eap, <span style="color:#87AF00; margin-left:1px; margin-right:1px">WifiPhase2</span> phase2 = <span style="color:#87AF00; margin-right:1px">Krynetic.Database.Plugins.WifiPlugin+WifiPhase2.MSCHAPV2</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> anonymousIdentity = <span style="color:#D70000; margin-right:1px">null</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">bool</span> hidden = <span style="color:#5FAFAF; margin-right:1px">false</span>) -> <span style="color:#87AF00">string</span></function>
 ## <a id="x509certificates" href="#index_x509certificates">X509Certificates</a>
-* <function><a id="parsex509"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseX509</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> certPemString) -> <span style="color:#87AF00">Certificate</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="parsex509"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ParseX509</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> certPemString) -> <span style="color:#87AF00">Certificate</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Parses an X.509 certificate from a PEM\-formatted string and creates a Certificate object containing detailed information about the certificate.  
 ***certPemString***: The PEM\-encoded certificate as a string.  
 **Returns**: A Certificate object with properties such as thumbprint, serial number, validity period, issuer, subject  
 
 </pre></function>
-* <function><a id="createselfsignedcertificate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateSelfSignedCertificate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hashAlg = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="createselfsignedcertificate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateSelfSignedCertificate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> hashAlg = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Creates a self\-signed X.509 certificate with the specified subject name, RSA key size,
 validity period in days, and hash algorithm.  
 ***subject***: The subject name of the certificate.
@@ -2651,7 +3039,7 @@ validity period in days, and hash algorithm.
 **Returns**: A PEM formatted string containing both the certificate and private key  
 
 </pre></function>
-* <function><a id="createcertificateauthority"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCertificateAuthority</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">4096</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">3650</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+* <function><a id="createcertificateauthority"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCertificateAuthority</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">4096</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">3650</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
 **Summary**: Creates a self\-signed Certificate Authority (CA) with specified subject name, RSA key size, and validity period.  
 ***subject***: The subject name for the X.500 distinguished name of the certificate authority in a string format.
 ***keySize***: Optional parameter specifying the size of the RSA key to be generated. Defaults to 4096 bits if not provided.
@@ -2661,5 +3049,124 @@ validity period in days, and hash algorithm.
 \- KeyPem: The PEM\-encoded representation of the self\-signed certificate.  
 
 </pre></function>
-* <function><a id="signcertificate"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SignCertificate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> issuerCertPem, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> issuerKeyPem, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>) -> <span style="color:#87AF00">string</span></function>
-* <function><a id="createcertificatechain"></a><b>function</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCertificateChain</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> leafSubject, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> caCertPem, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> caKeyPem, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="signcertificate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">SignCertificate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> subject, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> issuerCertPem, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> issuerKeyPem, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="createcertificatechain"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">CreateCertificateChain</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> leafSubject, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> caCertPem, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> caKeyPem, <span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> validDays = <span style="color:#5FAFAF; margin-right:1px">365</span>) -> <span style="color:#87AF00">string</span></function>
+## <a id="csharp" href="#index_csharp">CSharp</a>
+* <function><a id="csharp"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">CSharp</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">CSharpScript</span>, <span style="color:#D75F00">Cs</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Evaluates C\# code using the CSharpScript runtime  
+***code***: C\# code that should be executed
+***input***: Configuration parameters when executing  
+**Returns**: Output from execution  
+**Examples**:
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;input&quot;: {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;data&quot;: &quot;hello&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;code&quot;: &quot;&quot;&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using System; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 1234 \+ 5678;
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;result.expression&quot;: &quot;CSharp(code, input)&quot;
+}  
+
+</pre></function>
+## <a id="javascript" href="#index_javascript">JavaScript</a>
+* <function><a id="javascript"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">JavaScript</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Js</span>)<pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Evaluates Javascript code using the YantraJS runtime  
+***code***: Javascript code that should be executed
+***input***: Configuration parameters when executing  
+**Returns**: Output from execution  
+**Examples**:
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;code&quot;: &quot;&quot;&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function fib(n) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return n &lt;= 1 ? n : fib(n \- 1) \+ fib(n \- 2);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return fib(7);
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;result.expression&quot;: &quot;JavaScript(code)&quot;
+}  
+
+</pre></function>
+## <a id="lua" href="#index_lua">Lua</a>
+* <function><a id="lua"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Lua</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span></function>
+## <a id="python" href="#index_python">Python</a>
+* <function><a id="python"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Python</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Py</span>)</function>
+## <a id="ruby" href="#index_ruby">Ruby</a>
+* <function><a id="ruby"></a><b>fn</b> <span style="color:#AF5F5F">[may modify] </span><span style="color:#D75F00; margin-right: 2px">Ruby</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> code, <span style="color:#87AF00; margin-left:1px; margin-right:1px">EvalInput</span> input = <span style="color:#87AF00; margin-right:1px">null</span>) -> <span style="color:#87AF00">Task\<object\></span> -- (alias <span style="color:#D75F00">Rb</span>)</function>
+## <a id="elliptic-curve-digital-signature-algorithm-esdsa" href="#index_elliptic-curve-digital-signature-algorithm-esdsa">Elliptic Curve Digital Signature Algorithm (ESDSA)</a>
+* <function><a id="ecdsagenerate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSAGenerate</span>() -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates an ECDSA key pair using the NIST P\-256 curve.  
+**Returns**: A tuple containing the Base64\-encoded  
+
+</pre></function>
+* <function><a id="ecdsasign"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSASign</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PrivateKey) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Signs a message using the ECDSA algorithm with a provided  
+***message***: The original message to be signed.
+***base64PrivateKey***: The base64 encoded private key  
+
+</pre></function>
+* <function><a id="ecdsaverify"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">ECDSAVerify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Signature, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PublicKey) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Verifies an ECDSA (Elliptic Curve Digital Signature Algorithm) signature for a given message.  
+***message***: The original message that was signed.
+***base64Signature***: The base64 encoded string representing the signature to be verified.
+***base64PublicKey***: The base64 encoded public key  
+
+</pre></function>
+## <a id="hash-based-message-authentication-code-hmac" href="#index_hash-based-message-authentication-code-hmac">Hash-based Message Authentication Code (HMAC)</a>
+* <function><a id="hmacgenerate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACGenerate</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates a Base64 encoded HMAC key for the specified algorithm.  
+***algorithm***: The hashing algorithm to use for HMAC (e.g., &quot;SHA256&quot;).  
+**Returns**: A string representing the Base64 encoded HMAC key.  
+
+</pre></function>
+* <function><a id="hmacsign"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACSign</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Creates an HMAC (Hash\-based Message Authentication Code) signature for a given message using the specified key and algorithm.  
+***message***: The input string message to be signed.
+***base64Key***: The base64\-encoded secret key used for creating the HMAC signature.
+***algorithm***: The hashing algorithm to use, with a default of &quot;SHA256&quot;.  
+**Returns**: A base64\-encoded string representing the HMAC signature of the message.  
+**Remarks**:
+This function uses UTF\-8 encoding for converting the input message into bytes. 
+It creates an HMAC using the specified or default algorithm and computes the hash of the input message bytes.
+The computed hash is then converted to a base64 string and returned as the signature.
+Ensure that the key provided in base64 format is correctly decoded to prevent errors during HMAC generation.  
+
+</pre></function>
+* <function><a id="hmacverify"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">HMACVerify</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> message, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Signature, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> algorithm = <span style="color:#D70000; margin-right:1px">"SHA256"</span>) -> <span style="color:#5FAFAF">bool</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Verifies if the provided Base64\-encoded HMAC signature matches the expected HMAC 
+signature generated from the given message and key using the specified hash algorithm.  
+***message***: The original message for which the HMAC signature is to be verified.
+***base64Signature***: The Base64\-encoded HMAC signature to verify against the expected signature.
+***base64Key***: The Base64\-encoded key used to generate the HMAC signature.
+***algorithm***: The hash algorithm to use for generating the HMAC signature (default is &quot;SHA256&quot;).  
+**Returns**: True if the provided signature matches the generated signature; otherwise, false.  
+
+</pre></function>
+## <a id="advanced-encryption-standard-aes" href="#index_advanced-encryption-standard-aes">Advanced Encryption Standard (AES)</a>
+* <function><a id="aesgenerate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESGenerate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySizeBits = <span style="color:#5FAFAF; margin-right:1px">256</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Generates a new pair of AES Key and Initial Vector (IV)  
+***keySizeBits***: AES key size to be created  
+**Returns**: Key and IV pair  
+
+</pre></function>
+* <function><a id="aesencrypt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESEncrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plaintext, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64IV) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Encrypts a given plaintext using AES encryption with the provided base64 key and IV.  
+***plaintext***: The text to be encrypted.
+***base64Key***: The base64\-encoded AES key.
+***base64IV***: The base64\-encoded IV.  
+**Returns**: The base64\-encoded encrypted ciphertext.  
+
+</pre></function>
+* <function><a id="aesdecrypt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">AESDecrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64CipherText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64Key, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64IV) -> <span style="color:#87AF00">string</span><pre style="color:#009700; background-color:#051012; margin-bottom:0px; margin-top:6px; padding:8px 12px 10px 12px; white-space:pre-wrap;">
+**Summary**: Decrypts a base64\-encrypted data using the provided key and initialization vector.  
+***base64CipherText***: The encrypted base64 string.
+***base64Key***: The base64\-encoded encryption key.
+***base64IV***: The base64\-encoded initialization vector.  
+**Returns**: The decrypted AES data as a UTF8 string.  
+
+</pre></function>
+## <a id="rivest-shamir-adleman-rsa" href="#index_rivest-shamir-adleman-rsa">Rivest Shamir Adleman (RSA)</a>
+* <function><a id="rsagenerate"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSAGenerate</span>(<span style="color:#5FAFAF; margin-left:1px; margin-right:1px">int</span> keySize = <span style="color:#5FAFAF; margin-right:1px">2048</span>) -> <span style="color:#87AF00">ValueTuple\<string, string\></span></function>
+* <function><a id="rsaencrypt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSAEncrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> plaintext, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PublicKey) -> <span style="color:#87AF00">string</span></function>
+* <function><a id="rsadecrypt"></a><b>fn</b> <span style="color:#87AF00">[pure] </span><span style="color:#D75F00; margin-right: 2px">RSADecrypt</span>(<span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64CipherText, <span style="color:#87AF00; margin-left:1px; margin-right:1px">string</span> base64PrivateKey) -> <span style="color:#87AF00">string</span></function>
