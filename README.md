@@ -50,27 +50,27 @@ Syntax/
 
 Servers/
   README.md                    Overview, selection, ports, settings
-  GraphQL/
+  AMQP/
+  Announce/
+  CouchDB/
+  Couchbase/
+  FTP/
   GRPC/
-  SocketIO/
+  GraphQL/
+  HTTP/
+  KubernetesProbe/
   MQTT/
-  WCF/
-  Sparql/
   MongoDB/
-  SQL/
+  OData/
+  OIDC/
   Redis/
   S3/
-  Couchbase/
-  CouchDB/
-  AMQP/
-  FTP/
+  SQL/
   SSH/
-  OData/
-  HTTP/
-  OIDC/
+  SocketIO/
+  Sparql/
   VirtualDisk/
-  KubernetesProbe/
-  Announce/
+  WCF/
 
 Handlers/
   README.md                    Handlers and the @ namespaces
